@@ -1,0 +1,236 @@
+qid	english_name	culture_number
+Q805	Yemen	3
+Q159	Russia	2
+Q711	Mongolia	1
+Q183	Germany	7
+Q30	United States of America	8
+Q96	Mexico	9
+Q142	France	6
+Q739	Colombia	9
+Q114	Kenya	9
+Q212	Ukraine	2
+Q39	Switzerland	6
+Q38	Italy	6
+Q668	India	4
+Q40	Austria	6
+Q145	United Kingdom	8
+Q148	People's Republic of China	1
+Q213	Czech Republic	6
+Q227	Azerbaijan	2
+Q29	Spain	6
+Q408	Australia	8
+Q215	Slovenia	6
+Q222	Albania	2
+Q16	Canada	8
+Q854	Sri Lanka	4
+Q794	Iran	3
+Q298	Chile	9
+Q31	Belgium	6
+Q155	Brazil	9
+Q129286	British Raj	4
+Q717	Venezuela	9
+Q27	Republic of Ireland	8
+Q414	Argentina	9
+Q17	Japan	1
+Q948	Tunisia	3
+Q218	Romania	2
+Q217	Moldova	2
+Q117	Ghana	5
+Q252	Indonesia	3
+Q20	Norway	7
+Q36	Poland	6
+Q403	Serbia	2
+Q928	Philippines	4
+Q801	Israel	2
+Q733	Paraguay	9
+Q34	Sweden	7
+Q881	Vietnam	4
+Q258	South Africa	5
+Q41	Greece	2
+Q191	Estonia	7
+Q858	Syria	3
+Q33	Finland	7
+Q55	Netherlands	7
+Q958	South Sudan	5
+Q214	Slovakia	6
+Q28	Hungary	6
+Q750	Bolivia	9
+Q225	Bosnia and Herzegovina	2
+Q233	Malta	6
+Q224	Croatia	6
+Q262	Algeria	3
+Q851	Saudi Arabia	3
+Q37	Lithuania	7
+Q35	Denmark	7
+Q419	Peru	9
+Q211	Latvia	2
+Q399	Armenia	2
+Q43	Turkey	3
+Q1028	Morocco	3
+Q683	Samoa	4
+Q784	Dominica	9
+Q219	Bulgaria	2
+Q837	Nepal	4
+Q1027	Mauritius	4
+Q77	Uruguay	9
+Q730	Suriname	5
+Q843	Pakistan	3
+Q921	Brunei	4
+Q45	Portugal	6
+Q1033	Nigeria	5
+Q184	Belarus	2
+Q691	Papua New Guinea	4
+Q869	Thailand	4
+Q783	Honduras	9
+Q836	Burma	4
+Q189	Iceland	7
+Q865	Republic of China	1
+Q230	Georgia	2
+Q228	Andorra	6
+Q833	Malaysia	4
+Q983	Equatorial Guinea	5
+Q986	Eritrea	5
+Q863	Tajikistan	2
+Q664	New Zealand	8
+Q954	Zimbabwe	3
+Q889	Afghanistan	3
+Q929	Central African Republic	5
+Q792	El Salvador	9
+Q754	Trinidad and Tobago	9
+Q232	Kazakhstan	2
+Q236	Montenegro	2
+Q79	Egypt	3
+Q1006	Guinea	5
+Q15180	Soviet Union	2
+Q1042	Seychelles	4
+Q796	Iraq	3
+Q221	Republic of Macedonia	2
+Q884	South Korea	1
+Q1039	Sao Tomé and Príncipe	5
+Q917	Bhutan	4
+Q878	United Arab Emirates	3
+Q241	Cuba	9
+Q1049	Sudan	5
+Q810	Jordan	3
+Q657	Chad	5
+Q963	Botswana	5
+Q1019	Madagascar	5
+Q32	Luxembourg	6
+Q4628	Faroe Islands	7
+Q912	Mali	5
+Q265	Uzbekistan	2
+Q115	Ethiopia	5
+Q1011	Cape Verde	5
+Q1246	Kosovo	2
+Q672	Tuvalu	4
+Q1041	Senegal	5
+Q1009	Cameroon	5
+Q786	Dominican Republic	9
+Q1045	Somalia	5
+Q242	Belize	9
+Q819	Laos	4
+Q813	Kyrgyzstan	2
+Q1036	Uganda	5
+Q16957	East Germany	7
+Q902	Bangladesh	4
+Q1037	Rwanda	5
+Q1016	Libya	3
+Q423	North Korea	1
+Q1000	Gabon	5
+Q811	Nicaragua	9
+Q967	Burundi	5
+Q962	Benin	5
+Q702	Federated States of Micronesia	4
+Q804	Panama	9
+Q974	Democratic Republic of the Congo	5
+Q766	Jamaica	9
+Q800	Costa Rica	9
+Q678	Tonga	4
+Q790	Haiti	9
+Q916	Angola	5
+Q424	Cambodia	4
+Q1030	Namibia	5
+Q229	Cyprus	6
+Q223	Greenland	7
+Q1032	Niger	5
+Q756617	Kingdom of Denmark	7
+Q1025	Mauritania	3
+Q1014	Liberia	5
+Q1013	Lesotho	5
+Q736	Ecuador	9
+Q924	Tanzania	5
+Q1007	Guinea-Bissau	5
+Q1008	Côte d'Ivoire	5
+Q2277	Roman Empire	6
+Q874	Turkmenistan	2
+Q1044	Sierra Leone	5
+Q977	Djibouti	5
+Q1029	Mozambique	5
+Q164079	Kingdom of Hanover	7
+Q781	Antigua and Barbuda	9
+Q970	Comoros	5
+Q38872	Prussia	7
+Q244	Barbados	9
+Q710	Kiribati	4
+Q965	Burkina Faso	5
+Q23334	Abkhazia	2
+Q769	Grenada	9
+Q844930	Classical Athens	2
+Q778	The Bahamas	9
+Q1050	Swaziland	5
+Q238	San Marino	6
+Q945	Togo	4
+Q822	Lebanon	3
+Q334	Singapore	4
+Q1020	Malawi	5
+Q1005	Gambia	5
+Q953	Zambia	5
+Q574	Timor-Leste	4
+Q398	Bahrain	3
+Q763	Saint Kitts and Nevis	9
+Q219060	State of Palestine	3
+Q817	Kuwait	3
+Q34020	នីអ៊ូ	4
+Q84	London	8
+Q685	Solomon Islands	4
+Q34266	Russian Empire	2
+Q842	Oman	3
+Q774	Guatemala	9
+Q29999	Kingdom of the Netherlands	7
+Q760	Saint Lucia	9
+Q734	Guyana	9
+Q712	Fiji	4
+Q846	Qatar	3
+Q6250	Western Sahara	5
+Q382593	New Netherland	8
+Q1747689	Ancient Rome	6
+Q971	Republic of the Congo	5
+Q826	Maldives	4
+Q235	Monaco	6
+Q347	Liechtenstein	7
+Q179876	Kingdom of England	8
+Q757	Saint Vincent and the Grenadines	9
+Q697	Nauru	4
+Q695	Palau	4
+Q22890	Ireland	8
+Q12560	Ottoman Empire	3
+Q1183	Puerto Rico	9
+Q180573	South Vietnam	4
+Q18097	Korea	1
+Q93180	Seleucid Empire	3
+Q709	Marshall Islands	4
+Q193619	Union of South Africa	5
+Q21203	Aruba	9
+Q686	Vanuatu	4
+Q83286	Socialist Federal Republic of Yugoslavia	2
+Q282475	Kingdom of Kartli-Kakheti	2
+Q22502	Taiwan	1
+Q7318	Nazi Germany	7
+Q23635	Bermuda	9
+Q171150	Kingdom of Hungary	6
+Q25279	Curaçao	9
+Q55502	Kingdom of Jerusalem	2
+Q206208	Puto	4
+Q28513	Austria-Hungary	6
+Q43287	German Empire	7
+Q33946	Czechoslovakia	6
