@@ -7,7 +7,7 @@ Q30,United States of America,8,english speaking
 Q96,Mexico,9,latin america
 Q142,France,6,catholic europe
 Q739,Colombia,9,latin america
-Q114,Kenya,9,latin america
+Q114,Kenya,5,africa
 Q212,Ukraine,2,orthodox
 Q39,Switzerland,6,catholic europe
 Q38,Italy,6,catholic europe
@@ -60,7 +60,7 @@ Q233,Malta,6,catholic europe
 Q224,Croatia,6,catholic europe
 Q262,Algeria,3,islamic
 Q851,Saudi Arabia,3,islamic
-Q37,Lithuania,7,protestant europe
+Q37,Lithuania,6,catholic europe
 Q35,Denmark,7,protestant europe
 Q419,Peru,9,latin america
 Q211,Latvia,7,protestant europe
@@ -90,14 +90,14 @@ Q228,Andorra,6,catholic europe
 Q833,Malaysia,4,south asia
 Q983,Equatorial Guinea,5,africa
 Q986,Eritrea,5,africa
-Q863,Tajikistan,2,orthodox
+Q863,Tajikistan,3,islamic
 Q664,New Zealand,8,english speaking
 Q954,Zimbabwe,3,islamic
 Q889,Afghanistan,3,islamic
 Q929,Central African Republic,5,africa
 Q792,El Salvador,9,latin america
 Q754,Trinidad and Tobago,9,latin america
-Q232,Kazakhstan,2,orthodox
+Q232,Kazakhstan,3,islamic
 Q236,Montenegro,2,orthodox
 Q79,Egypt,3,islamic
 Q1006,Guinea,5,africa
@@ -118,7 +118,7 @@ Q1019,Madagascar,5,africa
 Q32,Luxembourg,6,catholic europe
 Q4628,Faroe Islands,7,protestant europe
 Q912,Mali,5,africa
-Q265,Uzbekistan,2,orthodox
+Q265,Uzbekistan,3,islamic
 Q115,Ethiopia,5,africa
 Q1011,Cape Verde,5,africa
 Q1246,Kosovo,2,orthodox
@@ -129,7 +129,7 @@ Q786,Dominican Republic,9,latin america
 Q1045,Somalia,5,africa
 Q242,Belize,9,latin america
 Q819,Laos,4,south asia
-Q813,Kyrgyzstan,2,orthodox
+Q813,Kyrgyzstan,3,islamic
 Q1036,Uganda,5,africa
 Q16957,East Germany,7,protestant europe
 Q902,Bangladesh,4,south asia
@@ -162,7 +162,7 @@ Q924,Tanzania,5,africa
 Q1007,Guinea-Bissau,5,africa
 Q1008,Côte d'Ivoire,5,africa
 Q2277,Roman Empire,6,catholic europe
-Q874,Turkmenistan,2,orthodox
+Q874,Turkmenistan,3,islamic
 Q1044,Sierra Leone,5,africa
 Q977,Djibouti,5,africa
 Q1029,Mozambique,5,africa
