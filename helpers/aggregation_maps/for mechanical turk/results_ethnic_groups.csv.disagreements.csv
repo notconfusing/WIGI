@@ -1,21 +1,21 @@
 qid,en_label,Answer1,Answer2,Answer
-http://wikidata.org/wiki/Q842,Oman,Africa,Islamic,no_agreement
-http://wikidata.org/wiki/Q757,Saint Vincent and the Grenadines,Catholic European,English-speaking,no_agreement
-http://wikidata.org/wiki/Q954,Zimbabwe,Africa,Islamic,no_agreement
+http://wikidata.org/wiki/Q842,Oman,Africa,Islamic,Islamic
+http://wikidata.org/wiki/Q757,Saint Vincent and the Grenadines,Catholic European,English-speaking,Latin America
+http://wikidata.org/wiki/Q954,Zimbabwe,Africa,Islamic,Africa
 http://wikidata.org/wiki/Q207162,Bourbon Restoration,Catholic European,English-speaking,no_agreement
-http://wikidata.org/wiki/Q22890,Ireland,Catholic European,English-speaking,no_agreement
+http://wikidata.org/wiki/Q22890,Ireland,Catholic European,English-speaking,English-speaking
 http://wikidata.org/wiki/Q42211,Vandals,Catholic European,English-speaking,no_agreement
 http://wikidata.org/wiki/Q2429397,Ancient Carthage,Africa,Catholic European,no_agreement
-http://wikidata.org/wiki/Q962,Benin,Africa,Protestant European,no_agreement
+http://wikidata.org/wiki/Q962,Benin,Africa,Protestant European,Africa
 http://wikidata.org/wiki/Q231392,Kingdom of Asturias,Catholic European,English-speaking,no_agreement
 http://wikidata.org/wiki/Q2770,Tula,Africa,Orthodox,no_agreement
-http://wikidata.org/wiki/Q28,Hungary,Catholic European,Islamic,no_agreement
-http://wikidata.org/wiki/Q30971,French Polynesia,Catholic European,English-speaking,no_agreement
-http://wikidata.org/wiki/Q45315,Berber people,Africa,Islamic,no_agreement
-http://wikidata.org/wiki/Q222,Albania,Catholic European,Islamic,no_agreement
+http://wikidata.org/wiki/Q28,Hungary,Catholic European,Islamic,Catholic European
+http://wikidata.org/wiki/Q30971,French Polynesia,Catholic European,English-speaking,South Asia
+http://wikidata.org/wiki/Q45315,Berber people,Africa,Islamic,Islamic
+http://wikidata.org/wiki/Q222,Albania,Catholic European,Islamic,Islamic
 http://wikidata.org/wiki/Q191324,Middle Kingdom of Egypt,Africa,Islamic,no_agreement
-http://wikidata.org/wiki/Q6250,Western Sahara,Africa,Islamic,no_agreement
-http://wikidata.org/wiki/Q262,Algeria,Africa,Islamic,no_agreement
+http://wikidata.org/wiki/Q6250,Western Sahara,Africa,Islamic,Africa
+http://wikidata.org/wiki/Q262,Algeria,Africa,Islamic,Africa
 http://wikidata.org/wiki/Q2603851,Kingdom of Serbia,Africa,Orthodox,no_agreement
 http://wikidata.org/wiki/Q6343,Carthage,Catholic European,Islamic,no_agreement
 http://wikidata.org/wiki/Q1025,Mauritania,Africa,Islamic,no_agreement
