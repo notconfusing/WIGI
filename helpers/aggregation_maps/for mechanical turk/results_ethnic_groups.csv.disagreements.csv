@@ -2,7 +2,7 @@ qid,en_label,Answer1,Answer2,Answer
 http://wikidata.org/wiki/Q842,Oman,Africa,Islamic,Islamic
 http://wikidata.org/wiki/Q757,Saint Vincent and the Grenadines,Catholic European,English-speaking,Latin America
 http://wikidata.org/wiki/Q954,Zimbabwe,Africa,Islamic,Africa
-http://wikidata.org/wiki/Q207162,Bourbon Restoration,Catholic European,English-speaking,Catholic European
+http://wikidata.org/wiki/Q207162,Bourbon Restoration,CatLuxembourgholic European,English-speaking,Catholic European
 http://wikidata.org/wiki/Q22890,Ireland,Catholic European,English-speaking,English-speaking
 http://wikidata.org/wiki/Q42211,Vandals,Catholic European,English-speaking,pre-modern European
 http://wikidata.org/wiki/Q2429397,Ancient Carthage,Africa,Catholic European,pre-modern European
@@ -211,7 +211,7 @@ http://wikidata.org/wiki/Q83418,Normans,Catholic European,Protestant European,pr
 http://wikidata.org/wiki/Q274536,Azerbaijan,Catholic European,Orthodox,Islamic
 http://wikidata.org/wiki/Q41642,Phoenicia,Catholic European,Orthodox,pre-modern European
 http://wikidata.org/wiki/Q736,Ecuador,Catholic European,Latin America,Latin America
-http://wikidata.org/wiki/Q32,Luxembourg,Catholic European,Protestant European,Catholic European,
+http://wikidata.org/wiki/Q32,Luxembourg,Catholic European,Protestant European,Catholic European
 http://wikidata.org/wiki/Q156199,Electorate of Saxony,Catholic European,Protestant European,Protestant European
 http://wikidata.org/wiki/Q228990,French Empire,Catholic European,Protestant European,Catholic European
 http://wikidata.org/wiki/Q12544,Byzantine Empire,Latin America,Orthodox,Orthodox
