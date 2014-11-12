@@ -1,285 +1,275 @@
-qid,en_label,Answer1,Answer2,Answer
-http://wikidata.org/wiki/Q842,Oman,Africa,Islamic,Islamic
-http://wikidata.org/wiki/Q757,Saint Vincent and the Grenadines,Catholic European,English-speaking,English-speaking
-http://wikidata.org/wiki/Q954,Zimbabwe,Africa,Islamic,Islamic
-http://wikidata.org/wiki/Q207162,Bourbon Restoration,Catholic European,English-speaking,Catholic European
-http://wikidata.org/wiki/Q22890,Ireland,Catholic European,English-speaking,English-speaking
-http://wikidata.org/wiki/Q42211,Vandals,Catholic European,English-speaking,Protestant European
-http://wikidata.org/wiki/Q2429397,Ancient Carthage,Africa,Catholic European,Africa
-http://wikidata.org/wiki/Q962,Benin,Africa,Protestant European,Africa
-http://wikidata.org/wiki/Q231392,Kingdom of Asturias,Catholic European,English-speaking,Catholic European
-http://wikidata.org/wiki/Q2770,Tula,Africa,Orthodox,Orthodox
-http://wikidata.org/wiki/Q28,Hungary,Catholic European,Islamic,Protestant European
-http://wikidata.org/wiki/Q30971,French Polynesia,Catholic European,English-speaking,Catholic European
-http://wikidata.org/wiki/Q45315,Berber people,Africa,Islamic,Africa
-http://wikidata.org/wiki/Q222,Albania,Catholic European,Islamic,Islamic
-http://wikidata.org/wiki/Q191324,Middle Kingdom of Egypt,Africa,Islamic,Africa
-http://wikidata.org/wiki/Q6250,Western Sahara,Africa,Islamic,Africa
-http://wikidata.org/wiki/Q262,Algeria,Africa,Islamic,Africa
-http://wikidata.org/wiki/Q2603851,Kingdom of Serbia,Africa,Orthodox,Orthodox
-http://wikidata.org/wiki/Q6343,Carthage,Catholic European,Islamic,Africa
-http://wikidata.org/wiki/Q1025,Mauritania,Africa,Islamic,no_agreement
-http://wikidata.org/wiki/Q1049,Sudan,Africa,Islamic,no_agreement
-http://wikidata.org/wiki/Q948,Tunisia,Africa,Islamic,no_agreement
-http://wikidata.org/wiki/Q645400,Argentine,Catholic European,English-speaking,no_agreement
-http://wikidata.org/wiki/Q983,Equatorial Guinea,Africa,English-speaking,no_agreement
-http://wikidata.org/wiki/Q131964,Austrian Empire,Catholic European,English-speaking,no_agreement
-http://wikidata.org/wiki/Q469950,Bobo,Africa,English-speaking,no_agreement
-http://wikidata.org/wiki/Q686,Vanuatu,Catholic European,English-speaking,no_agreement
-http://wikidata.org/wiki/Q1032,Niger,Africa,Catholic European,no_agreement
-http://wikidata.org/wiki/Q370736,Cape Colony,Catholic European,English-speaking,no_agreement
-http://wikidata.org/wiki/Q284667,Electorate of Mainz,Africa,Catholic European,no_agreement
-http://wikidata.org/wiki/Q26167,Duchy of Schleswig,Africa,Protestant European,no_agreement
-http://wikidata.org/wiki/Q1020,Malawi,Africa,English-speaking,no_agreement
-http://wikidata.org/wiki/Q295663,Albano,Africa,Catholic European,no_agreement
-http://wikidata.org/wiki/Q157070,County of Flanders,Catholic European,English-speaking,no_agreement
-http://wikidata.org/wiki/Q38060,Gaul,Catholic European,Confucian,no_agreement
-http://wikidata.org/wiki/Q28244,Amharic,Africa,Islamic,no_agreement
-http://wikidata.org/wiki/Q258,South Africa,Africa,Latin America,no_agreement
-http://wikidata.org/wiki/Q6500954,Zaire,Africa,Catholic European,no_agreement
-http://wikidata.org/wiki/Q1028,Morocco,Africa,Islamic,no_agreement
-http://wikidata.org/wiki/Q1009,Cameroon,Africa,Catholic European,no_agreement
-http://wikidata.org/wiki/Q47690,Babylonia,Africa,Islamic,no_agreement
-http://wikidata.org/wiki/Q106782,Kingdom of God,Catholic European,English-speaking,no_agreement
-http://wikidata.org/wiki/Q16,Canada,Catholic European,English-speaking,no_agreement
-http://wikidata.org/wiki/Q223050,statelessness,Africa,English-speaking,no_agreement
-http://wikidata.org/wiki/Q103122,Ostrogoths,Catholic European,Confucian,no_agreement
-http://wikidata.org/wiki/Q1016,Libya,Africa,Islamic,no_agreement
-http://wikidata.org/wiki/Q678,Tonga,Africa,South Asia,no_agreement
-http://wikidata.org/wiki/Q31747,Irish Free State,Catholic European,English-speaking,no_agreement
-http://wikidata.org/wiki/Q1281618,sculptor,Catholic European,English-speaking,no_agreement
-http://wikidata.org/wiki/Q425028,Goto,Africa,English-speaking,no_agreement
-http://wikidata.org/wiki/Q1044,Sierra Leone,Africa,South Asia,no_agreement
-http://wikidata.org/wiki/Q130900,Lombards,Catholic European,English-speaking,no_agreement
-http://wikidata.org/wiki/Q746558,Emirate of Bukhara,Islamic,South Asia,no_agreement
-http://wikidata.org/wiki/Q1803779,Icelandic cattle,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q769,Grenada,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q837,Nepal,Confucian,South Asia,no_agreement
-http://wikidata.org/wiki/Q742083,Princes of Paliano,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q836680,Duchy of Nassau,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q912,Mali,Islamic,South Asia,no_agreement
-http://wikidata.org/wiki/Q180573,South Vietnam,Confucian,South Asia,no_agreement
-http://wikidata.org/wiki/Q940348,Bosniaks,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q958291,United Principalities,English-speaking,Orthodox,no_agreement
-http://wikidata.org/wiki/Q8680,British Empire,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q212056,Mongolian People's Republic,Confucian,South Asia,no_agreement
-http://wikidata.org/wiki/Q188736,Bosnia,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q875556,Israelis,English-speaking,Islamic,no_agreement
-http://wikidata.org/wiki/Q191077,Kingdom of Yugoslavia,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q9056,Czech,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q226317,Flanders,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q209857,Kingdom of Lombardy–Venetia,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q2227570,Duchy of Württemberg,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q23427,South Ossetia,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q980,Bavaria,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q188161,Dutch East Indies,Latin America,South Asia,no_agreement
-http://wikidata.org/wiki/Q79797,Armenians,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q208404,Kingdom of Armenia,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q804,Panama,English-speaking,Latin America,no_agreement
-http://wikidata.org/wiki/Q838261,Federal Republic of Yugoslavia,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q813,Kyrgyzstan,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q863,Tajikistan,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q902,Bangladesh,Islamic,South Asia,no_agreement
-http://wikidata.org/wiki/Q921,Brunei,Islamic,South Asia,no_agreement
-http://wikidata.org/wiki/Q36704,Yugoslavia,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q186537,Khanate of Kazan,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q211,Latvia,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q208169,Republic of Ragusa,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q38872,Prussia,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q182647,Khwarezm,Protestant European,South Asia,no_agreement
-http://wikidata.org/wiki/Q9083,Lithuanian,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q39193,Bohemia,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q191,Estonia,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q760,Saint Lucia,English-speaking,Latin America,no_agreement
-http://wikidata.org/wiki/Q209065,Kingdom of Greece,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q25228,Anguilla,English-speaking,Latin America,no_agreement
-http://wikidata.org/wiki/Q213510,Belgian Congo,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q395903,Cyprus,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q2277,Roman Empire,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q249934,Burji dynasty,Islamic,South Asia,no_agreement
-http://wikidata.org/wiki/Q236,Montenegro,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q41,Greece,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q842390,Tuʻi Tonga Empire,English-speaking,South Asia,no_agreement
-http://wikidata.org/wiki/Q487829,Chagatai Khanate,Confucian,South Asia,no_agreement
-http://wikidata.org/wiki/Q55304,Q55304,English-speaking,Islamic,no_agreement
-http://wikidata.org/wiki/Q221457,Congress Poland,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q2577303,Q2577303,Confucian,English-speaking,no_agreement
-http://wikidata.org/wiki/Q42000,Tahiti,Latin America,Protestant European,no_agreement
-http://wikidata.org/wiki/Q365,Cologne,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q3403551,Principality of Halych,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q836,Burma,Confucian,English-speaking,no_agreement
-http://wikidata.org/wiki/Q8785,Armenian,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q577668,Khanate of Bukhara,Islamic,South Asia,no_agreement
-http://wikidata.org/wiki/Q686481,Brazi,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q486181,Samanid dynasty,Islamic,South Asia,no_agreement
-http://wikidata.org/wiki/Q28513,Austria-Hungary,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q241,Cuba,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q42834,Western Roman Empire,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q2257531,Siceliotes,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q193714,Mandatory Palestine,English-speaking,Islamic,no_agreement
-http://wikidata.org/wiki/Q704300,Free City of Frankfurt,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q600018,Kingdom of Hungary,Islamic,Latin America,no_agreement
-http://wikidata.org/wiki/Q399,Armenia,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q420759,Second Bulgarian Empire,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q483505,Tajik people,Islamic,South Asia,no_agreement
-http://wikidata.org/wiki/Q199707,Turkmen Soviet Socialist Republic,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q34020,នីអ៊ូ,Confucian,English-speaking,no_agreement
-http://wikidata.org/wiki/Q750,Bolivia,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q230,Georgia,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q244165,Nagorno-Karabakh Republic,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q950952,Dardania,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q29520,China,Confucian,South Asia,no_agreement
-http://wikidata.org/wiki/Q223,Greenland,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q37024,Serbia and Montenegro,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q2980623,Kingdom of Bosnia,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q656,Saint Petersburg,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q234,Flanders,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q121932,People's Republic of Bulgaria,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q784,Dominica,English-speaking,Latin America,no_agreement
-http://wikidata.org/wiki/Q1986139,Parthian Empire,Islamic,South Asia,no_agreement
-http://wikidata.org/wiki/Q699964,Archduchy of Austria,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q1246,Kosovo,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q326029,Duchy of Brunswick,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q696241,Khanate of Kokand,Orthodox,South Asia,no_agreement
-http://wikidata.org/wiki/Q152750,Protectorate of Bohemia and Moravia,Latin America,Protestant European,no_agreement
-http://wikidata.org/wiki/Q347,Liechtenstein,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q529605,Electorate of Hesse,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q229,Cyprus,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q1003703,Bulgaria,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q3995,Basque Country,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q528042,Dalmatia,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q235,Monaco,Catholic European,Islamic,no_agreement
-http://wikidata.org/wiki/Q33,Finland,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q12560,Ottoman Empire,Catholic European,Islamic,no_agreement
-http://wikidata.org/wiki/Q734,Guyana,English-speaking,Latin America,no_agreement
-http://wikidata.org/wiki/Q161036,Free State of Prussia,Islamic,Protestant European,no_agreement
-http://wikidata.org/wiki/Q124216,Swiss people,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q4628,Faroe Islands,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q1108445,Kievan Rus',Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q139670,Democratic Republic of Armenia,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q42884,Germans,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q458,European Union,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q14118,Savoy,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q13403037,Q13403037,English-speaking,Islamic,no_agreement
-http://wikidata.org/wiki/Q518101,First Republic of Austria,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q155019,Duchy of Lorraine,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q211230,Syros,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q2235,Veliky Novgorod,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q503585,Korea under Japanese rule,Confucian,South Asia,no_agreement
-http://wikidata.org/wiki/Q229411,Delhi Sultanate,Islamic,South Asia,no_agreement
-http://wikidata.org/wiki/Q40,Austria,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q1209822,Kingdom of Kakheti,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q3051808,Kosova,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q1054409,March of Ancona,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q7411,Dutch,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q12557,Mongol Empire,Confucian,Islamic,no_agreement
-http://wikidata.org/wiki/Q33296,Mughal Empire,Confucian,Islamic,no_agreement
-http://wikidata.org/wiki/Q4938064,Bohemia,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q36,Poland,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q3287203,Q3287203,English-speaking,Islamic,no_agreement
-http://wikidata.org/wiki/Q1003997,Judea,Catholic European,Islamic,no_agreement
-http://wikidata.org/wiki/Q17278379,Q17278379,English-speaking,Islamic,no_agreement
-http://wikidata.org/wiki/Q1257426,Sclaveni,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q11225429,Thebes,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q122443,Attica,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q164079,Kingdom of Hanover,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q833665,Boeotian confederation,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q16671638,Q16671638,English-speaking,Islamic,no_agreement
-http://wikidata.org/wiki/Q16410,People's Republic of Hungary,Catholic European,Islamic,no_agreement
-http://wikidata.org/wiki/Q6581823,Southern Netherlands,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q171150,Kingdom of Hungary,Catholic European,Islamic,no_agreement
-http://wikidata.org/wiki/Q123559,Al-Andalus,Catholic European,Islamic,no_agreement
-http://wikidata.org/wiki/Q622783,Spanish Netherlands,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q282475,Kingdom of Kartli-Kakheti,Confucian,Islamic,no_agreement
-http://wikidata.org/wiki/Q156038,Duchy of Courland and Semigallia,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q208545,Socialist Republic of Bosnia and Herzegovina,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q2622868,Kingdom of Armenia,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q779011,Principality of Montenegro,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q11266977,Epirus,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q706018,Electorate of Brunswick-Lüneburg,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q11772,Ancient Greece,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q467864,People's Socialist Republic of Albania,Islamic,Protestant European,no_agreement
-http://wikidata.org/wiki/Q244,Barbados,English-speaking,Latin America,no_agreement
-http://wikidata.org/wiki/Q35,Denmark,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q13534153,Athens,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q203493,Kingdom of Romania,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q2979717,Second Empire of Haiti,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q252,Indonesia,Islamic,South Asia,no_agreement
-http://wikidata.org/wiki/Q1147043,Southern Song,Confucian,English-speaking,no_agreement
-http://wikidata.org/wiki/Q1005,Gambia,English-speaking,Latin America,no_agreement
-http://wikidata.org/wiki/Q83418,Normans,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q274536,Azerbaijan,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q41642,Phoenicia,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q736,Ecuador,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q32,Luxembourg,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q156199,Electorate of Saxony,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q228990,French Empire,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q12544,Byzantine Empire,Latin America,Orthodox,no_agreement
-http://wikidata.org/wiki/Q482942,Azerbaijani people,Islamic,South Asia,no_agreement
-http://wikidata.org/wiki/Q13426199,Republic of China before 1949,Confucian,South Asia,no_agreement
-http://wikidata.org/wiki/Q711,Mongolia,Confucian,South Asia,no_agreement
-http://wikidata.org/wiki/Q16641,American Samoa,English-speaking,South Asia,no_agreement
-http://wikidata.org/wiki/Q3456410,Republic of Mulhouse,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q173302,Estonians,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q172107,Polish–Lithuanian Commonwealth,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q153015,Kingdom of Saxony,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q15643279,Khwarazmian empire/ khorasan /Tajikistan,Orthodox,South Asia,no_agreement
-http://wikidata.org/wiki/Q6602,Strasbourg,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q128904,Elam,Islamic,South Asia,no_agreement
-http://wikidata.org/wiki/Q403,Serbia,Latin America,Orthodox,no_agreement
-http://wikidata.org/wiki/Q4147589,Q4147589,English-speaking,Islamic,no_agreement
-http://wikidata.org/wiki/Q174193,United Kingdom of Great Britain and Ireland,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q335088,Armenian Kingdom of Cilicia,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q484578,Uzbek Soviet Socialist Republic,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q153943,Kingdom of Westphalia,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q816709,Tuvan People's Republic,Confucian,Orthodox,no_agreement
-http://wikidata.org/wiki/Q1718221,Non-citizens,English-speaking,Orthodox,no_agreement
-http://wikidata.org/wiki/Q154741,Confederation of the Rhine,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q457167,West Ukrainian People's Republic,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q801,Israel,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q5690,Sparta,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q152115,Duchy of Warsaw,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q4040,Aragon,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q71747,Duchy of Brittany,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q4882572,Belgium,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q242,Belize,English-speaking,Latin America,no_agreement
-http://wikidata.org/wiki/Q16957,East Germany,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q721728,Castle of Eger,Catholic European,Islamic,no_agreement
-http://wikidata.org/wiki/Q159856,Duchy of Brabant,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q556263,Duchy of Brunswick-Lüneburg,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q1231,Kosovo,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q156726,Ivano-Frankivsk,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q656954,"Soli, Cilicia",Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q2991382,County of Provence,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q329439,engraver,Confucian,Islamic,no_agreement
-http://wikidata.org/wiki/Q167420,Croats,Latin America,Orthodox,no_agreement
-http://wikidata.org/wiki/Q1330631,Pherae,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q1039,Sao Tomé and Príncipe,Catholic European,Latin America,no_agreement
-http://wikidata.org/wiki/Q15878,Normandy,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q1433867,Kazakh Khanate,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q168651,Landgraviate of Hesse-Kassel,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q62633,Grand Duchy of Finland,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q510662,ring road,English-speaking,Protestant European,no_agreement
-http://wikidata.org/wiki/Q776,Utrecht,Islamic,Protestant European,no_agreement
-http://wikidata.org/wiki/Q131337,Azerbaijan Soviet Socialist Republic,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q11917,Canton of Geneva,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q154849,Grand Duchy of Tuscany,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q844930,Classical Athens,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q2453974,Don Republic,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q1412,Finnish,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q964024,Moldavian Democratic Republic,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q13526919,Crotone,Islamic,Protestant European,no_agreement
-http://wikidata.org/wiki/Q4400406,Q4400406,English-speaking,Islamic,no_agreement
-http://wikidata.org/wiki/Q1747689,Ancient Rome,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q2843,Lübeck,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q1412043,Phlius,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q142417,Kingdom of Valencia,Catholic European,Protestant European,no_agreement
-http://wikidata.org/wiki/Q517333,Principality of Polotsk,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q39702,Macedonia,Catholic European,Orthodox,no_agreement
-http://wikidata.org/wiki/Q173761,Lithuanian Soviet Socialist Republic,Orthodox,Protestant European,no_agreement
-http://wikidata.org/wiki/Q8890160,Q8890160,English-speaking,Islamic,no_agreement
-http://wikidata.org/wiki/Q2177215,Q2177215,Islamic,Latin America,no_agreement
-http://wikidata.org/wiki/Q710,Kiribati,English-speaking,South Asia,no_agreement
-http://wikidata.org/wiki/Q4470623,Q4470623,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q6504570,Rzeczpospolita,Islamic,Orthodox,no_agreement
-http://wikidata.org/wiki/Q389688,Achaemenid Empire,Islamic,Protestant European,no_agreement
+qid,en_label,Answer1,Answer2,Answer,Answer-Piotr
+http://wikidata.org/wiki/Q842,Oman,Africa,Islamic,Islamic,Islamic
+http://wikidata.org/wiki/Q757,Saint Vincent and the Grenadines,Catholic European,English-speaking,Latin America,Latin America
+http://wikidata.org/wiki/Q954,Zimbabwe,Africa,Islamic,Islamic,Africa
+http://wikidata.org/wiki/Q207162,Bourbon Restoration,Catholic European,English-speaking,Catholic European,Catholic European
+http://wikidata.org/wiki/Q22890,Ireland,Catholic European,English-speaking,English-speaking,English-speaking
+http://wikidata.org/wiki/Q42211,Vandals,Catholic European,English-speaking,Protestant European,pre-modern European
+http://wikidata.org/wiki/Q2429397,Ancient Carthage,Africa,Catholic European,Africa,pre-modern European
+http://wikidata.org/wiki/Q962,Benin,Africa,Protestant European,Africa,Africa
+http://wikidata.org/wiki/Q231392,Kingdom of Asturias,Catholic European,English-speaking,Catholic European,pre-modern European
+http://wikidata.org/wiki/Q2770,Tula,Africa,Orthodox,Orthodox,no_agreement
+http://wikidata.org/wiki/Q28,Hungary,Catholic European,Islamic,Catholic European,Catholic European
+http://wikidata.org/wiki/Q30971,French Polynesia,Catholic European,English-speaking,South Asia,South Asia
+http://wikidata.org/wiki/Q45315,Berber people,Africa,Islamic,Islamic,Islamic
+http://wikidata.org/wiki/Q222,Albania,Catholic European,Islamic,Islamic,Islamic
+http://wikidata.org/wiki/Q191324,Middle Kingdom of Egypt,Africa,Islamic,Africa,Africa
+http://wikidata.org/wiki/Q6250,Western Sahara,Africa,Islamic,Africa,Africa
+http://wikidata.org/wiki/Q262,Algeria,Africa,Islamic,Africa,Africa
+http://wikidata.org/wiki/Q2603851,Kingdom of Serbia,Africa,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q6343,Carthage,Catholic European,Islamic,Africa,pre-modern European
+http://wikidata.org/wiki/Q1025,Mauritania,Africa,Islamic,Africa,Africa
+http://wikidata.org/wiki/Q1049,Sudan,Africa,Islamic,Africa,Africa
+http://wikidata.org/wiki/Q948,Tunisia,Africa,Islamic,Africa,Africa
+http://wikidata.org/wiki/Q645400,Argentine,Catholic European,English-speaking,Latin America,Latin America
+http://wikidata.org/wiki/Q983,Equatorial Guinea,Africa,English-speaking,Africa,Africa
+http://wikidata.org/wiki/Q131964,Austrian Empire,Catholic European,English-speaking,Catholic European,Catholic European
+http://wikidata.org/wiki/Q469950,Bobo,Africa,English-speaking,Africa,Africa
+http://wikidata.org/wiki/Q686,Vanuatu,Catholic European,English-speaking,South Asia,South Asia
+http://wikidata.org/wiki/Q1032,Niger,Africa,Catholic European,Africa,Africa
+http://wikidata.org/wiki/Q370736,Cape Colony,Catholic European,English-speaking,Africa,Africa
+http://wikidata.org/wiki/Q284667,Electorate of Mainz,Africa,Catholic European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q26167,Duchy of Schleswig,Africa,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q1020,Malawi,Africa,English-speaking,Africa,Africa
+http://wikidata.org/wiki/Q295663,Albano,Africa,Catholic European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q157070,County of Flanders,Catholic European,English-speaking,Catholic European,Catholic European
+http://wikidata.org/wiki/Q38060,Gaul,Catholic European,Confucian,Catholic European,pre-modern European
+http://wikidata.org/wiki/Q28244,Amharic,Africa,Islamic,Africa,Africa
+http://wikidata.org/wiki/Q258,South Africa,Africa,Latin America,Africa,Africa
+http://wikidata.org/wiki/Q6500954,Zaire,Africa,Catholic European,Africa,Africa
+http://wikidata.org/wiki/Q1028,Morocco,Africa,Islamic,Africa,Africa
+http://wikidata.org/wiki/Q1009,Cameroon,Africa,Catholic European,Africa,Africa
+http://wikidata.org/wiki/Q47690,Babylonia,Africa,Islamic,Islamic,pre-modern Middle East
+http://wikidata.org/wiki/Q106782,Kingdom of God,Catholic European,English-speaking,Jewish,Jewish
+http://wikidata.org/wiki/Q16,Canada,Catholic European,English-speaking,English-speaking,English-speaking
+http://wikidata.org/wiki/Q103122,Ostrogoths,Confucian,Catholic European,Catholic European,pre-modern European
+http://wikidata.org/wiki/Q1016,Libya,Africa,Islamic,Africa,Africa
+http://wikidata.org/wiki/Q678,Tonga,Africa,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q31747,Irish Free State,Catholic European,English-speaking,English-speaking,Catholic European
+http://wikidata.org/wiki/Q1044,Sierra Leone,Africa,South Asia,Africa,Africa
+http://wikidata.org/wiki/Q130900,Lombards,Catholic European,English-speaking,Catholic European,pre-modern European
+http://wikidata.org/wiki/Q746558,Emirate of Bukhara,Islamic,South Asia,Islamic,Islamic
+http://wikidata.org/wiki/Q769,Grenada,Catholic European,Latin America,Catholic European,Catholic European
+http://wikidata.org/wiki/Q837,Nepal,Confucian,South Asia,Confucian,Confucian
+http://wikidata.org/wiki/Q742083,Princes of Paliano,Catholic European,Latin America,Catholic European,Catholic European
+http://wikidata.org/wiki/Q836680,Duchy of Nassau,English-speaking,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q912,Mali,Islamic,South Asia,Africa,Africa
+http://wikidata.org/wiki/Q180573,South Vietnam,Confucian,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q940348,Bosniaks,Catholic European,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q958291,United Principalities,English-speaking,Orthodox,Catholic European,Catholic European
+http://wikidata.org/wiki/Q8680,British Empire,English-speaking,Protestant European,English-speaking,English-speaking
+http://wikidata.org/wiki/Q212056,Mongolian People's Republic,Confucian,South Asia,Confucian,South Asia
+http://wikidata.org/wiki/Q188736,Bosnia,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q875556,Israelis,English-speaking,Islamic,Orthodox,Jewish
+http://wikidata.org/wiki/Q191077,Kingdom of Yugoslavia,Catholic European,Latin America,Orthodox,Orthodox
+http://wikidata.org/wiki/Q9056,Czech,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q226317,Flanders,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q209857,Kingdom of Lombardy–Venetia,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q2227570,Duchy of Württemberg,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q23427,South Ossetia,Islamic,Orthodox,Orthodox,Islamic
+http://wikidata.org/wiki/Q980,Bavaria,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q188161,Dutch East Indies,Latin America,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q79797,Armenians,Islamic,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q208404,Kingdom of Armenia,Islamic,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q804,Panama,English-speaking,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q838261,Federal Republic of Yugoslavia,Orthodox,Protestant European,Orthodox,Orthodox
+http://wikidata.org/wiki/Q813,Kyrgyzstan,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q863,Tajikistan,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q902,Bangladesh,Islamic,South Asia,Islamic,Islamic
+http://wikidata.org/wiki/Q921,Brunei,Islamic,South Asia,Islamic,Islamic
+http://wikidata.org/wiki/Q36704,Yugoslavia,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q186537,Khanate of Kazan,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q211,Latvia,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q208169,Republic of Ragusa,Catholic European,Latin America,Catholic European,Catholic European
+http://wikidata.org/wiki/Q38872,Prussia,Orthodox,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q182647,Khwarezm,Protestant European,South Asia,Islamic,Islamic
+http://wikidata.org/wiki/Q9083,Lithuanian,Catholic European,Latin America,Catholic European,Catholic European
+http://wikidata.org/wiki/Q39193,Bohemia,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q191,Estonia,Orthodox,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q760,Saint Lucia,English-speaking,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q209065,Kingdom of Greece,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q25228,Anguilla,English-speaking,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q213510,Belgian Congo,Orthodox,Protestant European,Africa,Africa
+http://wikidata.org/wiki/Q395903,Cyprus,Islamic,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q2277,Roman Empire,Catholic European,Orthodox,Catholic European,pre-modern European
+http://wikidata.org/wiki/Q249934,Burji dynasty,Islamic,South Asia,Islamic,pre-modern Middle East
+http://wikidata.org/wiki/Q236,Montenegro,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q41,Greece,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q842390,Tuʻi Tonga Empire,English-speaking,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q487829,Chagatai Khanate,Confucian,South Asia,Islamic,Islamic
+http://wikidata.org/wiki/Q55304,Q55304,English-speaking,Islamic,Protestant European,no_agreement
+http://wikidata.org/wiki/Q221457,Congress Poland,Catholic European,Orthodox,Catholic European,Catholic European
+http://wikidata.org/wiki/Q2577303,Q2577303,Confucian,English-speaking,Catholic European,no_agreement
+http://wikidata.org/wiki/Q42000,Tahiti,Latin America,Protestant European,South Asia,South Asia
+http://wikidata.org/wiki/Q365,Cologne,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q3403551,Principality of Halych,Islamic,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q836,Burma,Confucian,English-speaking,South Asia,South Asia
+http://wikidata.org/wiki/Q8785,Armenian,Islamic,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q577668,Khanate of Bukhara,Islamic,South Asia,Islamic,Islamic
+http://wikidata.org/wiki/Q686481,Brazi,Catholic European,Orthodox,Orthodox,no_agreement
+http://wikidata.org/wiki/Q486181,Samanid dynasty,Islamic,South Asia,Islamic,pre-Modern Middle East
+http://wikidata.org/wiki/Q28513,Austria-Hungary,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q241,Cuba,Catholic European,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q42834,Western Roman Empire,Catholic European,Latin America,Catholic European,pre-Modern European
+http://wikidata.org/wiki/Q2257531,Siceliotes,Catholic European,Orthodox,Catholic European,pre-Modern European
+http://wikidata.org/wiki/Q193714,Mandatory Palestine,English-speaking,Islamic,Islamic,Islamic
+http://wikidata.org/wiki/Q704300,Free City of Frankfurt,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q600018,Kingdom of Hungary,Islamic,Latin America,Catholic European,Catholic European
+http://wikidata.org/wiki/Q399,Armenia,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q420759,Second Bulgarian Empire,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q483505,Tajik people,Islamic,South Asia,Islamic,Islamic
+http://wikidata.org/wiki/Q199707,Turkmen Soviet Socialist Republic,Catholic European,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q34020,នីអ៊ូ,Confucian,English-speaking,South Asia,no_agreement
+http://wikidata.org/wiki/Q750,Bolivia,Catholic European,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q230,Georgia,Islamic,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q244165,Nagorno-Karabakh Republic,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q950952,Dardania,Catholic European,Orthodox,Orthodox,pre-Modern European
+http://wikidata.org/wiki/Q29520,China,Confucian,South Asia,Confucian,Confucian
+http://wikidata.org/wiki/Q223,Greenland,English-speaking,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q37024,Serbia and Montenegro,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q2980623,Kingdom of Bosnia,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q656,Saint Petersburg,Orthodox,Protestant European,Orthodox,Orthodox
+http://wikidata.org/wiki/Q234,Flanders,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q121932,People's Republic of Bulgaria,Catholic European,Protestant European,Orthodox,Orthodox
+http://wikidata.org/wiki/Q784,Dominica,English-speaking,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q1986139,Parthian Empire,Islamic,South Asia,Islamic,pre-modern Middle East
+http://wikidata.org/wiki/Q699964,Archduchy of Austria,English-speaking,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q1246,Kosovo,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q326029,Duchy of Brunswick,English-speaking,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q696241,Khanate of Kokand,Orthodox,South Asia,Islamic,Islamic
+http://wikidata.org/wiki/Q152750,Protectorate of Bohemia and Moravia,Latin America,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q347,Liechtenstein,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q529605,Electorate of Hesse,Catholic European,Protestant European,Protestant Europeant,Protestant Europeant
+http://wikidata.org/wiki/Q229,Cyprus,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q1003703,Bulgaria,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q3995,Basque Country,Catholic European,Latin America,Catholic European,Catholic European
+http://wikidata.org/wiki/Q528042,Dalmatia,Catholic European,Orthodox,Catholic European,Catholic European
+http://wikidata.org/wiki/Q235,Monaco,Catholic European,Islamic,Catholic European,Catholic European
+http://wikidata.org/wiki/Q33,Finland,Orthodox,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q12560,Ottoman Empire,Catholic European,Islamic,Islamic,Islamic
+http://wikidata.org/wiki/Q734,Guyana,English-speaking,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q161036,Free State of Prussia,Islamic,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q124216,Swiss people,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q4628,Faroe Islands,English-speaking,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q1108445,Kievan Rus',Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q139670,Democratic Republic of Armenia,Islamic,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q42884,Germans,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q14118,Savoy,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q13403037,Q13403037,English-speaking,Islamic,Orthodox,no_agreement
+http://wikidata.org/wiki/Q518101,First Republic of Austria,English-speaking,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q155019,Duchy of Lorraine,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q211230,Syros,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q2235,Veliky Novgorod,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q503585,Korea under Japanese rule,Confucian,South Asia,Confucian,Confucian
+http://wikidata.org/wiki/Q229411,Delhi Sultanate,Islamic,South Asia,Islamic,Islamic
+http://wikidata.org/wiki/Q40,Austria,English-speaking,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q1209822,Kingdom of Kakheti,Islamic,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q3051808,Kosova,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q7411,Dutch,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q12557,Mongol Empire,Confucian,Islamic,Confucian,pre-modern Middle East
+http://wikidata.org/wiki/Q33296,Mughal Empire,Confucian,Islamic,Confucian,pre-modern Middle East
+http://wikidata.org/wiki/Q4938064,Bohemia,Orthodox,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q36,Poland,Catholic European,Orthodox,Catholic European,Catholic European
+http://wikidata.org/wiki/Q3287203,Q3287203,English-speaking,Islamic,South Asia,no_agreement
+http://wikidata.org/wiki/Q1003997,Judea,Catholic European,Islamic,Orthodox,Jewish
+http://wikidata.org/wiki/Q1257426,Sclaveni,Catholic European,Latin America,Orthodox,pre-modern European
+http://wikidata.org/wiki/Q11225429,Thebes,Islamic,Orthodox,Orthodox,pre-modern European
+http://wikidata.org/wiki/Q122443,Attica,Catholic European,Orthodox,Orthodox,pre-modern European
+http://wikidata.org/wiki/Q164079,Kingdom of Hanover,Catholic European,Orthodox,Protestant European,Protestant European
+http://wikidata.org/wiki/Q833665,Boeotian confederation,Catholic European,Orthodox,Orthodox,pre-modern European
+http://wikidata.org/wiki/Q16671638,Q16671638,English-speaking,Islamic,Catholic European,no_agreement
+http://wikidata.org/wiki/Q16410,People's Republic of Hungary,Catholic European,Islamic,Catholic European,Catholic European
+http://wikidata.org/wiki/Q6581823,Southern Netherlands,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q171150,Kingdom of Hungary,Catholic European,Islamic,Catholic European,Catholic European
+http://wikidata.org/wiki/Q123559,Al-Andalus,Catholic European,Islamic,Islamic,Islamic
+http://wikidata.org/wiki/Q622783,Spanish Netherlands,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q282475,Kingdom of Kartli-Kakheti,Confucian,Islamic,Orthodox,Orthodox
+http://wikidata.org/wiki/Q156038,Duchy of Courland and Semigallia,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q208545,Socialist Republic of Bosnia and Herzegovina,Catholic European,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q2622868,Kingdom of Armenia,Islamic,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q779011,Principality of Montenegro,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q11266977,Epirus,Catholic European,Orthodox,Orthodox,pre-modern European
+http://wikidata.org/wiki/Q706018,Electorate of Brunswick-Lüneburg,English-speaking,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q11772,Ancient Greece,Catholic European,Latin America,Orthodox,pre-modern European
+http://wikidata.org/wiki/Q467864,People's Socialist Republic of Albania,Islamic,Protestant European,Islamic,Islamic
+http://wikidata.org/wiki/Q244,Barbados,English-speaking,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q35,Denmark,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q13534153,Athens,Catholic European,Orthodox,Orthodox,pre-modern European
+http://wikidata.org/wiki/Q203493,Kingdom of Romania,Catholic European,Protestant European,Orthodox,Orthodox
+http://wikidata.org/wiki/Q2979717,Second Empire of Haiti,Catholic European,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q252,Indonesia,Islamic,South Asia,Islamic,Islamic
+http://wikidata.org/wiki/Q1147043,Southern Song,Confucian,English-speaking,Confucian,no_agreement
+http://wikidata.org/wiki/Q1005,Gambia,English-speaking,Latin America,Africa,Africa
+http://wikidata.org/wiki/Q83418,Normans,Catholic European,Protestant European,Catholic European,pre-modern European
+http://wikidata.org/wiki/Q274536,Azerbaijan,Catholic European,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q41642,Phoenicia,Catholic European,Orthodox,Islamic,pre-modern European
+http://wikidata.org/wiki/Q736,Ecuador,Catholic European,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q32,Luxembourg,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q156199,Electorate of Saxony,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q228990,French Empire,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q12544,Byzantine Empire,Latin America,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q482942,Azerbaijani people,Islamic,South Asia,Islamic,Islamic
+http://wikidata.org/wiki/Q13426199,Republic of China before 1949,Confucian,South Asia,Confucian,Confucian
+http://wikidata.org/wiki/Q711,Mongolia,Confucian,South Asia,Confucian,Confucian
+http://wikidata.org/wiki/Q16641,American Samoa,English-speaking,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q3456410,Republic of Mulhouse,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q173302,Estonians,Orthodox,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q172107,Polish–Lithuanian Commonwealth,Catholic European,Orthodox,Catholic European,Catholic European
+http://wikidata.org/wiki/Q153015,Kingdom of Saxony,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q15643279,Khwarazmian empire/ khorasan /Tajikistan,Orthodox,South Asia,Islamic,pre-Modern Middle East
+http://wikidata.org/wiki/Q6602,Strasbourg,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q128904,Elam,Islamic,South Asia,Islamic,pre-Modern Middle East
+http://wikidata.org/wiki/Q403,Serbia,Latin America,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q4147589,Q4147589,English-speaking,Islamic,Orthodox,no_agreement
+http://wikidata.org/wiki/Q174193,United Kingdom of Great Britain and Ireland,English-speaking,Protestant European,English-speaking,English-speaking
+http://wikidata.org/wiki/Q335088,Armenian Kingdom of Cilicia,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q484578,Uzbek Soviet Socialist Republic,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q153943,Kingdom of Westphalia,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q816709,Tuvan People's Republic,Confucian,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q154741,Confederation of the Rhine,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q457167,West Ukrainian People's Republic,Orthodox,Protestant European,Orthodox,Orthodox
+http://wikidata.org/wiki/Q801,Israel,Islamic,Orthodox,Orthodox,Jewish
+http://wikidata.org/wiki/Q5690,Sparta,Orthodox,Protestant European,Orthodox,pre-Modern European
+http://wikidata.org/wiki/Q152115,Duchy of Warsaw,Catholic European,Orthodox,Catholic European,Catholic European
+http://wikidata.org/wiki/Q4040,Aragon,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q71747,Duchy of Brittany,English-speaking,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q4882572,Belgium,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q242,Belize,English-speaking,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q16957,East Germany,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q721728,Castle of Eger,Catholic European,Islamic,Protestant European,no_agreement
+http://wikidata.org/wiki/Q159856,Duchy of Brabant,Catholic European,Protestant European,Catholic European,pre-modern Europe
+http://wikidata.org/wiki/Q556263,Duchy of Brunswick-Lüneburg,English-speaking,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q1231,Kosovo,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q156726,Ivano-Frankivsk,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q656954,"Soli, Cilicia",Orthodox,Protestant European,Orthodox,no_agreement
+http://wikidata.org/wiki/Q2991382,County of Provence,English-speaking,Protestant European,Catholic European,pre-modern European
+http://wikidata.org/wiki/Q167420,Croats,Latin America,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q1330631,Pherae,Catholic European,Orthodox,Orthodox,pre-modern European
+http://wikidata.org/wiki/Q1039,Sao Tomé and Príncipe,Catholic European,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q15878,Normandy,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q1433867,Kazakh Khanate,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q168651,Landgraviate of Hesse-Kassel,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q62633,Grand Duchy of Finland,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q776,Utrecht,Islamic,Protestant European,Protestant European,no_agreement
+http://wikidata.org/wiki/Q131337,Azerbaijan Soviet Socialist Republic,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q11917,Canton of Geneva,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q154849,Grand Duchy of Tuscany,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q844930,Classical Athens,Orthodox,Protestant European,Orthodox,pre-Modern European
+http://wikidata.org/wiki/Q2453974,Don Republic,Orthodox,Protestant European,Orthodox,Orthodox
+http://wikidata.org/wiki/Q1412,Finnish,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q964024,Moldavian Democratic Republic,Catholic European,Protestant European,Orthodox,Orthodox
+http://wikidata.org/wiki/Q13526919,Crotone,Islamic,Protestant European,Catholic European,pre-Modern European
+http://wikidata.org/wiki/Q4400406,Q4400406,English-speaking,Islamic,Orthodox,no_agreement
+http://wikidata.org/wiki/Q1747689,Ancient Rome,Orthodox,Protestant European,Catholic European,pre-Modern European
+http://wikidata.org/wiki/Q2843,Lübeck,Catholic European,Protestant European,Protestant European,no_agreement
+http://wikidata.org/wiki/Q1412043,Phlius,Orthodox,Protestant European,Orthodox,pre-Modern European
+http://wikidata.org/wiki/Q142417,Kingdom of Valencia,Catholic European,Protestant European,Catholic European,pre-Modern European
+http://wikidata.org/wiki/Q517333,Principality of Polotsk,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q39702,Macedonia,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q173761,Lithuanian Soviet Socialist Republic,Orthodox,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q8890160,Q8890160,English-speaking,Islamic,Catholic European,no_agreement
+http://wikidata.org/wiki/Q2177215,Q2177215,Islamic,Latin America,Orthodox,no_agreement
+http://wikidata.org/wiki/Q710,Kiribati,English-speaking,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q4470623,Q4470623,Islamic,Orthodox,Orthodox,no_agreement
+http://wikidata.org/wiki/Q6504570,Rzeczpospolita,Islamic,Orthodox,Catholic European,no_agreement
+http://wikidata.org/wiki/Q389688,Achaemenid Empire,Islamic,Protestant European,Islamic,pre-Modern Middle East
