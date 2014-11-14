@@ -65,7 +65,7 @@ http://wikidata.org/wiki/Q187985,Tibetan people,Confucian,South Asia,Confucian,C
 http://wikidata.org/wiki/Q980,Bavaria,Catholic European,Protestant European,Protestant European,Protestant European
 http://wikidata.org/wiki/Q2904712,Sebei people,Africa,Orthodox,Africa,Africa
 http://wikidata.org/wiki/Q1280677,Serbs of Croatia,Catholic European,Orthodox,Orthodox,Orthodox
-http://wikidata.org/wiki/Q6572419,List of Greek Americans,Catholic European,Orthodox,Orthodox,English-speaking
+http://wikidata.org/wiki/Q6572419,List of Greek Americans,Catholic European,Orthodox,Orthodox,invalid entry
 http://wikidata.org/wiki/Q371762,Yeniche people,Protestant European,South Asia,Protestant European,Protestant European
 http://wikidata.org/wiki/Q2671687,Armenians in France,Catholic European,Orthodox,Orthodox,Orthodox
 http://wikidata.org/wiki/Q1075293,Irish American,Catholic European,English-speaking,English-speaking,English-speaking
@@ -161,61 +161,61 @@ http://wikidata.org/wiki/Q2986879,British African-Caribbean people,English-speak
 http://wikidata.org/wiki/Q106713,Mestizo,Catholic European,Latin America,Latin America,Latin America
 http://wikidata.org/wiki/Q932244,Sinhalese people,Confucian,South Asia,South Asia,South Asia
 http://wikidata.org/wiki/Q3198706,Kono people,Confucian,Orthodox,Africa
-http://wikidata.org/wiki/Q237534,Austrians,Catholic European,English-speaking,Protestant European
-http://wikidata.org/wiki/Q1183,Puerto Rico,English-speaking,Latin America,Latin America
-http://wikidata.org/wiki/Q37,Lithuania,Catholic European,Orthodox,Catholic European
-http://wikidata.org/wiki/Q2401619,Banu Zuhrah,Africa,Islamic,Islamic
-http://wikidata.org/wiki/Q1998273,Ingrian Finns,Catholic European,Orthodox,Protestant European
-http://wikidata.org/wiki/Q311883,Maranao people,Africa,South Asia,South Asia
-http://wikidata.org/wiki/Q653884,Hispanic America,English-speaking,Latin America,Latin America
-http://wikidata.org/wiki/Q5187,Chechen Republic,Islamic,Orthodox,Orthodox
-http://wikidata.org/wiki/Q118281,Kannada people,Islamic,South Asia,South Asia
-http://wikidata.org/wiki/Q402913,Bengali people,Islamic,South Asia,South Asia
-http://wikidata.org/wiki/Q147401,Zapotec peoples,Catholic European,Latin America,Latin America
-http://wikidata.org/wiki/Q72484,Tay people,Confucian,South Asia,South Asia
-http://wikidata.org/wiki/Q2021092,German Russian,Orthodox,Protestant European,Protestant European
-http://wikidata.org/wiki/Q510023,Paiute people,English-speaking,Latin America,English-speaking
-http://wikidata.org/wiki/Q165235,Bosnians,Islamic,Orthodox,Islamic
-http://wikidata.org/wiki/Q36411,Shipibo-Conibo people,Africa,Latin America,Latin America
-http://wikidata.org/wiki/Q5172105,Coromantee,Africa,English-speaking,Africa
-http://wikidata.org/wiki/Q46118,Uyghur people,Confucian,Islamic,Islamic
-http://wikidata.org/wiki/Q875651,Irish Travellers,Catholic European,English-speaking,English-speaking
-http://wikidata.org/wiki/Q1242155,Albanians in Kosovo,Islamic,Orthodox,Islamic
-http://wikidata.org/wiki/Q6529576,Bihari people,Islamic,South Asia,South Asia
-http://wikidata.org/wiki/Q3346380,Kachin people,Confucian,South Asia,South Asia
-http://wikidata.org/wiki/Q2633574,Banu Tamim,Catholic European,Islamic,Islamic
-http://wikidata.org/wiki/Q2033181,White Latin American,English-speaking,Latin America,Latin America
-http://wikidata.org/wiki/Q1123923,Nez Perce people,English-speaking,Latin America,English-speaking
-http://wikidata.org/wiki/Q1408764,Circassia,English-speaking,Islamic,Orthodox
-http://wikidata.org/wiki/Q6510842,Lebanese American,English-speaking,Islamic,Islamic
-http://wikidata.org/wiki/Q748316,Temne people,Africa,Islamic,Africa
-http://wikidata.org/wiki/Q690869,Ruthenians (historical ethnonym),Catholic European,Orthodox,Orthodox
-http://wikidata.org/wiki/Q628490,Mountain Jews,English-speaking,Orthodox,Orthodox
-http://wikidata.org/wiki/Q1217927,Dutch Burghers,Catholic European,Protestant European,Protestant European
-http://wikidata.org/wiki/Q160894,Spanish people,Catholic European,Latin America,Catholic European
-http://wikidata.org/wiki/Q7507476,Sicilian American,English-speaking,Latin America,Catholic European
-http://wikidata.org/wiki/Q902,Bangladesh,Confucian,South Asia,South Asia
-http://wikidata.org/wiki/Q172717,Avar people,Islamic,Orthodox,Islamic
-http://wikidata.org/wiki/Q799929,Gisu people,Africa,English-speaking,Africa
-http://wikidata.org/wiki/Q6869724,Minuane people,Africa,Latin America,Latin America
-http://wikidata.org/wiki/Q196194,Romani,Catholic European,Orthodox,Orthodox
-http://wikidata.org/wiki/Q41975,Mongols,Confucian,South Asia,Confucian
-http://wikidata.org/wiki/Q1060991,Chamorro people,English-speaking,South Asia,South Asia
-http://wikidata.org/wiki/Q244157,Igbo people,Africa,South Asia,Africa
-http://wikidata.org/wiki/Q10090,Hindu,Confucian,South Asia,South Asia
-http://wikidata.org/wiki/Q13219195,Banu Salmah,Confucian,South Asia,Islamic
-http://wikidata.org/wiki/Q467790,Mansi people,Africa,Orthodox,Orthodox
-http://wikidata.org/wiki/Q179248,Albanians,Orthodox,Protestant European,Islamic
-http://wikidata.org/wiki/Q191923,Mulatto,English-speaking,Latin America,Latin America
-http://wikidata.org/wiki/Q381151,Walloons,Catholic European,Protestant European,Catholic European
-http://wikidata.org/wiki/Q115473,Hazara people,Islamic,Orthodox,Islamic
-http://wikidata.org/wiki/Q2672654,History of the Jews in Morocco,Africa,Orthodox,Islamic
-http://wikidata.org/wiki/Q7403051,Sakonnet,English-speaking,Islamic,English-speaking
-http://wikidata.org/wiki/Q1891793,Moroccan people,Africa,Islamic,Islamic
-http://wikidata.org/wiki/Q336136,Banu Bariq,Islamic,South Asia,Islamic
-http://wikidata.org/wiki/Q15763,Circassians,Islamic,Orthodox,Orthodox
-http://wikidata.org/wiki/Q371230,Ngāi Tahu,English-speaking,South Asia,South Asia
-http://wikidata.org/wiki/Q1473943,Shapsugs,Confucian,Orthodox,Islamic
-http://wikidata.org/wiki/Q5869624,History of the Jews in Bessarabia,Islamic,Orthodox,Islamic
-http://wikidata.org/wiki/Q46713,Saraiki people,Protestant European,South Asia,no_agreement
-http://wikidata.org/wiki/Q4987,Banu Hashim,Islamic,South Asia,Islamic
+http://wikidata.org/wiki/Q237534,Austrians,Catholic European,English-speaking,Protestant European,Protestant European
+http://wikidata.org/wiki/Q1183,Puerto Rico,English-speaking,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q37,Lithuania,Catholic European,Orthodox,Catholic European,Catholic European
+http://wikidata.org/wiki/Q2401619,Banu Zuhrah,Africa,Islamic,Islamic,Islamic
+http://wikidata.org/wiki/Q1998273,Ingrian Finns,Catholic European,Orthodox,Protestant European,Protestant European
+http://wikidata.org/wiki/Q311883,Maranao people,Africa,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q653884,Hispanic America,English-speaking,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q5187,Chechen Republic,Islamic,Orthodox,Orthodox,Islamic
+http://wikidata.org/wiki/Q118281,Kannada people,Islamic,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q402913,Bengali people,Islamic,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q147401,Zapotec peoples,Catholic European,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q72484,Tay people,Confucian,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q2021092,German Russian,Orthodox,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q510023,Paiute people,English-speaking,Latin America,English-speaking,English-speaking
+http://wikidata.org/wiki/Q165235,Bosnians,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q36411,Shipibo-Conibo people,Africa,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q5172105,Coromantee,Africa,English-speaking,Africa,Africa
+http://wikidata.org/wiki/Q46118,Uyghur people,Confucian,Islamic,Islamic,Islamic
+http://wikidata.org/wiki/Q875651,Irish Travellers,Catholic European,English-speaking,English-speaking,English-speaking
+http://wikidata.org/wiki/Q1242155,Albanians in Kosovo,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q6529576,Bihari people,Islamic,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q3346380,Kachin people,Confucian,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q2633574,Banu Tamim,Catholic European,Islamic,Islamic,Islamic
+http://wikidata.org/wiki/Q2033181,White Latin American,English-speaking,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q1123923,Nez Perce people,English-speaking,Latin America,English-speaking,English-speaking
+http://wikidata.org/wiki/Q1408764,Circassia,English-speaking,Islamic,Orthodox,Orthodox
+http://wikidata.org/wiki/Q6510842,Lebanese American,English-speaking,Islamic,Islamic,English-speaking
+http://wikidata.org/wiki/Q748316,Temne people,Africa,Islamic,Africa,Africa
+http://wikidata.org/wiki/Q690869,Ruthenians (historical ethnonym),Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q628490,Mountain Jews,English-speaking,Orthodox,Orthodox,Jewish
+http://wikidata.org/wiki/Q1217927,Dutch Burghers,Catholic European,Protestant European,Protestant European,Protestant European
+http://wikidata.org/wiki/Q160894,Spanish people,Catholic European,Latin America,Catholic European,Catholic European
+http://wikidata.org/wiki/Q7507476,Sicilian American,English-speaking,Latin America,Catholic European,English-speaking
+http://wikidata.org/wiki/Q902,Bangladesh,Confucian,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q172717,Avar people,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q799929,Gisu people,Africa,English-speaking,Africa,Africa
+http://wikidata.org/wiki/Q6869724,Minuane people,Africa,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q196194,Romani,Catholic European,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q41975,Mongols,Confucian,South Asia,Confucian,Confucian
+http://wikidata.org/wiki/Q1060991,Chamorro people,English-speaking,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q244157,Igbo people,Africa,South Asia,Africa,Africa
+http://wikidata.org/wiki/Q10090,Hindu,Confucian,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q13219195,Banu Salmah,Confucian,South Asia,Islamic,Islamic
+http://wikidata.org/wiki/Q467790,Mansi people,Africa,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q179248,Albanians,Orthodox,Protestant European,Islamic,Islamic
+http://wikidata.org/wiki/Q191923,Mulatto,English-speaking,Latin America,Latin America,Latin America
+http://wikidata.org/wiki/Q381151,Walloons,Catholic European,Protestant European,Catholic European,Catholic European
+http://wikidata.org/wiki/Q115473,Hazara people,Islamic,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q2672654,History of the Jews in Morocco,Africa,Orthodox,Islamic,invalid entry
+http://wikidata.org/wiki/Q7403051,Sakonnet,English-speaking,Islamic,English-speaking,English-speaking
+http://wikidata.org/wiki/Q1891793,Moroccan people,Africa,Islamic,Islamic,Islamic
+http://wikidata.org/wiki/Q336136,Banu Bariq,Islamic,South Asia,Islamic,Islamic
+http://wikidata.org/wiki/Q15763,Circassians,Islamic,Orthodox,Orthodox,Orthodox
+http://wikidata.org/wiki/Q371230,Ngāi Tahu,English-speaking,South Asia,South Asia,South Asia
+http://wikidata.org/wiki/Q1473943,Shapsugs,Confucian,Orthodox,Islamic,Islamic
+http://wikidata.org/wiki/Q5869624,History of the Jews in Bessarabia,Islamic,Orthodox,Islamic,invalid entry
+http://wikidata.org/wiki/Q46713,Saraiki people,Protestant European,South Asia,no_agreement,Islamic  
+http://wikidata.org/wiki/Q4987,Banu Hashim,Islamic,South Asia,Islamic,Islamic
