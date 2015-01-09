@@ -18,7 +18,7 @@ Wikipedia Gender Index (WIGI), uses Wikidata to produce gender-related statistic
    + Investigation into the [Germanic Nationality Classification Shift](http://nbviewer.ipython.org/github/notconfusing/WIGI/blob/master/German%20Austrian%20Analysis.ipynb)
    + Aggregating sitelinks into a [language-culture female percentage scatter plot](http://nbviewer.ipython.org/github/notconfusing/WIGI/blob/master/Language%20Culture%20Scatter.ipynb)
    + Modelling [female percentage of biographies for prediction](http://nbviewer.ipython.org/github/notconfusing/WIGI/blob/master/Logistics%20Fem%20Per.ipynb)
-   + Scraping out the ;mechanical turk disagreements for hand coding](http://nbviewer.ipython.org/github/notconfusing/WIGI/blob/master/Mechanical%20Turk%20Disagreements.ipynb)
+   + Scraping out the [mechanical turk disagreements for hand coding](http://nbviewer.ipython.org/github/notconfusing/WIGI/blob/master/Mechanical%20Turk%20Disagreements.ipynb)
    + How to make the [sitelinks scatter plots](http://nbviewer.ipython.org/github/notconfusing/WIGI/blob/master/Sitelinks%20Exmaple.ipynb)
    + [Comparing WIGI to the world economic forum](http://nbviewer.ipython.org/github/notconfusing/WIGI/blob/master/World%20Economic%20Forum%20Comparison.ipynb)
 
