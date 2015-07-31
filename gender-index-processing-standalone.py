@@ -8,9 +8,9 @@ import json
 import pywikibot
 from collections import defaultdict
 import time
+import shutil
 
 java_min_int = -2147483648
-gender_ordered = [u'female', u'male', u'transgender female', u'intersex', u"fa'afafine", u'transgender male', u'female animal', u'male animal', u'woman', u'genderqueer', u'kathoey']
 
 #Tranforming QIDs into English labels.
 enwp = pywikibot.Site('en','wikipedia')
@@ -42,15 +42,21 @@ def engify_labels(df):
     df.columns = labels
     return df
 
-snap = 'snapshot_data/'
-snapshot_dates = os.listdir(snap)
-latest = os.path.join(snap,max(snapshot_dates))
-csvs = filter(lambda x: x.endswith('.csv'), os.listdir(latest))
-if not len(csvs) == 1:
-    raise Exception
-else:
-    index_data_file = os.path.join(latest,csvs[0])
-df = pandas.read_csv(index_data_file, na_values=[java_min_int])
+snap = '/home/maximilianklein/snapshot_data/'
+java_place = '/home/maximilianklein/Wikidata-Toolkit/wdtk-examples/results'
+snapshot_dates = os.listdir(java_place)
+latest_file_name = max(snapshot_dates)
+latest_date = '-'.join(latest_file_name.split('.')[0].split('-')[-3:])
+latest = os.path.join(java_place,latest_file_name)
+#cp file over here and make property index
+new_snap_location = os.path.join(snap,latest_date)
+if not os.path.exists(new_snap_location):
+    os.makedirs(new_snap_location)
+copy_dest = os.path.join(new_snap_location,latest_file_name)
+print(latest, copy_dest)
+shutil.copyfile(latest, copy_dest)
+
+df = pandas.read_csv(copy_dest, na_values=[java_min_int])
 
 def split_column(q_str):
     if type(q_str) is float:
@@ -67,7 +73,7 @@ for column in ['gender', 'ethnic_group', 'citizenship', 'place_of_birth', 'site_
     
 
 
-def make_reindex(snap_df):
+def make_reindex(df):
 
     def int_dict_factory():
         return defaultdict(int)
@@ -107,7 +113,7 @@ reindexed_dfs = make_reindex(df)
 
 for param, gender_df in reindexed_dfs.iteritems():
     engify_labels(gender_df)
-    property_index_dir = latest + '/property_indexes'
+    property_index_dir = os.path.join(new_snap_location, 'property_indexes')
     if not os.path.exists(property_index_dir):
         os.makedirs(property_index_dir)
     filename = '%s/%s-index.csv' % (property_index_dir, param)
