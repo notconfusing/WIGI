@@ -53,7 +53,6 @@ new_snap_location = os.path.join(snap,latest_date)
 if not os.path.exists(new_snap_location):
     os.makedirs(new_snap_location)
 copy_dest = os.path.join(new_snap_location,latest_file_name)
-print(latest, copy_dest)
 shutil.copyfile(latest, copy_dest)
 
 df = pandas.read_csv(copy_dest, na_values=[java_min_int])
@@ -70,9 +69,105 @@ for column in ['gender', 'ethnic_group', 'citizenship', 'place_of_birth', 'site_
     column_plural = column+'s'
     df[column_plural] = df[column].apply(split_column)
     del df[column]
+
+###
+#CULTURES
+###
+pobs_map = json.load(open('helpers/aggregation_maps/pobs_map.json','r'))
+country_map = pandas.DataFrame.from_csv('helpers/aggregation_maps/country_maps.csv')
+
+ethnic_group_map = json.load(open('helpers/aggregation_maps/mechanical_turk/ethnic_groups_map.json','r'))
+citizenship_map = json.load(open('helpers/aggregation_maps/mechanical_turk/citizenship_map.json','r')) 
+
+unknown_countries = list()
+
+def map_pob(qid):
+    if not type(qid) is str:
+        return None
+    else:
+        try:
+            country_list = pobs_map[qid]
+        except:
+            unknown_countries.append(qid)
+            return None
+        if len(country_list) == 0:
+            return None
+        else:
+            country = country_list[0] #assumption
+            culture = country_map.ix[country]['culture_name']
+            return culture
+
+def map_wrapper(m):
+    def return_fun(qid):
+        try:
+            return m[qid]
+        except KeyError:
+            return None
+    return return_fun
+
+
+
+#order is important because it determines the preference we will use
+col_map_fun = zip(['ethnic_groups', 'citizenships', 'place_of_births'],
+                  [map_wrapper(ethnic_group_map),map_wrapper(citizenship_map), map_pob])
+
+mismatch = pandas.DataFrame()
+def determine_culture(row):
+    culture = None
+    for col, map_fun in col_map_fun:
+        val = row[col]
+        #print val
+        if isinstance(val,list):
+            val = val[0]
+        guess = map_fun(val)
+        if (culture is not None) and (guess is not None):
+            if culture != guess:
+                mismatch.append(row,ignore_index=True)
+        if guess:
+            culture = guess    
+    return str(culture).lower() if culture else culture #to return None properly
+
+
+df['culture'] = df.apply(lambda x: determine_culture(x), axis=1)
     
+###
+#WORLD MAP
+###
+
+modrecs = df.copy(deep=True)
+
+modrecs['country'] = modrecs.apply(lambda x: map_pob(x), axis=1)
+map_cit = map_wrapper(citizenship_map)
+modrecs['citizenship'] = modrecs.apply(lambda x: map_cit(x), axis=1)
+cdf = modrecs[['country','citizenship','gender']]
+
+def combine_economy(row):
+    cit = row['citizenship']
+    cunt = row['country']
+    return cit if cit else cunt
+cdf['Economy_qid'] = cdf.apply(combine_economy,axis=1)
+edf = cdf[cdf['Economy_qid'].apply(lambda x: x is not None)]
+bios_count = len(edf)
+
+edf['Economy'] = edf['Economy_qid'].apply(english_label)
 
 
+country_perc = defaultdict(dict)
+country_groups= edf.groupby(by='Economy')
+
+for country, group in country_groups:
+    nonmale = group[group['gender'] != 'Q6581097']['gender'].count()
+    total = group['gender'].count()
+    nm_perc = nonmale / float(total)
+    country_perc[country]['Economy'] = country #for later on joining
+    country_perc[country]['Score'] = nm_perc #for later on joining
+    country_perc[country]['total']= total
+
+wdf = pd.DataFrame.from_dict(country_perc, orient='index')
+
+###
+#REINDEX
+###
 def make_reindex(df):
 
     def int_dict_factory():
@@ -120,3 +215,5 @@ for param, gender_df in reindexed_dfs.iteritems():
     filepoint = open(filename, 'w')
     filepoint.write(gender_df.to_csv())
     filepoint.close()
+
+
