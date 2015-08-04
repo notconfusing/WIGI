@@ -89,7 +89,7 @@ def organise_snaps():
     property_index_dir = os.path.join(new_snap_location, 'property_indexes')
     if not os.path.exists(property_index_dir):
         os.makedirs(property_index_dir)
-    return copy_dest
+    return copy_dest, property_index_dir
 
 def split_columns(df):
     def split_column(q_str):
@@ -207,26 +207,26 @@ def make_reindex(df):
     gender_dfs = {param: pandas.DataFrame.from_dict(gender_param[param], orient='columns') for param in params}
     return gender_dfs
 
-def save_property_index(param, df):
+def save_property_index(param, df, property_index_dir):
     filename = '%s/%s-index.csv' % (property_index_dir, param)
     filepoint = open(filename, 'w')
     filepoint.write(gender_df.to_csv())
     filepoint.close()
 
 
-def save_reindex(reindexed_dfs):
+def save_reindex(reindexed_dfs, property_index_dir):
     for param, gender_df in reindexed_dfs.iteritems():
         engify_labels(gender_df)
-        save_property_index(param, gender_df)
+        save_property_index(param, gender_df, property_index_dir)
 
 
 if __name__ == '__main__':
-    copy_dest = organise_snaps()
+    copy_dest, property_index_dir = organise_snaps()
     df = pandas.read_csv(copy_dest, na_values=[java_min_int])
     df = split_columns(df)
     #df = make_culture(df)
     #reindexed_dfs = make_reindex(df)
-    #save_reindex(reindexed_dfs)
+    #save_reindex(reindexed_dfs, property_index,dir)
 
     wdf = make_world_map(df)
-    save_property_index('worldmap', wdf)
+    save_property_index('worldmap', wdf, property_index_dir)
