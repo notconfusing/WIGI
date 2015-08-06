@@ -40,8 +40,11 @@ def map_pob(qids):
 
 def map_country(qids):
     country = map_pob(qids)
-    culture = country_map.ix[country]['culture_name']
-    return culture
+    if country:
+        culture = country_map.ix[country]['culture_name']
+        return culture
+    else:
+        return None
 
 def map_wrapper(m):
     def return_fun(qids):
@@ -140,7 +143,7 @@ def make_world_map(df):
     df['citizenship'] = df.apply(lambda x: x['citizenships'][0], axis=1)
     df['gender'] = df.apply(lambda x: x['genders'][0], axis=1)
     cdf = df[['country','citizenship','gender']]
-    print(cdf.head())
+    #print(cdf.head())
 
 
     def combine_economy(row):
@@ -152,7 +155,7 @@ def make_world_map(df):
     bios_count = len(edf)
 
     edf['Economy'] = edf['Economy_qid'].apply(english_label)
-    print(edf.head())
+    #print(edf.head())
 
     country_perc = defaultdict(dict)
     country_groups= edf.groupby(by='Economy')
@@ -210,7 +213,7 @@ def make_reindex(df):
 def save_property_index(param, df, property_index_dir):
     filename = '%s/%s-index.csv' % (property_index_dir, param)
     filepoint = open(filename, 'w')
-    filepoint.write(gender_df.to_csv())
+    filepoint.write(df.to_csv(encoding='utf-8'))
     filepoint.close()
 
 
@@ -224,9 +227,9 @@ if __name__ == '__main__':
     copy_dest, property_index_dir = organise_snaps()
     df = pandas.read_csv(copy_dest, na_values=[java_min_int])
     df = split_columns(df)
-    #df = make_culture(df)
-    #reindexed_dfs = make_reindex(df)
-    #save_reindex(reindexed_dfs, property_index,dir)
+    df = make_culture(df)
+    reindexed_dfs = make_reindex(df)
+    save_reindex(reindexed_dfs, property_index_dir)
 
     wdf = make_world_map(df)
     save_property_index('worldmap', wdf, property_index_dir)
