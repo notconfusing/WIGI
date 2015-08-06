@@ -219,6 +219,41 @@ def save_reindex(reindexed_dfs, property_index_dir):
         engify_labels(gender_df)
         save_property_index(param, gender_df, property_index_dir)
 
+def changes_between(fa, fb):
+    dfa = pandas.DataFrame.from_csv(fa)
+    dfb = pandas.DataFrame.from_csv(fb)
+
+    removed_columns = dfa.columns.difference(dfb.columns)
+    added_columns = dfb.columns.difference(dfa.columns)
+    
+    change_df = dfb - dfa
+    return change_df
+
+
+def make_change_sets():
+    dates = os.listdir(snap)
+    sdates = sorted(dates)
+    latest = sdates[-1]
+    prev = sdates[-2]
+    latest_dir = os.path.join(os.path.join(snap,latest),'property_indexes')
+    prev_dir = os.path.join(os.path.join(snap,prev),'property_indexes')
+    latest_files = os.listdir(latest_dir)
+    prev_files = os.listdir(prev_dir)
+    changedir = os.path.join(latest_dir,'changes-since-{}'.format(prev))
+    if not os.path.exists(changedir):
+        os.makedirs(changedir)
+   
+    
+    for ind_file in latest_files:
+        if ind_file in prev_files:
+            p_f = os.path.join(prev_dir, ind_file)
+            l_f = os.path.join(latest_dir, ind_file)
+            change_df = changes_between(p_f, l_f)
+            filename = '{}-from-{}-to-{}'.format(ind_file,prev,latest)
+            filepoint = os.path.join(changedir, filename)
+            change_df.to_csv(filepoint , encoding='utf-8')
+
+
 
 if __name__ == '__main__':
     copy_dest, property_index_dir = organise_snaps()
@@ -230,3 +265,4 @@ if __name__ == '__main__':
 
     wdf = make_world_map(df)
     save_property_index('worldmap', wdf, property_index_dir)
+    make_change_sets()
