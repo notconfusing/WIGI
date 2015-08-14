@@ -1,27 +1,20 @@
-import requests as rq
+import grequests as gq
 from sys import argv
 
-API = 'https://wikidata.org/w/api.php'
+API = ('https://wikidata.org/w/api.php?action=wbgetentities'
+       '&sites=enwiki&props=labels&languages=en&format=json&ids=%s')
 
 
-def fetch_label(id):
-    data = {'action': 'wbgetentities',
-            'ids': id,
-            'sites': 'enwiki',
-            'props': 'labels',
-            'language': 'en',
-            'format': 'json'}
+def fetch_label(ids):
+    urls = [API % id for id in ids]
 
-    response = rq.get(API, params=data)
+    rs = (gq.get(url) for url in urls)
 
-    if response.ok:
-        parsed_json = response.json()
-        #print map(lambda x:
-                  #parsed_json['entities'][x]['labels']['en']['value'], ids)
-        return parsed_json['entities'][id]['labels']['en']['value']
-    else:
-        print 'Failed!'
+    response = gq.imap(rs, size=20)
 
+    for i, res in enumerate(response):
+        parsed_json = res.json()
+        print parsed_json['entities']
 
 if __name__ == '__main__':
-    print fetch_label(argv[1])
+    print fetch_label(argv[1:])
