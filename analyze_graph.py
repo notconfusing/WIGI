@@ -9,7 +9,7 @@ def get_graph(ids_dict):
     """
     def node(_id):
         if "title" in ids_dict[_id].keys():
-            return (_id, ids_dict[_id]["title"])
+            return (_id + "-0", ids_dict[_id]["title"])
         else:
             return (_id, "null")
 
@@ -18,12 +18,11 @@ def get_graph(ids_dict):
     for _id in ids_dict.keys():
         id_node = node(_id)
         DG.add_node(id_node)
-        DG.add_edges_from([(id_node, node(subclass_id)) for subclass_id in
-            ids_dict[_id]['subclass']])
+        # Sperate graphs here
+        DG.add_edges_from([((id_node[0] + "-" + str(i), id_node[1]), node(subclass_id))
+                           for i, subclass_id in enumerate(ids_dict[_id]['subclass'])])
 
     return DG
-
-def top_nodes(DG):
 
 
 if __name__ == "__main__":
@@ -33,7 +32,7 @@ if __name__ == "__main__":
     DG = get_graph(ids_dict)
 
     # Trying to analyze connected components
-    G = DG.to_directed()
+    G = DG.to_undirected()
     X = list(nx.connected_component_subgraphs(G))
     X.sort(key=lambda g: len(g.nodes()), reverse=True)
     graphs_len = [len(g.nodes()) for g in X]
