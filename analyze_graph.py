@@ -9,7 +9,7 @@ def get_graph(ids_dict):
     """
     def node(_id):
         if "title" in ids_dict[_id].keys():
-            return (_id + "-0", ids_dict[_id]["title"])
+            return (_id, ids_dict[_id]["title"])
         else:
             return (_id, "null")
 
@@ -18,9 +18,8 @@ def get_graph(ids_dict):
     for _id in ids_dict.keys():
         id_node = node(_id)
         DG.add_node(id_node)
-        # Sperate graphs here
-        DG.add_edges_from([((id_node[0] + "-" + str(i), id_node[1]), node(subclass_id))
-                           for i, subclass_id in enumerate(ids_dict[_id]['subclass'])])
+        DG.add_edges_from([(id_node, node(subclass_id)) for subclass_id in
+            ids_dict[_id]['subclass']])
 
     return DG
 
