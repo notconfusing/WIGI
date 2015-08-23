@@ -1,9 +1,11 @@
+#! /usr/bin/env python
+
 from __future__ import print_function
 import pywikibot
 
 
 def fetch_label(ids):
-    wikidata = pywikibot.Site('en','wikipedia').data_repository()
+    wikidata = pywikibot.Site('en', 'wikipedia').data_repository()
 
     id_to_label = dict()
     used_ids = set()
@@ -32,7 +34,6 @@ def fetch_label(ids):
             superclass_ids = []
 
         id_to_label[_id] = {'subclass': superclass_ids}
-
         if 'en' in page.labels:
             id_to_label[_id]['title'] = page.labels['en']
 
@@ -42,10 +43,14 @@ def fetch_label(ids):
 if __name__ == "__main__":
     import pandas as pd
     import json
-    from sys import argv
+    from sys import argv, exit
+
+    if len(argv) < 3:
+        print("Usage: subclass_graph.py <input file> <output file>")
+        exit(0)
 
     data = pd.read_csv(argv[1])
-    data_ids = set(data.iloc[:, 0])
-    # We can have the labels in the same json file for both the csvs
+    data_qids = set(data.iloc[:, 0])
+
     with open(argv[2], 'w') as json_file:
-        json.dump(fetch_label(data_ids), json_file)
+        json.dump(fetch_label(data_qids), json_file)
