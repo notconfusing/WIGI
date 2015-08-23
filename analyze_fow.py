@@ -1,8 +1,8 @@
 from __future__ import print_function
 import networkx as nx
+import pandas as pd
 
 
-# XXX
 def get_graph(ids_dict):
     """
     Get the neworkx digraph from the ids_json where two id A is connected to B
@@ -30,6 +30,7 @@ def ancestor_sort(DG):
     # nodes.sort(key=lambda n: len(nx.ancestors(DG, n)))
     return nodes
 
+# These nodes are too vague to have any use in our analysis
 useless_nodes = [('Q35120', 'entity'),
     ('Q488383', 'object'),
     ('Q7184903', 'abstract object'),
@@ -60,38 +61,102 @@ useless_nodes = [('Q35120', 'entity'),
     ('Q171283', 'Homo'),
     ('Q5', 'human')]
 
-useful_nodes = [
-    ('Q336', 'science'),
-    ('Q11862829', 'academic discipline'),
-    ('Q7748', 'law'),
-    ('Q309', 'history'),
-    ('Q34749', 'social science'),
-    ('Q11190', 'medicine'),
-    ('Q11023', 'engineering'),
-    ('Q735', 'art'),
-    ('Q838948', 'work of art'),
-    ('Q80083', 'humanities')
-]
 
+def get_categories_dict(DG):
+    def subclasses_of(*nodes):
+        ancestors = set.union(*list(map(lambda node: nx.ancestors(DG, node), [node for node in nodes])))
+        ancestors = ancestors.union(set(nodes))
+        return ancestors
 
-def get_categories(DG):
     categories = dict()
     # XXX: these categories don't have the category labels themselve add it.
-    art = set.union(nx.ancestors(DG, ('Q735', 'art')),
-            nx.ancestors(DG, ('Q838948', 'work of art')))
-    history = nx.ancestors(DG, ('Q309', 'history'))
-    social_sciences = nx.ancestors(DG, ('Q34749', 'social science'))
-    law = nx.ancestors(DG, ('Q7748', 'law'))
-    science = nx.ancestors(DG, ('Q336', 'science')) - art - history
-    sports = nx.ancestors(DG, ('Q349', 'sport'))
+    # XXX: The category labels are potentially overlapping
+    art = subclasses_of(('Q735', 'art'),
+            ('Q838948', 'work of art'),
+            ('Q483501', 'artist'),
+            ('Q191163', 'landscape art'),
+            ('Q17279581', 'floral painting'),
+            ('Q134307', 'portrait'),
+            ('Q170571', 'still life'))
+    history = subclasses_of(('Q309', 'history'))
+    social_sciences = subclasses_of(('Q34749', 'social science'))
+    law = subclasses_of(('Q7748', 'law'))
+    science = subclasses_of(('Q336', 'science'),
+                            ('Q901', 'scientist'),
+                            ('Q2996394', 'biological process'),
+                            ('Q39286', 'entomology')) - art - history
+    mathematics = subclasses_of(('Q395', 'mathematics'),
+                                ('Q21198', 'computer science'),  # XXX: This can be little controversial
+                                ('Q131476', 'graph theory'),
+                                ('Q188444', 'differential geometry'),
+                                ('Q12482', 'set theory'),
+                                ('Q1166618', 'mathematical logic'),
+                                ('Q271977', 'partial differential equation'),
+                                ('Q847526','queueing theory'),
+                                ('Q467606', 'model theory'),
+                                ('Q595364', 'lattice'))
+    sports = subclasses_of(('Q349', 'sport'))
+    engineering = subclasses_of(('Q11023', 'engineering'))
+    software = subclasses_of(('Q7397', 'software'))
+    language_study = subclasses_of(('Q771861', 'Eurasiatic languages'))
+    # NOTE: maybe we should seperate out islam from religion
+    religion = subclasses_of(('Q9174', 'religion'),
+                             ('Q12818349', 'Islamic theology'),
+                             ('Q484181', 'fiqh'),
+                             ('Q2737409', 'Hadith studies'),
+                             ('Q335414', 'tafsir'),
+                             ('Q34178', 'theology'))
+    # Islamic theology has more number of biographies than theology is
+    # definitely an anamoly, also Islamic Theology is not a subclass of
+    # theology
+    illegal_drug_trade = subclasses_of(('Q844924', 'illegal drug trade'))
+    politics = subclasses_of(('Q82955', 'politician'))
+    literature_and_poetry = subclasses_of(('Q36180', 'writer'),
+                                          ('Q482', 'poetry'))
+    medicine = subclasses_of(('Q39631', 'physician'))
+    journalism = subclasses_of(('Q11030', 'journalism'))
+    feminism = subclasses_of(('Q223569', 'women\'s rights'),
+                                 ('Q7252', 'feminism'),
+                                 ('Q205204', 'women\'s suffrage'))
+
+    # There are disproportionately large number of mathematicians in wikipedia,
+    # the number of biographies in journalism is less than number of
+    # biographies in queuing theory
+
+    # Add Language Study
 
     categories["art"] = art
     categories["history"] = history
     categories["social sciences"] = social_sciences
     categories["law "] = law
     categories["science"] = science
+    categories["mathematics"] = mathematics
     categories["sports"] = sports
+    categories["engineering"] = engineering
+    categories["software"] = software
+    categories["language study"] = language_study
+    categories["religion"] = religion
+    categories["illegal drug trade"] = illegal_drug_trade
+    categories["politics"] = politics
+    categories["literature and poetry"] = literature_and_poetry
+    categories["medicine"] = medicine
+    categories["journalism"] = journalism
+    categories["feminism"] = feminism
     return categories
+
+
+def get_id_categories_dict(categories):
+    id_categories_dict = dict()
+    for cat in categories.keys():
+        id_categories_dict[cat] = set(_id for (_id, title) in categories[cat])
+    return id_categories_dict
+
+
+def get_category(qid, id_categories_dict):
+    for key in id_categories_dict.keys():
+        if qid in id_categories_dict[key]:
+            return key
+    return "unclassified"
 
 
 # It is kinda strange to see that "art" and "work or art" are different
@@ -121,6 +186,7 @@ def get_categories(DG):
 # Also we need to sperate out social science ('Q34749', 'social science')
 
 
+
 if __name__ == "__main__":
     import json
     ids_dict = json.load(open("./fow_ids.json"))
@@ -128,7 +194,17 @@ if __name__ == "__main__":
     DG = get_graph(ids_dict)
 
     DG.remove_nodes_from(useless_nodes)
-    categories = get_categories(DG)
+    categories = get_categories_dict(DG)
+    id_categories_dict = get_id_categories_dict(categories)
     classified_nodes = set.union(*[set(val) for val in categories.values()])
-    DG.remove_nodes_from(classified_nodes)
-    top_nodes = ancestor_sort(DG)
+    # DG.remove_nodes_from(classified_nodes)
+    # top_nodes = ancestor_sort(DG)
+
+
+    fow = pd.read_csv('./flatten_field_of_work-index.csv')
+    fow.loc[:, 'field of work'] = list(map(lambda qid: ids_dict[qid].get('title', 'null'), fow.qid))
+    category = list(map(lambda qid: get_category(qid, id_categories_dict),
+        fow.qid))
+    fow.loc[:, 'category'] = category
+
+    unclassified = fow[fow.category == 'unclassified']
