@@ -8,13 +8,13 @@ Directory contains raw (unprocessed) data as obtained from Wikidata dump
 through an extractor.
 
 ### Scripts
-Directory contains scripts, their input and output files necessary for
-generating classified data which can be analyzed further.
+Directory contains scripts used for flattening, classification and post
+processing of the data.
 
 ### Analysis
 Directory contains jupyter notebooks with that perform exploratory data
-analysis on output obtained through scripts.
-
+analysis on output obtained through scripts. It also has input and output files
+generated through scripts.
 
 ## License
 
