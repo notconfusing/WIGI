@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import json
 import pandas as pd
@@ -7,39 +8,40 @@ from wikidata_graph import *
 
 # These nodes are too vague to have any use in our analysis
 useless_nodes = [('Q35120', 'entity'),
-    ('Q488383', 'object'),
-    ('Q7184903', 'abstract object'),
-    ('Q1190554', 'event'),
-    ('Q151885', 'concept'),
-    ('Q3249551', 'process'),
-    ('Q223557', 'physical object'),
-    ('Q16686448', 'artificial object'),
-    ('Q386724', 'work'),
-    ('Q5127848', 'class'),
-    ('Q16889133', 'class'),
-    ('Q1914636', 'activity'),
-    ('Q9081', 'knowledge'),
-    ('Q217594', 'class'),
-    ('Q17008256', 'collection'),
-    ('Q830077', 'subject'),
-    ('Q18336849', 'item with given name property'),
-    ('Q178706', 'institution'),
-    ('Q43229', 'organization'),
-    ('Q16334295', 'group of humans'),
-    ('Q16334298', 'living thing group'),
-    ('Q17519152', 'group of objects'),
-    ('Q18844919', 'group'),
-    ('Q36161', 'set'),
-    ('Q853614', 'identifier'),
-    ('Q2500638', 'creator'),
-    ('Q28877', 'good'),
-    ('Q171283', 'Homo'),
-    ('Q5', 'human')]
+                 ('Q488383', 'object'),
+                 ('Q7184903', 'abstract object'),
+                 ('Q1190554', 'event'),
+                 ('Q151885', 'concept'),
+                 ('Q3249551', 'process'),
+                 ('Q223557', 'physical object'),
+                 ('Q16686448', 'artificial object'),
+                 ('Q386724', 'work'),
+                 ('Q5127848', 'class'),
+                 ('Q16889133', 'class'),
+                 ('Q1914636', 'activity'),
+                 ('Q9081', 'knowledge'),
+                 ('Q217594', 'class'),
+                 ('Q17008256', 'collection'),
+                 ('Q830077', 'subject'),
+                 ('Q18336849', 'item with given name property'),
+                 ('Q178706', 'institution'),
+                 ('Q43229', 'organization'),
+                 ('Q16334295', 'group of humans'),
+                 ('Q16334298', 'living thing group'),
+                 ('Q17519152', 'group of objects'),
+                 ('Q18844919', 'group'),
+                 ('Q36161', 'set'),
+                 ('Q853614', 'identifier'),
+                 ('Q2500638', 'creator'),
+                 ('Q28877', 'good'),
+                 ('Q171283', 'Homo'),
+                 ('Q933845', 'topic–comment'),
+                 ('Q5', 'human')]
 
 
 if __name__ == "__main__":
-    ids_dict = json.load(open("./fow_ids.json"))
-    fow = pd.read_csv('./flatten_field_of_work-index.csv')
+    ids_dict = json.load(open("fow_ids.json"))
+    fow = pd.read_csv('field_of_work-index.csv')
 
     # generate graph and filter nodes
     DG = get_graph(ids_dict)

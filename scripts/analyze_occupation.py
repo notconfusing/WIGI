@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import json
 import pandas as pd
@@ -56,7 +57,7 @@ useless_nodes = [('Q35120', 'entity'),
 
 if __name__ == "__main__":
     ids_dict = json.load(open("./occ_ids.json"))
-    occ = pd.read_csv('./flatten_occupation-index.csv')
+    occ = pd.read_csv('./occupation-index.csv')
 
     # generate graph and filter nodes
     DG = get_graph(ids_dict)
