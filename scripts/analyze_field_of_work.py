@@ -35,7 +35,7 @@ useless_nodes = [('Q35120', 'entity'),
                  ('Q2500638', 'creator'),
                  ('Q28877', 'good'),
                  ('Q171283', 'Homo'),
-                 ('Q933845', 'topic–comment'),
+                 ('Q933845', u'topic\u2013comment'),
                  ('Q5', 'human')]
 
 
