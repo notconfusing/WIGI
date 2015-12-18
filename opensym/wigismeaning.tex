@@ -1,0 +1,215 @@
+% This is "sig-alternate.tex" V2.0 May 2012
+% This file should be compiled with V2.5 of "sig-alternate.cls" May 2012
+%
+% This example file demonstrates the use of the 'sig-alternate.cls'
+% V2.5 LaTeX2e document class file. It is for those submitting
+% articles to ACM Conference Proceedings WHO DO NOT WISH TO
+% STRICTLY ADHERE TO THE SIGS (PUBS-BOARD-ENDORSED) STYLE.
+% The 'sig-alternate.cls' file will produce a similar-looking,
+% albeit, 'tighter' paper resulting in, invariably, fewer pages.
+%
+% ----------------------------------------------------------------------------------------------------------------
+% This .tex file (and associated .cls V2.5) produces:
+%       1) The Permission Statement
+%       2) The Conference (location) Info information
+%       3) The Copyright Line with ACM data
+%       4) NO page numbers
+%
+% as against the acm_proc_article-sp.cls file which
+% DOES NOT produce 1) thru' 3) above.
+%
+% Using 'sig-alternate.cls' you have control, however, from within
+% the source .tex file, over both the CopyrightYear
+% (defaulted to 200X) and the ACM Copyright Data
+% (defaulted to X-XXXXX-XX-X/XX/XX).
+% e.g.
+% \CopyrightYear{2007} will cause 2007 to appear in the copyright line.
+% \crdata{0-12345-67-8/90/12} will cause 0-12345-67-8/90/12 to appear in the copyright line.
+%
+% ---------------------------------------------------------------------------------------------------------------
+% This .tex source is an example which *does* use
+% the .bib file (from which the .bbl file % is produced).
+% REMEMBER HOWEVER: After having produced the .bbl file,
+% and prior to final submission, you *NEED* to 'insert'
+% your .bbl file into your source .tex file so as to provide
+% ONE 'self-contained' source file.
+%
+% ================= IF YOU HAVE QUESTIONS =======================
+% Questions regarding the SIGS styles, SIGS policies and
+% procedures, Conferences etc. should be sent to
+% Adrienne Griscti (griscti@acm.org)
+%
+% Technical questions _only_ to
+% Gerald Murray (murray@hq.acm.org)
+% ===============================================================
+%
+% For tracking purposes - this is V2.0 - May 2012
+
+\documentclass{sig-alternate}
+\usepackage{url}
+
+\begin{document}
+%
+% --- Author Metadata here ---
+\conferenceinfo{OpenSym}{'15 San Francisco, Calif. USA}
+%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
+%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
+% --- End of Author Metadata ---
+
+\title{Wikipedia in the World of Global Gender Inequality Indices: What The Biography Gender Gap Is Measuring}
+%
+% You need the command \numberofauthors to handle the 'placement
+% and alignment' of the authors beneath the title.
+%
+% For aesthetic reasons, we recommend 'three authors at a time'
+% i.e. three 'name/affiliation blocks' be placed beneath the title.
+%
+% NOTE: You are NOT restricted in how many 'rows' of
+% "name/affiliations" may appear. We just ask that you restrict
+% the number of 'columns' to three.
+%
+% Because of the available 'opening page real-estate'
+% we ask you to refrain from putting more than six authors
+% (two rows with three columns) beneath the article title.
+% More than six makes the first-page appear very cluttered indeed.
+%
+% Use the \alignauthor commands to handle the names
+% and affiliations for an 'aesthetic maximum' of six authors.
+% Add names, affiliations, addresses for
+% the seventh etc. author(s) as the argument for the
+% \additionalauthors command.
+% These 'additional authors' will be output/set for you
+% without further effort on your part as the last section in
+% the body of your article BEFORE References or any Appendices.
+
+\numberofauthors{1} %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+% 1st. author
+\alignauthor
+Max Klein
+       \email{max@notconfusing.com}
+       }
+
+\maketitle
+\begin{abstract}
+While Wikipedia's editor gender gap is important but difficult to measure, its biographical gender gap can more readily be measured.
+We correlate a Wikipedia-derived gender inequality indicator (WIGI), with four widespread gender inequality indices in use today (GDI, GEI, GGGI, and SIGI). Analysing their methodologies and correlations to Wikipedia, we find evidence that Wikipedia's bias in biographical coverage is related to the gender bias in positions of social power.
+\end{abstract}
+
+% A category with the (minimum) three required fields
+\category{J.4}{SOCIAL AND BEHAVIORAL SCIENCES}{Sociology}
+%A category including the fourth, optional field follows...
+\category{K.6.2}{MANAGEMENT OF COMPUTING AND INFORMATION SYSTEMS}{Installation Management}[Performance and usage measurement]
+
+%\terms{Human Factors}
+
+\keywords{data mining, Wikidata, Wikipedia, gender gap, demographics}
+
+\section{Introduction}
+Encylopedias have long contained gender bias, both in their \textit{editorship} and in their \textit{biographical coverage}. \cite{thomas:respect} \cite{reagle}. Like its historical counterparts, Wikipedia has been estimated to have a female authorship of around only 13\% - 16\%\cite{hill}. A skew of the same order of magnitude has been found by studies of biographical articles in Wikipedia \cite{lam}, \cite{eom}, \cite{reagle}.  More recently Wagner et. al has compared gender statistics derived from Wikipedia and gender inequality indices, concluding ``to a certain extent gender inequalities of the real world manifest on Wikipedia"\cite{DBLP:journals/corr/WagnerGJS15}.  Yet it is important to disentangle biases that exist in the larger world and those that are introduced by Wikipedians and Wikipedia policy. We seek to understand in more detail which social factors that gender inequality indices measure are also reflected in Wikipedia.
+
+
+\section{Research Question}
+RQ1: Using other gender inequality indices as a basis, which social factors does Wikipedia biography inclusion measure?
+
+
+\section{Method}
+We correlate four general gender inequality indices to a Wikipedia-derived indicator, and then compare which factors in the highest and lowest correlated indices are similar.
+
+Our Wikipedia-derived indicator is called the \textit{Wikipedia Gender Inequality Indicator} (\textbf{WIGI}), and utilizes Wikidata. Wikidata is a database that stores and feeds semantic facts to every language edition of Wikipedia. Its October 14 2014 dataset included a total of 1,061,634 Wikidata items about humans with a \textit{date of birth} and a \textit{citizenship} or a \textit{place of birth} property that is a country. Place of birth and citizenship we recognize may not be the same, but in case of contradiction we simply select one at random. As we are looking at large aggregates we don't believe this will have a significant effect. Ultimately the \textit{ratio of female and nonbinary gendered biographies} to total biographies the score for a country\cite{klein:wigi}. WIGI that list of countries along with these computed biography gender ratios.
+
+Of the other gender inequality indices there is a consensus that the complexity of the issue means that no single index is the best \cite{mills} \cite{hawken}. We use four ``general" indices that are in widespread use. 
+ 
+\begin{itemize}
+\item The Gender Development Index (\textbf{GDI}) from the United Nations Development program ``measures gender gap in human development achievements in three basic dimensions of human development: health, measured by female and male life expectancy at birth; education, measured by female and male expected years of schooling for children and female and male mean years of schooling for adults ages 25 and older; and command over economic resources, measured by female and male estimated earned income." \footnote{\url{http://hdr.undp.org/en/content/gender-development-index-gdi}}
+\item In Education, Social Watch's Gender Equity Index (\textbf{GEI}) ``looks at the gender gap in enrolment at all levels and in literacy; economic participation computes the gaps in income and employment and empowerment measures the gaps in highly qualified jobs, parliament and senior executive positions." \footnote{\url{http://www.socialwatch.org/node/14366}}
+\item The Global Gender Gap Index (\textbf{GGGI}) was developed by the World Economic Forum in 2006. The GGGI is intended to allow comparison of gender gap across different countries and years, it focuses on four areas:  economic participation and opportunity, educational attainment, political empowerment and health statistics.
+\item The Social Institutions and Gender Index (\textbf{SIGI}) is of the OECD Development Centre from 2007. A composite indicator of gender equality that solely focuses on social institutions (norms, values and attitudes), SIGI uses the five dimensions of discriminatory family code, restricted physical integrity, son bias, restricted resources and assets, and restricted civil liberties.
+\end{itemize}
+
+In each index higher scores represent higher equality, however in order to normalise comparisons we focus only on the positional rank of the countries, not the precise score. To understand how close two indices are we use the Spearman rank correlation coefficient. 
+
+We next compute a calibration step on the year of birth of Wikipedia biographies to maximise the correlation between WIGI and a general index. The end date for biography inclusion is held constant at the present date. That is, we are looking at what time until present the biography data of Wikipedia makes a by-country index that most matches a general index.
+
+Finally for each general index we compute the maximum Spearman rank correlation along with the start decade that achieves it. Full data\footnote{\url{https://github.com/notconfusing/WIGI/blob/master/helpers/foreign_indexes/WIGI_comparison.csv}}
+ and 
+\urldef\myurl\url{http://nbviewer.ipython.org/github/notconfusing/WIGI/blob/master/World
+%20Economic%20Forum%20Comparison.ipynb}
+code\footnote{\myurl} available online.
+
+
+\section{Results}
+
+We produce a comparison table of indices, their correlation, the correlation significance, and the maximizing start decade, ordered by correlation in table \ref{table:scores}. Each general index shows some statistically significant moderate correlation with WIGI. In the end the GEI most highly correlates with WIGI with Spearman rank correlation 0.417, and the GDI the least at 0.278. 
+
+Also we find that each general index most highly correlates with WIGI around 1910. Intuitively this makes sense in light of the fact that general indices are more a measure of modern history, as they seek to measure the present day. The present day humans are those born about 1910 or later. Wikipedia has information dating back past 1000 BCE, but this information is not useful in describing the world that the general indices do. 
+
+\begin{table}
+\centering
+\caption{WIGI's correlation to general indices and calibrated start date.}
+\label{table:scores}
+\begin{tabular}{|l|p{2cm}|l|p{2cm}|}
+\multicolumn{4}{}{ WIGI compared to Alternative indices}\\\hline
+Index &
+Spearman Correlation &
+Significance &
+Calibrated Start Decade\\\hline
+GEI &
+0.417 &
+p{\textless}0.001 &
+1910\\\hline
+SIGI &
+0.338 &
+p{\textless}0.001 &
+1910\\\hline
+GGGI &
+0.310 &
+p=0.03 &
+1890\\\hline
+GDI &
+0.278 &
+p{\textless}0.001 &
+1910\\\hline
+\end{tabular}
+\end{table}
+
+
+\section{Discussion}
+How do the methodologies of the GEI and GDI show what WIGI is measuring? Looking back at their descriptions we find that both indices share overlapping features in \textit{education} and \textit{income}, but diverge on the features of \textit{empowerment} and \textit{health}. 
+In their similarities of education and income we find related measurements of school enrolment, years of schooling and earned income.
+The disparity that emerges is that GEI additionally measures empowerment by positions of power whereas GDI additionally measures life expectancy. Since GEI is the is the most similar to WIGI and GDI is the least similar, this suggests that the WIGI is more highly correlated to women's positions of power by country than to life expectancy by country.
+
+A positions of power bias is similar to what we might expect from Wikipedia's notability policies. Notability in Wikipedia, although varying by language, essentially defers to inclusion in the journalistic record. That means that humans in positions of power, as GEI imports, would would have articles in Wikipedias in greater proportion, because more powerful positions are more covered in media. Yet, because of the imperfect correlation we find with the GEI, we cannot say that Wikipedia's gender bias is entirely due the social positions of power bias - it is only one factor. 
+
+Finally we conclude that Wikipedia's biographical bias is closer to the gender bias in highly-qualified jobs, political and executive positions than longevity.
+
+%\section{Limitations and Future Work}
+%The analysis of manually inspecting the least and most correlated indices is naive and manual. A more sophisticated system might be able to understand each index as a set of measures, and then compute what combination of indices best correlate with WIGI. In this way we would have a more nuanced analysis of which measures WIGI is uncovering.
+
+%
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+\bibliography{sigproc}  % sigproc.bib is the name of the Bibliography in this case
+% You must have a proper ".bib" file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%
+\end{document}  % This is where a 'short' article might terminate
