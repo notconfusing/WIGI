@@ -9,8 +9,9 @@ def read_data(usepkl=True):
     try:
         pkl_file = open('./data.pkl', 'r')
         data = pkl.load(pkl_file)
-    except EOFError:
-        snap_dir = "/home/hargup/snapshot_data"
+    except (IOError, EOFError):
+        # snap_dir = "/home/hargup/snapshot_data/snapshot_data"
+        snap_dir = "/home/hargup/remotefs2/maximilianklein/snapshot_data"
 
         dates = os.listdir(snap_dir)
         dates.remove('newest')
