@@ -46,6 +46,12 @@ def flatten(data, unique_qids=None):
             for column in enumerate(columns):
                 dataframe.loc[field, column[1]] += row[column[0] + skip]
 
+    # XXX: this is a hack for the "occupation-index.csv" files whose's first
+    # columns is unnamed by default.
+    new_columns = dataframe.columns.values
+    new_columns[0] = 'qid'
+    dataframe.columns = new_columns
+
     return dataframe
 
 if __name__ == '__main__':
