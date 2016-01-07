@@ -10,10 +10,10 @@ def preview(data):
     print(data.describe())
 
 
-def pre_process(data, missing_value = 0, drop_nan = True):
+def pre_process(data, missing_value=0, drop_nan=True):
     if drop_nan:
         data = data.drop('nan', 1)
-    return data.fillna(value = missing_value)
+    return data.fillna(value=missing_value)
 
 
 def ids_set(data):
@@ -28,7 +28,11 @@ def ids_set(data):
     return unique_qids
 
 
-def flatten(data, unique_qids):
+def flatten(data, unique_qids=None):
+    data = pre_process(data)
+    if unique_qids is None:
+        unique_qids = ids_set(data)
+
     columns = data.columns[1:]
     dataframe = pd.DataFrame(0, index=unique_qids, columns=columns)
 
@@ -57,8 +61,7 @@ if __name__ == '__main__':
     data = pd.read_csv(path.abspath(datafile))
     preview(data)
 
-    data = pre_process(data)
-    flattened_df = flatten(data, ids_set(data))
+    flattened_df = flatten(data)
 
     preview(flattened_df)
     flattened_df.to_csv('flat_{}'.format(datafile))

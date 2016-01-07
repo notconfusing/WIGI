@@ -4,7 +4,9 @@
 import json
 import pandas as pd
 from wikidata_graph import *
+from flatten import flatten
 import numpy as np
+import os
 
 
 # these occupation nodes are too vague to directly convey any information
@@ -133,11 +135,43 @@ def cat_to_id_dict(ids_dict):
     return cat_dict
 
 
-if __name__ == "__main__":
-    ids_dict = json.load(open("./occ_ids.json"))
-    occ = pd.read_csv('./occupation-index.csv')
+def read_data(usepkl=True):
+    bls_wd_match = pd.read_csv('../data/bls_wd.csv')
+    try:
+        pkl_file = open('./data.pkl', 'r')
+        data = pkl.load(pkl_file)
+    except (IOError, EOFError):
+        snap_dir = "/home/hargup/remotefs2/maximilianklein/snapshot_data"
 
-    cat_dict = cat_to_id_dict(ids_dict)
+        dates = os.listdir(snap_dir)
+        dates.remove('newest')
+        dates.remove('newest-changes')
+
+        # dataframes = []
+        data = dict()
+        for date in dates:
+            filepath = "{}/{}/property_indexes/occupation-index.csv".format(snap_dir, date)
+            try:
+                occ = pd.read_csv(filepath)
+                occ = flatten(occ)
+                fm = get_fm_occupation(occ)
+                bls_wd = get_bls_wd(fm)
+                data[date] = bls_wd
+
+                # dataframes.append(fm)
+            except IOError:
+                print("{} not found".format(filepath))
+
+        pkl_file = open('./data.pkl', 'w')
+        pkl.dump(data, pkl_file)
+
+    return data
+
+
+def get_fm_occupation(occ):
+    ids_dict = json.load(open("./occ_ids.json"))
+
+    # cat_dict = cat_to_id_dict(ids_dict)
 
 
     # generate graph and filter nodes
@@ -145,14 +179,14 @@ if __name__ == "__main__":
     DG.remove_nodes_from(useless_nodes)
 
     # for more insight into data
-    top_nodes = ancestor_sort(DG)
-    null_nodes = [node for node in DG.nodes() if node[1] == 'null']
+    # top_nodes = ancestor_sort(DG)
+    # null_nodes = [node for node in DG.nodes() if node[1] == 'null']
 
     # generate categories
     categories = get_categories_dict(DG, leaf_nodes(DG))
     id_categories_dict = get_id_categories_dict(categories)
 
-    classified_nodes = set.union(*[set(val) for val in categories.values()])
+    # classified_nodes = set.union(*[set(val) for val in categories.values()])
 
     # classify data
     occ.loc[:, 'occupation'] = list(map(lambda qid: ids_dict[qid].get('title'),
@@ -160,7 +194,7 @@ if __name__ == "__main__":
     category = list(map(lambda qid: get_category(qid, id_categories_dict),
                         occ.qid))
     occ.loc[:, 'category'] = category
-    unclassified = occ[occ.category == 'unclassified']
+    # unclassified = occ[occ.category == 'unclassified']
 
     occ['total'] = occ[occ.columns[2:]].sum(axis=1)
     category_wise_data = occ.groupby('category').aggregate(sum)
@@ -171,7 +205,60 @@ if __name__ == "__main__":
     fm = fm[fm['total'] > 10]  # Removed categories with very low number of people
     fm.sort_values(by='total', ascending=False)
     fm = fm.iloc[:, [12, 13, 15, 17]]
-    fm.to_csv('../data/fm_occupation.csv')
+    return fm
 
+
+
+def get_bls_wd(wd):
+    bls_wd = bls_wd_match.copy(deep=True)
+    # bls = pd.read_csv('../data/labelled_bls_occupations.csv')
+    bls_wd = bls_wd[~bls_wd.wd_occupation.isnull()]
+    bls_wd['bls_total'] = bls_wd['bls_total'].apply(lambda x: float(x))
+
+    # Reduce percentage in the range of 0 to 1
+    bls_wd['bls_p_women'] = bls_wd['bls_p_women'].apply(lambda x: float(x)/100)
+
+    bls_wd['wd_occupation'] = bls_wd['wd_occupation'].apply(lambda x: split_func(x))
+
+
+    bls_wd['wd_total'] = bls_wd['wd_occupation'].apply(lambda x: wd.loc[wd['category'].isin(x)].sum().total)
+    bls_wd['wd_women'] = bls_wd['wd_occupation'].apply(lambda x: wd.loc[wd['category'].isin(x)].sum().female)
+    bls_wd['wd_p_women'] = bls_wd['wd_women']/bls_wd['wd_total']
+    bls_wd.to_csv('../data/bls_wd_matchup.csv')
+
+
+
+
+def split_func(string):
+    string = string.replace('\n', ', ')
+    cats = string.split(',')
+    cats = [cat.strip() for cat in cats]
+    cats = list(filter(lambda x: len(x) > 0, cats))
+    return cats
+
+
+bls_wd = pd.read_csv('../data/bls_wd.csv')
+wd = pd.read_csv('../data/fm_occupation.csv')
+bls = pd.read_csv('../data/labelled_bls_occupations.csv')
+bls_wd = bls_wd[~bls_wd.wd_occupation.isnull()]
+bls_wd['bls_total'] = bls_wd['bls_total'].apply(lambda x: float(x))
+
+# Reduce percentage in the range of 0 to 1
+bls_wd['bls_p_women'] = bls_wd['bls_p_women'].apply(lambda x: float(x)/100)
+
+bls_wd['wd_occupation'] = bls_wd['wd_occupation'].apply(lambda x: split_func(x))
+
+
+bls_wd['wd_total'] = bls_wd['wd_occupation'].apply(lambda x: wd.loc[wd['category'].isin(x)].sum().total)
+bls_wd['wd_women'] = bls_wd['wd_occupation'].apply(lambda x: wd.loc[wd['category'].isin(x)].sum().female)
+# bls_wd['wd_male'] = bls_wd['wd_occupation'].apply(lambda x: wd.loc[wd['category'].isin(x)].sum().male)
+bls_wd['wd_p_women'] = bls_wd['wd_women']/bls_wd['wd_total']
+bls_wd.to_csv('../data/bls_wd_matchup.csv')
+    # XXX This is flattened occupation-index
+    # occ = pd.read_csv('./occupation-index.csv')
+    occ = pd.read_csv('../data/occupation-index.csv')
+    occ = flatten(occ)
+    fm = get_fm_occupation(occ)
+    fm.to_csv('../data/fm_occupation.csv')
     # Wikidata is messed up, there are categories like "Archimedes"
     # Then is also a Female prince :/

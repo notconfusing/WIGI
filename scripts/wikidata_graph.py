@@ -109,7 +109,3 @@ def get_category(qid, id_categories_dict):
         if qid in id_categories_dict[key]:
             return key
     return "unclassified"
-
-
-if __name__ == "__main__":
-    pass
