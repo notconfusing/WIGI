@@ -15,6 +15,7 @@ def fetch_label(ids):
 
     while len(ids) > 0:
         _id = ids.pop()
+        print(_id)
         used_ids.add(_id)
         page = pywikibot.ItemPage(wikidata, _id)
 
@@ -23,7 +24,7 @@ def fetch_label(ids):
         try:
             data = page.get()
             claims = data['claims']
-        except pywikibot.NoPage:
+        except (pywikibot.NoPage, NotImplementedError):
             id_to_label[_id] = {}
             continue
 
@@ -34,7 +35,7 @@ def fetch_label(ids):
             superclass_ids = [superclass_item.id
                               for superclass_item in superclass_items]
             ids.update(set(superclass_ids) - used_ids)
-        except KeyError:
+        except KeyError, AttributeError:
             superclass_ids = []
 
         id_to_label[_id] = {'subclass': superclass_ids}
@@ -57,7 +58,8 @@ if __name__ == "__main__":
         exit(0)
 
     data = pd.read_csv(argv[1])
-    data_qids = set(data.iloc[:, 0])
+    data_qids = set(data['qid'])
+
 
     with open(argv[2], 'w') as json_file:
         json.dump(fetch_label(data_qids), json_file)

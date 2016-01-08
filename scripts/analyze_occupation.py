@@ -7,6 +7,7 @@ from wikidata_graph import *
 from flatten import flatten
 import numpy as np
 import os
+import pickle as pkl
 
 
 # these occupation nodes are too vague to directly convey any information
@@ -136,9 +137,8 @@ def cat_to_id_dict(ids_dict):
 
 
 def read_data(usepkl=True):
-    bls_wd_match = pd.read_csv('../data/bls_wd.csv')
     try:
-        pkl_file = open('./data.pkl', 'r')
+        pkl_file = open('./bls_data_stg1.pkl', 'r')
         data = pkl.load(pkl_file)
     except (IOError, EOFError):
         snap_dir = "/home/hargup/remotefs2/maximilianklein/snapshot_data"
@@ -154,15 +154,36 @@ def read_data(usepkl=True):
             try:
                 occ = pd.read_csv(filepath)
                 occ = flatten(occ)
-                fm = get_fm_occupation(occ)
-                bls_wd = get_bls_wd(fm)
-                data[date] = bls_wd
+                data[date] = occ
 
                 # dataframes.append(fm)
             except IOError:
                 print("{} not found".format(filepath))
 
-        pkl_file = open('./data.pkl', 'w')
+        pkl_file = open('./bls_data_stg1.pkl', 'w')
+        pkl.dump(data, pkl_file)
+
+    try:
+        pkl_file = open('./bls_data_stg2.pkl', 'w')
+        data = pkl.load(pkl_file)
+    except (IOError, EOFError):
+        for date in data.keys():
+            occ = data[date]
+            fm = get_fm_occupation(occ)
+            data[date] = fm
+
+        pkl_file = open('./bls_data_stg2.pkl', 'w')
+        pkl.dump(data, pkl_file)
+
+    try:
+        pkl_file = open('./bls_data_stg3.pkl', 'w')
+        data = pkl.load(pkl_file)
+    except (IOError, EOFError):
+        for date in data.keys():
+            fm = data[date]
+            bls_wd = get_bls_wd(fm)
+            data[date] = bls_wd
+        pkl_file = open('./bls_data_stg3.pkl', 'w')
         pkl.dump(data, pkl_file)
 
     return data
@@ -189,11 +210,22 @@ def get_fm_occupation(occ):
     # classified_nodes = set.union(*[set(val) for val in categories.values()])
 
     # classify data
-    occ.loc[:, 'occupation'] = list(map(lambda qid: ids_dict[qid].get('title'),
-                                        occ.qid))
+    # XXX: ids_dict.get(qid, {'title': 'untitled'}) is a HACK to overcome key
+    # errors when analyzing new data. The occ_ids.json has to generated every
+    # time because the subclass graph may have changed :/
+    def get_occupation(qid):
+        try:
+            return ids_dict[qid]['title']
+        except KeyError:
+            print(qid)
+            return 'rand'
+
+    occ['occupation'] = list(map(lambda qid: get_occupation(qid), occ.qid))
+    # occ.loc[:, 'occupation'] = list(map(lambda qid: get_occupation(qid), occ.qid))
     category = list(map(lambda qid: get_category(qid, id_categories_dict),
                         occ.qid))
-    occ.loc[:, 'category'] = category
+    occ['category'] = category
+    # occ.loc[:, 'category'] = category
     # unclassified = occ[occ.category == 'unclassified']
 
     occ['total'] = occ[occ.columns[2:]].sum(axis=1)
@@ -204,12 +236,12 @@ def get_fm_occupation(occ):
     fm = category_wise_data[category_wise_data['female/male ratio'] < np.inf]
     fm = fm[fm['total'] > 10]  # Removed categories with very low number of people
     fm.sort_values(by='total', ascending=False)
-    fm = fm.iloc[:, [12, 13, 15, 17]]
+    # fm = fm.iloc[:, [12, 13, 15, 17]]
     return fm
 
 
-
 def get_bls_wd(wd):
+    bls_wd_match = pd.read_csv('../data/bls_wd.csv')
     bls_wd = bls_wd_match.copy(deep=True)
     # bls = pd.read_csv('../data/labelled_bls_occupations.csv')
     bls_wd = bls_wd[~bls_wd.wd_occupation.isnull()]
@@ -227,8 +259,6 @@ def get_bls_wd(wd):
     bls_wd.to_csv('../data/bls_wd_matchup.csv')
 
 
-
-
 def split_func(string):
     string = string.replace('\n', ', ')
     cats = string.split(',')
@@ -236,29 +266,10 @@ def split_func(string):
     cats = list(filter(lambda x: len(x) > 0, cats))
     return cats
 
+# filepath = "/home/hargup/WIGI/data/occupation-index.csv"
+# occ = pd.read_csv(filepath)
+# occ = flatten(occ)
+# fm = get_fm_occupation(occ)
+# bls_wd = get_bls_wd(fm)
 
-bls_wd = pd.read_csv('../data/bls_wd.csv')
-wd = pd.read_csv('../data/fm_occupation.csv')
-bls = pd.read_csv('../data/labelled_bls_occupations.csv')
-bls_wd = bls_wd[~bls_wd.wd_occupation.isnull()]
-bls_wd['bls_total'] = bls_wd['bls_total'].apply(lambda x: float(x))
-
-# Reduce percentage in the range of 0 to 1
-bls_wd['bls_p_women'] = bls_wd['bls_p_women'].apply(lambda x: float(x)/100)
-
-bls_wd['wd_occupation'] = bls_wd['wd_occupation'].apply(lambda x: split_func(x))
-
-
-bls_wd['wd_total'] = bls_wd['wd_occupation'].apply(lambda x: wd.loc[wd['category'].isin(x)].sum().total)
-bls_wd['wd_women'] = bls_wd['wd_occupation'].apply(lambda x: wd.loc[wd['category'].isin(x)].sum().female)
-# bls_wd['wd_male'] = bls_wd['wd_occupation'].apply(lambda x: wd.loc[wd['category'].isin(x)].sum().male)
-bls_wd['wd_p_women'] = bls_wd['wd_women']/bls_wd['wd_total']
-bls_wd.to_csv('../data/bls_wd_matchup.csv')
-    # XXX This is flattened occupation-index
-    # occ = pd.read_csv('./occupation-index.csv')
-    occ = pd.read_csv('../data/occupation-index.csv')
-    occ = flatten(occ)
-    fm = get_fm_occupation(occ)
-    fm.to_csv('../data/fm_occupation.csv')
-    # Wikidata is messed up, there are categories like "Archimedes"
-    # Then is also a Female prince :/
+# data = read_data()
