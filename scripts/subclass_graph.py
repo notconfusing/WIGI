@@ -35,7 +35,7 @@ def fetch_label(ids):
             superclass_ids = [superclass_item.id
                               for superclass_item in superclass_items]
             ids.update(set(superclass_ids) - used_ids)
-        except KeyError, AttributeError:
+        except (KeyError, AttributeError):
             superclass_ids = []
 
         id_to_label[_id] = {'subclass': superclass_ids}

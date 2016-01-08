@@ -192,22 +192,14 @@ def read_data(usepkl=True):
 def get_fm_occupation(occ):
     ids_dict = json.load(open("./occ_ids.json"))
 
-    # cat_dict = cat_to_id_dict(ids_dict)
-
-
     # generate graph and filter nodes
     DG = get_graph(ids_dict)
     DG.remove_nodes_from(useless_nodes)
-
-    # for more insight into data
-    # top_nodes = ancestor_sort(DG)
-    # null_nodes = [node for node in DG.nodes() if node[1] == 'null']
 
     # generate categories
     categories = get_categories_dict(DG, leaf_nodes(DG))
     id_categories_dict = get_id_categories_dict(categories)
 
-    # classified_nodes = set.union(*[set(val) for val in categories.values()])
 
     # classify data
     # XXX: ids_dict.get(qid, {'title': 'untitled'}) is a HACK to overcome key
@@ -221,23 +213,20 @@ def get_fm_occupation(occ):
             return 'rand'
 
     occ['occupation'] = list(map(lambda qid: get_occupation(qid), occ.qid))
-    # occ.loc[:, 'occupation'] = list(map(lambda qid: get_occupation(qid), occ.qid))
     category = list(map(lambda qid: get_category(qid, id_categories_dict),
                         occ.qid))
     occ['category'] = category
-    # occ.loc[:, 'category'] = category
-    # unclassified = occ[occ.category == 'unclassified']
 
-    occ['total'] = occ[occ.columns[2:]].sum(axis=1)
-    category_wise_data = occ.groupby('category').aggregate(sum)
-    category_wise_data.loc[:, 'male/female ratio'] = category_wise_data.male/category_wise_data.female
-    category_wise_data.loc[:, 'female/male ratio'] = 1/category_wise_data['male/female ratio']
+    # XXX: Ignoring non binary gender
+    occ['total'] = occ[['male', 'female']].sum(axis=1)
+    occ = occ.groupby('category').aggregate(sum)
 
-    fm = category_wise_data[category_wise_data['female/male ratio'] < np.inf]
-    fm = fm[fm['total'] > 10]  # Removed categories with very low number of people
-    fm.sort_values(by='total', ascending=False)
-    # fm = fm.iloc[:, [12, 13, 15, 17]]
-    return fm
+    occ = occ[occ['total'] > 10]  # Removed categories with very low number of people
+    occ.sort_values(by='total', ascending=False)
+    # The category is the index
+    occ = occ[['female', 'male', 'total']]
+    occ['category'] = occ.index
+    return occ
 
 
 def get_bls_wd(wd):
@@ -256,7 +245,8 @@ def get_bls_wd(wd):
     bls_wd['wd_total'] = bls_wd['wd_occupation'].apply(lambda x: wd.loc[wd['category'].isin(x)].sum().total)
     bls_wd['wd_women'] = bls_wd['wd_occupation'].apply(lambda x: wd.loc[wd['category'].isin(x)].sum().female)
     bls_wd['wd_p_women'] = bls_wd['wd_women']/bls_wd['wd_total']
-    bls_wd.to_csv('../data/bls_wd_matchup.csv')
+    # bls_wd.to_csv('../data/bls_wd_matchup.csv')
+    return bls_wd
 
 
 def split_func(string):
