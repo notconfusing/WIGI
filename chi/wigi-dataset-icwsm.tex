@@ -20,32 +20,12 @@
 % proceedings, working notes, and technical reports.
 %
 \title{Wikidata Human Gender Index: An Open Dataset}
-\numberofauthors{4}
-% Notice how author names are alternately typesetted to appear ordered
-% in 2-column format; i.e., the first 4 autors on the first column and
-% the other 4 auhors on the second column. Actually, it's up to you to
-% strictly adhere to this author notation.
-\author{%
-  \alignauthor{%
-    \textbf{First Author}\\
-    \affaddr{University of Author} \\
-    \affaddr{Authortown, CA 94022, USA} \\
-    \affaddr{author1@anotherco.edu} }\alignauthor{%
-    \textbf{Fifth Author}\\
-    \affaddr{YetAuthorCo, Inc.}\\
-    \affaddr{Authortown, BC V6M 22P Canada}\\
-    \email{author5@anotherco.com} } \vfil \alignauthor{%
-    \textbf{Second Author}\\
-    \affaddr{VP, Authoring}\\
-    \affaddr{Authorship Holdings, Ltd.}\\
-    \affaddr{Awdur SA22 8PP, UK}\\
-    \email{author2@author.ac.uk} }\alignauthor{%
-    \textbf{Sixth Author}\\
-    \affaddr{Universit\'e de Auteur-Sud}\\
-    \affaddr{40222 Auteur France}\\
-    \email{author6@author.fr} } \vfil \alignauthor{%
-    }
-    }	
+
+\author{Max Klein \\
+Grouplens, Department of Computer Science \\
+Minneapolis, Minnesota 55455 \\
+isalix@gmail.com\\
+}
     
 \maketitle
 \begin{abstract}
@@ -65,21 +45,39 @@ Albeit with caveats and huge biases, if the data is to believed, affords us an u
 Introduce the dataset, and it's potential applications.	
 \section{Dataset Details}
 
-The Data is collected by (I'm sure I've written this somewhere already).
-
+\begin{figure}
+\label{fig:screenshot}
+\includegraphics[scale=0.6]{figures/website_screenshot.png} 
+\caption{Screenshot of wigi.wmflabs.org displaying the gender by culture plot.}
+\end{figure}
 
 How to use the data.
 
-Where is it located.
-What types of files.
-How is it updated.
-How can they be used. 
+Our dataset is available for free under the CC0 license online at  http://wigi.wmflabs.org/ . Here a visualization demonstration of our data lives, and direct downloads, from the http://wigi.wmflabs.org/snapshot_data/ folder. 	This folder contains the CSV-formatted, weekly captured "snapshots" of gender-related data from Wikidata. Each snapshot is represented in its own folder, along with are two special folders. The special folders are titled \texit{newest} and \textit{newest-changes}, which will always link to the most recent snapshot, and the changes between the two most recent snapshots (week to week), respectively.
 
-Show demonstrations of graphs from the website.
+Each week, just after the release of Wikidata's official weekly data dump, we download a copy of the dump and process it in the following way. Using the Wikidtata Toolkit \cite{kroetsch} the entire database is subset to only those items which have the property \textit{instance of} with value \textit{human} - or ``P31:Q5" in Wikidata terms. For each human item we find the values of \texit{gender}, \textit{date of birth}, \textit{date of death}, \textit{place of birth}, \textit{place of birth}, \textit{place of birth}, \textit{place of birth}, \textit{place of birth} and \textit{place of birth}. These correspond to Wikidata properties Q1, Q1,Q1,Q1,Q1,Q1,Q1, respectively. In every snapshot folder this intermediate step is saved as ``gender-index-data-\{snapshot data\}.csv", it records one Wikidata item per row, and it's columns are the value of each property. In order to be faithfully represent Wikidata, the value of each property is actually a list, since Wikidata allows there to potentially be many competing values for a property. We store the list, inside the comma-separated sheet, as | (pipe)-separated values. 
+ 
+For each of the recorded properties we then re-index the dataset aggregated on that property, but disaggregated by gender. So for instance, the date of birth index has one row per year unique year found as a date of birth, and one column per gender represented in Wikidata. For example the in the January 3^{rd} 2016 snapshot, the first row the date of birth index reads that for the year -4203 BCE Wikidata records two men, and no other genders as having this date of birth. Inside every snapshot folder there exists a subfolder containing 11 "re-indexes" of the snapshot - one per recorded property.
+ 
+ The third item in every snapshot folder is titled ``changes-since- \{previous snapshot date\}, and contains computed differences between this snapshot and the last. This feature allows pinpoint what happened in the past week. There is one ``change-since" file for each property file. The operation simply takes the union of the row-index, and the columns, and subtracts the earlier values from the later values, element-wise. Using the date of birth example again, the changes since file will show which genders were added - or subtracted - for each year, in the course of the week.
+   
+How is it updated.
+How can they be used. Examples of how to process the CSV can be found in our github repository (link.)
+
+Inside the directory, you will find:
+
+gender-index-data.csv (contains all properties)
+property_indexes
+per-property.csv
+changes-since-2015
+per-property-changes-since-last-week.csv
+
+Show demonstrations of graphs from the website. As a demonstration the website displays 4 visualizations of the data. 
+
 
 There is little cleaning done. More on this later.
 
-\section{Longitudinal Data}
+\section{Data Statistics}
 Total humans in Wikidata increased from 5,869,606 to 6,999,542, and shows linear, unconstrained growth.
 \begin{figure}
 \label{fig:totalhumans}
@@ -168,7 +166,7 @@ snapshot &  GEI &  SIGI &  GGGI &  GDI  \\
 \end{table}
 
 
-\section{Potential Application}
+\section{Potential Applications}
 Open Knowledge Foundation founder Rufus Pollock once said ``The best thing to do with your data will be thought of by someone else.”
 
 FRB/wikisize. Is it data completeness or feminist-focus?
