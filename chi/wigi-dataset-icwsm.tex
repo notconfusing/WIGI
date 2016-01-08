@@ -23,11 +23,7 @@
 %
 \title{Wikidata Human Gender Index: An Open Dataset with Perspectives on Times, Space, and Occupation}
 
-\author{Max Klein \\
-Grouplens, Department of Computer Science, University of Minnesota \\
-Minneapolis, Minnesota 55455 \\
-max@notconfusing.com\\
-}
+\author{AUTHORS BLINDED}
     
 \maketitle
 \begin{abstract}
@@ -54,10 +50,10 @@ The WHGI is meant for re-use, and we present some of the potential applications
 \begin{figure}
 \label{fig:screenshot}
 \includegraphics[scale=0.2]{figures/website_screenshot.png} 
-\caption{Screenshot of wigi.wmflabs.org displaying the gender by culture plot.}
+\caption{Screenshot of WEBSITE BLINDED displaying the gender by culture plot.}
 \end{figure}
 
-Our dataset is available for free under the CC0 license online at  \url{http://wigi.wmflabs.org/} . Here a visualization demonstration of our data lives, and direct downloads, from the \url{http://wigi.wmflabs.org/snapshot_data/} folder. 	This folder contains the CSV-formatted, weekly captured \textit{snapshots} of gender-related data from Wikidata. Each snapshot contains an unaggregated one-row-per-human complete view of the data, \textit{re-indexed} ``property"-specific file, aggregated by tempo, spatial, and other properties, and weekly changes between the property indexes.
+Our dataset is available for free under the CC0 license online at  \url{WEBSITE BLINDED} . Here a visualization demonstration of our data lives, and direct downloads, from the \url{WEBSITE BLINDED/} folder. 	This folder contains the CSV-formatted, weekly captured \textit{snapshots} of gender-related data from Wikidata. Each snapshot contains an unaggregated one-row-per-human complete view of the data, \textit{re-indexed} ``property"-specific file, aggregated by tempo, spatial, and other properties, and weekly changes between the property indexes.
 
 \subsection{Processing}
 Each week, just after the release of Wikidata's official weekly data dump, we download a copy of the dump and process it in the following way. Using the Wikidtata Toolkit \cite{kroetsch} the entire database is subsetted to only those items which have the property \textit{instance of} with value \textit{human} - or ``P31:Q5" in Wikidata terms. For each human item we find the values of \textit{gender}, \textit{date of birth}, \textit{date of death}, \textit{place of birth}, \textit{citizenship}, \textit{ethnic group}, \textit{field of work}, and \textit{occupation}. These correspond to Wikidata properties P21, P569, P570, P19, P27, P172, P101, and P106 respectively.  In every snapshot folder this intermediate step is saved as ``gender-index-data-\{snapshot data\}.csv", it records one Wikidata item per row, and it's columns are the value of each property.
@@ -66,7 +62,7 @@ For each of the recorded properties we then re-index the dataset aggregated on t
  
  The third item in every snapshot folder is titled ``changes-since- \{previous snapshot date\}, and contains computed differences between this snapshot and the last. This feature allows inspection of the movements of the past week. There is one ``changes-since" file for each property file. Using the date of birth example again, the changes since file will show which genders were added - or subtracted - for each year, in the course of the week.
 
-Examples of how to process the CSVs using both \textit{python-pandas} and \textit{R} can be found in our github repository \footnote{\url{https://github.com/notconfusing/WIGI}}. 
+Examples of how to process the CSVs using both \textit{python-pandas} and \textit{R} can be found in our github repository \footnote{\url{WEBSITE BLINDED}}. 
 
 As a demonstration the website displays 4 interactive visualizations of the dataset. Figure \ref{fig:screenshot} shows the \textit{gender-by-country} visualization, which shows the female ratio of humans by place of birth and citizenship combined. The visualizations show \textit{gender-by-culture}, where culture is a further aggregation of countries, \textit{gender-by-date-of-birth-and-death} and \textit{gender-by-Wikipedia-language}.
 
@@ -172,17 +168,13 @@ snapshot &  GEI &  SIGI &  GGGI &  GDI  \\
 \end{tabular}
 \end{table}
 
-WHGI is inspired in part by the already rich landscape of gender disparity indices, such as The Gender Development Index (\textbf{GDI}) from the United Nations Development program. It ``measures gender gap in human development achievements in three basic dimensions of human development: health, education, command over economic resources [sic]" \footnote{\url{http://hdr.undp.org/en/content/gender-development-index-gdi}}.
+WHGI is inspired in part by the rich landscape of gender disparity indices, such as The Gender Development Index (\textbf{GDI}) from the United Nations Development program. This type of index ranks countries by their gender equality. If we aggregate WHGI by place of birth and citizenship, and look at the female ratio of humans, we too have a country-by-gender equality measure.  We correlated the country rankings of this WHGI with 4 popular exogenous indices to see how well Wikidata reflects real world gender disparities. 
 
-\item In Education, Social Watch's Gender Equity Index (\textbf{GEI}) ``looks at the gender gap in enrolment at all levels and in literacy; economic participation computes the gaps in income and employment and empowerment measures the gaps in highly qualified jobs, parliament and senior executive positions." \footnote{\url{http://www.socialwatch.org/node/14366}}
-\item The Global Gender Gap Index (\textbf{GGGI}) was developed by the World Economic Forum in 2006. The GGGI is intended to allow comparison of gender gap across different countries and years, it focuses on four areas:  economic participation and opportunity, educational attainment, political empowerment and health statistics.
-\item The Social Institutions and Gender Index (\textbf{SIGI}) is of the OECD Development Centre from 2007. A composite indicator of gender equality that solely focuses on social institutions (norms, values and attitudes), SIGI uses the five dimensions of discriminatory family code, restricted physical integrity, son bias, restricted resources and assets, and restricted civil liberties.
+The 4 exogenous indices we used were: The United Nations' Gender Development Index (\textbf{GDI})  \footnote{\url{http://hdr.undp.org/en/content/gender-development-index-gdi}},  Social Watch's Gender Equity Index (\textbf{GEI}) \footnote{\url{http://www.socialwatch.org/node/14366}},  the Global Gender Gap Index (\textbf{GGGI}) \footnote{\url{http://reports.weforum.org/global-gender-gap-report-2014/}}, and the Social Institutions and Gender Index (\textbf{SIGI}) \footnote{\url{http://www.genderindex.org/ranking}}. 
 
+Additionally we conducted a calibration step, to find the date of birth threshold which maximized our correlations. In each case the maximizing threshold was found to be between 1900 and 1910. We interpreted as a good sign firstly because the exogenous indices are measures of recent history, and secondly because of the stability in the way that WHGI relates exogenous indices.
 
-
-Calibrated start dates were each 1900 or 1910 - a good sign. Over time the the WHGI-county is become more correlated to major external gender-disparity indexes, see Table \ref{table:scores}.
-
-Cite myself for what it means. 
+Table \ref{table:scores} shows the the correlations with each index, all of which were significant and ranged from 0.278 to 0.457. The ways in which WHGI correlates more to indices that focus on positions of power than indices which focus on health measures, show that Wikipedias' notability policies are are similarly biased [AUTHOR BLINDED].  Affirmingly, when looking at this information through a snapshotting lens, the correlation with every index is increasing over time. That is, the gender disparities found in WHGI by country are looking more like the real world gender disparities. 
 
 
 \subsection{Bureau of Labor Statistics}
@@ -191,20 +183,16 @@ Cite myself for what it means.
  In context with the fact that data quality is rising, this can be taken to mean that as Wikidata becomes more complete it is modelling the real world more. 
 
 \section{Potential Applications}
-Open Knowledge Foundation founder Rufus Pollock once said ``The best thing to do with your data will be thought of by someone else.”
+Though we believe in what Open Knowledge Foundation founder Rufus Pollock once said ``The best thing to do with your data will be thought of by someone else. " we still present a few ideas to stoke creativity. Since the data arises from Wikipedia, its introspective uses are many, but we also propose uses that are completely unrelated to the Wiki-universe. 
 
-FRB/wikisize. Is it data completeness or feminist-focus?
+Wikimedian communities can use WHGI to measure their editorial and content focus. With the temporal nature of the snapshotting, applications could be built to detect spikes in creation or deletion of humans. This could be useful to measure the effectiveness of editathons, and other planned editing. However such a tool could also alert to the presence of unplanned activity, good or bad, which effects the macro-level gender of Wikipedia and Wikidata.
 
+Divorced from Wikipedia entirely, a historian could use the data to determine the gender-disparity levels of a specific place and time. Typically to quantify the gender climate one would rely on the indexes like those mentioned in the Exogenous Indices section. However these indices, are limited to discussing recent history. With large caveats about accuracy and editor bias, our validation showed that our data is in touch with the real world to some degree. With this dataset we can quantify a type of gender-disparity of medieval France, ancient Greece, or Ming dynasty China. Generally WHGI is useful in all the same ways that exogenous indices are used, only with a larger timespan. That is certainly a novel approach not possible before Wikidata.
 
-Use for determining women's notability for historical events.
+Yet another new avenue this dataset opens is in the gender-disparity of a language. There are several theories about how language affects gender \cite{} \cite{}. A linguistic could use WHGI aggregated by language to quantify the gendered-ness of a language. Furthermore with the date of birth and death information, that linguistic could see how languages have focus on gender differently over time, potentially backing up a theory of language that comes from their native methods. 
 
-Linking with VIAF. 
-
-Comparing language's inherent gender bias to shown.
-
-Wikimedian communities can use this an introspective watch.
-
-Useful in all the same ways that external indices like the UNDP are too.
+\section{Conclusion}
+We made it because. It is easy to use, it can show some things about Wikipedia. Its also a validated measure of the real world. There are lots of potential ways in which it could be used.	
 
 
 \section{ Acknowledgments}
