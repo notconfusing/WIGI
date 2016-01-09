@@ -151,26 +151,35 @@ Hebrew      & 1.17\% \\
 \section{Validation}
 In order to gain an idea about how well WHGI reflects the real world, we validated out data by comparing it against 3 exogenous datasets. We correlated the WHGI date of birth frequency versus historical world population trends; WHGI gender by country versus external by-country gender-disparity indexes; and WHGI occupation by gender versus United States Bureau of Labor Statistics occupation gender.
 
-\subsection{World Population}
-Our most simple validation measure involved comparing the world's population by year to the number of humans in WHGI by year of birth. Even though, the number of people alive and the number of people born are slightly different, theoretically their curves should share the same shape. We performed a standard Pearson correlation using the data from our earliest and latest snapshots, and data from world data from the US Census Bureau\footnote{\url{https://commons.wikimedia.org/wiki/File:Population_curve.svg}}. 
+\subsection{World Population} Our most simple validation measure involved
+comparing the world's population by year to the number of humans in WHGI by
+year of birth. Even though, the number of people alive and the number of people
+born are slightly different, theoretically their curves should share the same
+shape. We performed a standard Pearson correlation between the number of people
+on Wikipedia born in a particular period, and the estimated historical world
+population by the US Census
+Bureau\footnote{\url{https://commons.wikimedia.org/wiki/File:Population_curve.svg}}.
+We have provided the result from our earliest and latest snapshots.
 
-The results in Table \ref{table:worldpop} show...
+
+The results in Table \ref{table:worldpop} shows a high correlation between real
+world estimates and wikidata.
 \begin{table}
-\caption{Correlation of number of WHGI by date of birth and world population. Signficances are $ ^{**}p\leq 0.01$.}
+\caption{Correlation of number of WHGI by date of birth and world population. Significances are $ ^{**}p\leq 0.01$.}
 \label{table:worldpop}
 \begin{tabular}{lrrrr}
 \toprule
 snapshot &  Correlation \\
 \midrule
-2014-09-17 & xxx**  \\
-2016-01-03 & xxx**  \\
+2014-09-17 & 0.852**  \\
+2016-01-03 & 0.845**  \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \subsection{Exogenous Gender-Disparities Indices}
 \begin{table}
-\caption{WHGI-country correlation to external indices. Correlation is the Spearman $\rho$, and signficances are $ ^*p\leq 0.05 $, $ ^{**}p\leq 0.01$.}
+\caption{WHGI-country correlation to external indices. Correlation is the Spearman $\rho$, and significances are $ ^*p\leq 0.05 $, $ ^{**}p\leq 0.01$.}
 \label{table:scores}
 \begin{tabular}{lrrrr}
 \toprule
