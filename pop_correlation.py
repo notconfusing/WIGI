@@ -8,7 +8,7 @@ wddob= dict()
 wddob[2015] = pd.read_csv("{}/2015-07-28/property_indexes/dob-index.csv".format(snap_dir))
 wddob[2016] = pd.read_csv("{}/2016-01-03/property_indexes/dob-index.csv".format(snap_dir))
 
-h_pop = pd.read_csv("./helpers/historic_population.csv")
+h_pop = pd.read_csv("./historic_population.csv")
 
 for key in wddob.keys():
     cols = list(wddob[key].columns)
