@@ -19,13 +19,15 @@ for key in wddob.keys():
 
     year_start = -10000
     years = [year_start]
-    pop = [1]
+    population = [1]
 
     for year_end in h_pop['year'][1:]:
         years.append(year_end)
-        pop.append(df[(df['year'] > year_start) & (df['year'] < year_end)].sum()[1:].sum())
+
+        pop = df[(df['year'] > year_start) & (df['year'] < year_end)].sum()[1:].sum()
+        pop = pop/(year_end - year_start)
+        population.append(pop)
         year_start = year_end
 
     print(key)
-    print(scipy.stats.pearsonr(pop, h_pop['pop']))
-    print(scipy.stats.spearmanr(pop, h_pop['pop']))
+    print(scipy.stats.pearsonr(population, h_pop['pop']))
