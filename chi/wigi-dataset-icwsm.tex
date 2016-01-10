@@ -15,14 +15,14 @@
 \setlength{\pdfpagewidth}{8.5in}
 \setlength{\pdfpageheight}{11in}
 \pdfinfo{
-/Title Wikidata Human Gender Index: An Open Dataset with Perspectives on Times, Space, and Occupation
+/Title Wikidata Human Gender Indicators: An Open Dataset with Perspectives on Times, Space, and Occupation
 /Author BLINDED}
 \setcounter{secnumdepth}{0}  
  \begin{document}
 % The file aaai.sty is the style file for AAAI Press 
 % proceedings, working notes, and technical reports.
 %
-\title{Wikidata Human Gender Index: An Open Dataset with Perspectives on Time, Space, and Occupation}
+\title{Wikidata Human Gender Indicators: An Open Dataset with Perspectives on Time, Space, and Occupation}
 
 \author{AUTHORS BLINDED}
     
@@ -39,7 +39,7 @@ Wikidata, the database that feeds Wikipedia, offers new opportunities to analyze
 
 As a knowledgebase Wikidata is slowly proving its worth for research. For instance, Wikidata has been used to find popular connections between nationalities and occupations \cite{goldfarb_quantifying_2015}. Or take the fact that all human and mouse genes have been imported into Wikidata \cite{mitraka_wikidata:_2015}, for an internet-wide community effort to find links between genes, drugs and diseases \cite{burgstaller-muehlbacher_wikidata_2015}. All of these tasks would be difficult to do without Wikidata.
 
-We introduce a weekly-updating dataset called the ``Wikidata Human Gender Index'' (WHGI), which measures the gender of the humans represented in Wikidata - that is, Wikipedia biography articles - across time, space, and occupational dimensions. Measuring and releasing data on Wikipedia's content gender gap attempts to solve two problems. The first is to shed light on the problem under the philosophy of ``what gets measured, gets fixed.'' Perhaps even more excitingly though, the scope of Wikidata gives us an unprecedented look at gender through time, space, and occupation, at a scale never seen before, which has potential applications for a not-possible-until-now open data mashups.
+We introduce a weekly-updating dataset called the ``Wikidata Human Gender Indicators'' (WHGI), which measures the gender of the humans represented in Wikidata - that is, Wikipedia biography articles - across time, space, and occupational dimensions. Measuring and releasing data on Wikipedia's content gender gap attempts to solve two problems. The first is to shed light on the problem under the philosophy of ``what gets measured, gets fixed.'' Perhaps even more excitingly though, the scope of Wikidata gives us an unprecedented look at gender through time, space, and occupation, at a scale never seen before, which has potential applications for a not-possible-until-now open data mashups.
 
 This paper begins by describing the format of the data presents a variety of statistics to illustrate how to use the data. We investigate how the data quality has changed over time, which demonstrates the 9 semantic properties available, and the advantages of its weekly, ``snapshot'' feature. We produce a top-10 of Wikipedia's which increased in their female ratio of human biographies as a example problem. 
 
@@ -188,9 +188,11 @@ Hebrew      & 1.17\% \\
 \end{table}
 
 \section{Validation}
-In order to gain an idea about how well WHGI reflects the real world, we validated out data by comparing it against 3 exogenous datasets. We correlated the WHGI date of birth frequency versus historical world population trends; WHGI gender by country versus external by-country gender-disparity indexes; and WHGI occupation by gender versus United States Bureau of Labor Statistics occupation gender.
+In order to gain an idea about how well WHGI reflects the real world, we validated out data by comparing it against 3 exogenous datasets. We correlated the WHGI date of birth frequency versus historical world population trends; WHGI gender by country versus exogenous by-country gender-disparity indices; and WHGI occupation by gender versus United States Bureau of Labor Statistics occupation gender.
 
-\subsection{World Population} Our most simple validation measure involved comparing the world's population by year to the number of humans in WHGI by year of birth. We conduct this validation even though, the number of people alive and the number of Wikipedia-notable people born are different measures. However if we operate under the assumptions that (a) the proportion of the world which is Wikipedia-notable is constant over time, and (b) that the birth rate is a fixed proportion of the population, then theoretically their curves should share approximately the same shape. Therefore we performed a standard Pearson correlation between the number of people in Wikidata born in a particular period, and the estimated historical world population by the US Census
+\subsection{World Population} Our most simple validation measure involved comparing the world's population by year to the number of humans in WHGI by year of birth. We conduct this validation even though, the number of people alive and the number of Wikipedia-notable people born are different measures. However if we operate under the assumptions that (a) the proportion of the world which is Wikipedia-notable is constant over time, and (b) that the birth rate is a fixed proportion of the population, then theoretically their curves should share approximately the same shape. 
+
+We performed a standard Pearson correlation between the number of people in Wikidata born in a particular period, and the estimated historical world population by the US Census
 Bureau\footnote{\url{https://commons.wikimedia.org/wiki/File:Population_curve.svg}}.
 We also conducted this correlation for our earliest and latest snapshots. The results in Table \ref{table:worldpop} shows a high and significant correlation between real world estimates and Wikidata, at about 0.85. We do see a very minor decrease in correlation over snapshots of 0.007. Overall though the population of Wikidata over time seems very aligned with the World's population over time.
 
@@ -224,19 +226,21 @@ snapshot &  GEI &  SIGI &  GGGI &  GDI  \\
 WHGI is inspired in part by the rich landscape of gender disparity indices, such as The Gender Development Index (\textbf{GDI}) from the United Nations Development program. This type of index ranks countries by their gender equality. If we aggregate WHGI by place of birth and citizenship, and look at the female ratio of humans, we too have a country-by-gender equality measure.  We correlated the country rankings of this WHGI with 4 popular exogenous indices to see how well Wikidata reflects real world gender disparities. 
 
 The 4 exogenous indices we used were: The United Nations' Gender Development Index (\textbf{GDI})  \footnote{\url{http://hdr.undp.org/en/content/gender-development-index-gdi}},  Social Watch's Gender Equity Index (\textbf{GEI}) \footnote{\url{http://www.socialwatch.org/node/14366}},  the Global Gender Gap Index (\textbf{GGGI}) \footnote{\url{http://reports.weforum.org/global-gender-gap-report-2014/}}, and the Social Institutions and Gender Index (\textbf{SIGI}) \footnote{\url{http://www.genderindex.org/ranking}}. 
+These exogenous indices measure indicators like life expectancy, years of schooling, earned income, representation in parliament and senior executive positions, and social norms.
 
-Additionally we conducted a calibration step, to find the date of birth threshold which maximized our correlations. In each case the maximizing threshold was found to be between 1900 and 1910. We interpreted as a good sign firstly because the exogenous indices are measures of recent history, and secondly because of the stability in the way that WHGI relates exogenous indices.
+Additionally we conducted a calibration step, to find the date of birth threshold which maximized our correlations. In each case the maximizing threshold was found to be between 1900 and 1910. We interpreted it as a good sign firstly because the exogenous indices are measures of recent history too, and secondly because it shows a robustness in the way that WHGI relates exogenous indices.
 
-Table \ref{table:scores} shows the the correlations with each index, all of which were significant and ranged from 0.278 to 0.457. Affirmingly, when looking at this information through a snapshotting lens, the correlation with every index is increasing over time. That is, the gender disparities found in WHGI by country are looking more like the real world gender disparities. 
+Table \ref{table:scores} shows the the correlations with each index, all of which were significant and ranged from 0.278 to 0.457. Affirmingly, when looking at this information through a snapshotting lens, the correlation with every index is increasing over time. On the low end the GDI correlation grew by 7.6\%, and on the upper end, the SIGI correlation jumped 24.5\% in the about-a-year time frame. That is, the gender disparities found in WHGI by country are increasingly looking more like the real world gender disparities.
 
 
 \subsection{Occupation Gender}
 The notion of what a human's job or occupation is, we saw in Table \ref{table:accompanying}, is well recorded in Wikidata. To answer the question of how accurate Wikidata's gender representation by occupation is, we compared it to data from the United States Bureau of Labor Statistics (BLS). We borrow this ground truth technique from \cite{kay_unequal_2015} who used it to evaluate the gender representation of Google image search results.
 
+Approximately 60\% of our sample have occupation data, and together the over 4,000 occupations are represented. The BLS has 332 occupation categories which are at a higher level ontologically than what is recorded in Wikidata. Whereas Wikidata might record that someone is a pastry chef, the BLS only has a category for cooks. In order to match the datasets we used Wikidata's internal ontology hierarchy, to generalize the occupation terms. A ``subclass of'' property exists in Wikidata, that relates items to their more general concept - and this is true for occupations as well. Wikidata indicates that pastry chef is a subclass of chef, and that chef is a sublcass of cook. 
 
-Since approximately 60\% of our sample have occupation data, we have a more
-complete than not sample of all humans. We matched occupations by hand. The
-overlap inthe names was 57\% complete. Finally we correlated the list of most gendered occupations according to WHGI, to that of the BLS
+Our method was to raise the generality of the professions until there were less than 500 professions to ease the matching task. Two authors then matched occupations manually for accuracy and confirmation. We resolved disagreements until the sets were matched. However not all occupations could matched due to the specificity of the BLS, coverage of Wikidata occupations was 57\% complete. In the reverse, there were many BLS occupations which Wikidata did not have any occupations, such as ``lodgings manager''. which outlines the limitation of this validation that, generally being a lodgings manager does not inherently make you notable for inclusion in Wikipedia. It must be acknowledged too that the BLS data describes the United States whereas WHGI has a worldwide scope.
+
+Finally we correlated the rankings of list of most gendered occupations according to WHGI, to that of the BLS. We did this for two early and late snapshots, but because occupation was not a property that we initially recorded, our first snapshot which included occupation was August 9\textsuperscript{th} 2015. The spearman rank correlation found was a significant 0.410,  and since then the correlation has increased noticeably from to 0.473. \ref{table:bls}. These are moderate correlations which we claim show support a link that Wikidata reflects the real world. Intriguingly, this is level correlation is roughly equal to the by-country gender-disparity indices.
 
 \begin{table}
 \caption{Rank correlation of gender ratios by occupation between WHGI and US
@@ -260,20 +264,21 @@ Wikipedia can tell us some things about the real world. In each of our validatio
 This distortion arises from the fact that Wikipedia and Wikidata do not specifically seek to model the real world. Humans in Wikidata come from Wikipedia articles about humans. Wikipedia articles about humans are created subject to a ``notability policy'', which varies from Wikipedia to Wikipedia. So a human here also implicitly means a ``notable'' human by some standard - and standard which contains a specific worldview. The ways in which WHGI correlates more to gender-disparity indices that focus on positions of power than indices which focus on health measures, show that Wikipedias care more about social position than longevity (AUTHOR BLINDED).
 
 
-
 \section{Potential Applications}
 Though we believe in what Open Knowledge Foundation founder Rufus Pollock once said ``The best thing to do with your data will be thought of by someone else,'' we still present a few ideas to stoke creativity. Since the data arises from Wikipedia, its introspective uses are many, but we also propose uses that are completely unrelated to the Wiki-universe. 
 
 Wikimedian communities can use WHGI to measure their editorial and content focus. With the temporal nature of the snapshotting, applications could be built to detect spikes in creation or deletion of humans. This could be useful to measure the effectiveness of editathons, and other planned editing. However such a tool could also alert to the presence of unplanned activity, good or bad, which effects the macro-level gender of Wikipedia and Wikidata.
 
-Divorced from Wikipedia entirely, a historian could use the data to determine the gender-disparity levels of a specific place and time. Typically to quantify the gender climate one would rely on the indexes like those mentioned in the Exogenous Indices section. However these indices, are limited to discussing recent history. With large caveats about accuracy and editor bias, our validation showed that our data is in touch with the real world to some degree. With this dataset we can quantify a type of gender-disparity of medieval France, ancient Greece, or Ming dynasty China. Generally WHGI is useful in all the same ways that exogenous indices are used, only with a larger timespan. That is certainly a novel approach not possible before Wikidata.
+Divorced from Wikipedia entirely, a historian could use the data to determine the gender-disparity levels of a specific place and time. Typically to quantify the gender climate one would rely on the indices like those mentioned in the Exogenous Indices section. However these indices, are limited to discussing recent history. With large caveats about accuracy and editor bias, our validation showed that our data is in touch with the real world to some degree. With this dataset we can quantify a type of gender-disparity of medieval France, ancient Greece, or Ming dynasty China. Generally WHGI is useful in all the same ways that exogenous indices are used, only with a larger timespan. That is certainly a novel approach not possible before Wikidata.
 
 Yet another new avenue this dataset opens is in the gender-disparity of a language. A linguistic could use WHGI aggregated by language to quantify the gendered-ness of a language. Furthermore with the date of birth and death information, that linguistic could see how languages have focus on gender differently over time. Potentially this could lend evidence to another theory of language that comes from their native methods. 
 
 Generally, WHGI is a essentially a biographic database. The data can not only provide insights on gender-related disparity, but also other disparities such as culture disparities, citizen disparities and ethnic group disparities, etc.  
 
-\section{Conclusion}
-We made it because. It is easy to use, it can show some things about Wikipedia. Its also a validated measure of the real world. Data quality and correlations increasing together is particularly encouraging. There are lots of potential ways in which it could be used.	
+\section{Conclusion and Future Work}
+We made the Wikidata Human Gender Indicators (WHGI), a biographic database for researchers wishing to incorporate gender data along dimensions of time, space and occupation. Based off of Wikidata and Wikipedia it can most obviously it can be used by that community to monitor demographic trends and biases in their content. We also a validated the indicators with measures of the real world, such as population, country-based gender disparities, and occupations. These validations showed that the WHGI is significantly correlated to real world demographics and gender disparities. We also showed that data quality of Wikidata has been increasing. Taken together, data quality and correlations increasing together is particularly encouraging as support for using WHGI as a tool. WHGI is freely available for download, we have outlined some of potential ways in which it could be used, and hope that many more are thought of by others.
+
+We hope to continue running the open source project in service of the Wikipedia and research communities seeking to statistically describe gender disparities. The ways in which we expand WHGI we hope will be directed by users feedback.
 
 
 \section{ Acknowledgments}
