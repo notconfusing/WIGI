@@ -41,7 +41,7 @@ As a knowledgebase Wikidata is slowly proving its worth for research. For instan
 
 We introduce a weekly-updating dataset called the ``Wikidata Human Gender Index'' (WHGI), which measures the gender of the humans represented in Wikidata - that is, Wikipedia biography articles - across time, space, and occupational dimensions. Measuring and releasing data on Wikipedia's content gender gap attempts to solve two problems. The first is to shed light on the problem under the philosophy of ``what gets measured, gets fixed.'' Perhaps even more excitingly though, the scope of Wikidata gives us an unprecedented look at gender through time, space, and occupation, at a scale never seen before, which has potential applications for a not-possible-until-now open data mashups.
 
-This paper begins by describing the format of the data presents a variety of statistics to illustrate how to use the data. We investigate how the data quality has changed over time, which demonstrates the 9 semantic properties available, and the advantages of its weekly, ``snapshot'' feature. We produce a top-10 of Wikipedia’s which increased in their female ratio of human biographies as a example problem. 
+This paper begins by describing the format of the data presents a variety of statistics to illustrate how to use the data. We investigate how the data quality has changed over time, which demonstrates the 9 semantic properties available, and the advantages of its weekly, ``snapshot'' feature. We produce a top-10 of Wikipedia's which increased in their female ratio of human biographies as a example problem. 
 
 To show that WHGI is not a not entirely Wikipedia navel-gazing, we present 3 validation measures utilizing ground truths from the US Census Bureau, Bureau for Labor Statistics, and United Nations Development Program. We show that the WHGI does in fact relate to the real world. This means that, albeit imperfectly, the WHGI can be a proxy for numerical data about the real word in times and places for which no previous data exists.
 
@@ -55,10 +55,12 @@ Finally, the WHGI is meant for re-use, and we present some potential application
 \caption{Screenshot of WEBSITE BLINDED displaying the gender by culture plot.}
 \end{figure}
 
-Our dataset is available for free under the CC-BY-SA license online at  \url{WEBSITE BLINDED}. Here a visualization demonstration of our data lives, and direct downloads, from the \url{WEBSITE BLINDED/} folder. 	This folder contains the CSV-formatted, weekly captured \textit{snapshots} of gender-related data from Wikidata. Each snapshot contains an unaggregated one-row-per-human complete view of the data, \textit{aggregated} ``property''-specific files, aggregated by tempo, spatial, and o0ther properties, and weekly changes between the property indexes. Our first snapshot is from September 17\textsuperscript{th} 2014, the latest presented here is January 3\textsuperscript{rd} 2016, but snapshotting is automated and tracks the official Wikidata data dumps.
+Our dataset is available for free under the CC-BY-SA license online at  \url{WEBSITE BLINDED}. Here a visualization demonstration of our data lives, and direct downloads, from the \url{WEBSITE BLINDED/} folder. 	This folder contains the CSV-formatted, weekly captured \textit{snapshots} of gender-related data from Wikidata. Each snapshot contains an unaggregated one-row-per-human complete view of the data, \textit{aggregated} ``property''-specific files, aggregated by tempo, spatial, and other properties, and weekly changes between the property indexes. Our first snapshot is from September 17\textsuperscript{th} 2014, the latest presented here is January 3\textsuperscript{rd} 2016, but snapshotting is automated and tracks the official Wikidata data dumps.
 
 \subsection{Processing}
-Each week, just after the release of Wikidata's official weekly data dump, we download a copy of the dump and process it in the following way. Using the Wikidtata Toolkit \footnote{\url{https://www.mediawiki.org/wiki/Wikidata_Toolkit}} the entire database is subsetted to only those items which have the property \textit{instance of} with value \textit{human} - or ``P31:Q5'' in Wikidata terms. For each human item we find the values of \textit{gender}, \textit{date of birth}, \textit{date of death}, \textit{place of birth}, \textit{citizenship}, \textit{ethnic group}, \textit{field of work}, and \textit{occupation}. These correspond to Wikidata properties P21, P569, P570, P19, P27, P172, P101, and P106 respectively.  In every snapshot folder this complete list of humans is saved as ``gender-index-data-\{snapshot data\}.csv'', it records one Wikidata item per row, and it's columns are the value of each property. 
+Each week, just after the release of Wikidata's official weekly data dump, we download a copy of the dump and process it in the following way. Using the Wikidtata Toolkit \footnote{\url{https://www.mediawiki.org/wiki/Wikidata_Toolkit}} the entire database is subsetted to only those items which have the property \textit{instance of} with value \textit{human} - or ``P31:Q5'' in Wikidata terms.
+
+For each human item we find the values of \textit{gender}, \textit{date of birth}, \textit{date of death}, \textit{place of birth}, \textit{citizenship}, \textit{ethnic group}, \textit{field of work}, and \textit{occupation}. These correspond to Wikidata properties P21, P569, P570, P19, P27, P172, P101, and P106 respectively.  In every snapshot folder this complete list of humans is saved as ``gender-index-data-\{snapshot data\}.csv'', it records one Wikidata item per row, and it's columns are the value of each property. 
 
 Because Wikidata is multilingual its values are stored as identifiers, which every language can translate. To maintain fidelity we keep this standard, so for example Aung San Suu Kyi represented in Wikidata in English looks like Figure \ref{fig:aung} and in our dataset would be a row like \begin{small} Q36740,1945,,Q6581072|,,Q836|,Q37995|,,Q82955|Q36180|Q1476215|
 \end{small}. Our code examples include functions to translate these Q-IDs into English labels.
@@ -188,19 +190,10 @@ Hebrew      & 1.17\% \\
 \section{Validation}
 In order to gain an idea about how well WHGI reflects the real world, we validated out data by comparing it against 3 exogenous datasets. We correlated the WHGI date of birth frequency versus historical world population trends; WHGI gender by country versus external by-country gender-disparity indexes; and WHGI occupation by gender versus United States Bureau of Labor Statistics occupation gender.
 
-\subsection{World Population} Our most simple validation measure involved
-comparing the world's population by year to the number of humans in WHGI by
-year of birth. Even though, the number of people alive and the number of people
-born are slightly different, theoretically their curves should share the same
-shape. We performed a standard Pearson correlation between the number of people
-on Wikipedia born in a particular period, and the estimated historical world
-population by the US Census
+\subsection{World Population} Our most simple validation measure involved comparing the world's population by year to the number of humans in WHGI by year of birth. We conduct this validation even though, the number of people alive and the number of Wikipedia-notable people born are different measures. However if we operate under the assumptions that (a) the proportion of the world which is Wikipedia-notable is constant over time, and (b) that the birth rate is a fixed proportion of the population, then theoretically their curves should share approximately the same shape. Therefore we performed a standard Pearson correlation between the number of people in Wikidata born in a particular period, and the estimated historical world population by the US Census
 Bureau\footnote{\url{https://commons.wikimedia.org/wiki/File:Population_curve.svg}}.
-We have provided the result from our earliest and latest snapshots.
+We also conducted this correlation for our earliest and latest snapshots. The results in Table \ref{table:worldpop} shows a high and significant correlation between real world estimates and Wikidata, at about 0.85. We do see a very minor decrease in correlation over snapshots of 0.007. Overall though the population of Wikidata over time seems very aligned with the World's population over time.
 
-
-The results in Table \ref{table:worldpop} shows a high correlation between real
-world estimates and wikidata.
 \begin{table}
 \caption{Correlation of number of WHGI by date of birth and world population. Significances are $ ^{**}p\leq 0.01$.}
 \label{table:worldpop}
@@ -234,7 +227,7 @@ The 4 exogenous indices we used were: The United Nations' Gender Development Ind
 
 Additionally we conducted a calibration step, to find the date of birth threshold which maximized our correlations. In each case the maximizing threshold was found to be between 1900 and 1910. We interpreted as a good sign firstly because the exogenous indices are measures of recent history, and secondly because of the stability in the way that WHGI relates exogenous indices.
 
-Table \ref{table:scores} shows the the correlations with each index, all of which were significant and ranged from 0.278 to 0.457. The ways in which WHGI correlates more to indices that focus on positions of power than indices which focus on health measures, show that Wikipedias' notability policies are are similarly biased [AUTHOR BLINDED].  Affirmingly, when looking at this information through a snapshotting lens, the correlation with every index is increasing over time. That is, the gender disparities found in WHGI by country are looking more like the real world gender disparities. 
+Table \ref{table:scores} shows the the correlations with each index, all of which were significant and ranged from 0.278 to 0.457. Affirmingly, when looking at this information through a snapshotting lens, the correlation with every index is increasing over time. That is, the gender disparities found in WHGI by country are looking more like the real world gender disparities. 
 
 
 \subsection{Occupation Gender}
@@ -259,8 +252,14 @@ snapshot &  Spearman Rank Correlation \\
 \end{tabular}
 \end{table}
 
-\subsection{Representation and Reflection}
-In each of our validation measures we found significant, and high or relatively high correlations. Certainly WHGI is does not exist in a bubble, but is reflection of the real world, although with some distortion. Therefore there is some limited justification in using WHGI as a proxy for real-world phenomena. Additionally we saw too that in all cases, real world - WHGI correlations are rising over time. In context with the fact from earlier that data quality is rising, this can be taken to mean that as Wikidata becomes more complete it is modelling the real world more.
+\section{Representative Limitation}
+ WHGI is measuring two phenomena that we do not disentangle. On the one hand the validation of dataset tells us \textit{how well time periods, nationalities, and occupations are gendered based on Wikipedia} and on the other hand we are inspecting how\textit{Wikipedia's demographics and notability policy are based on the real world}.
+
+Wikipedia can tell us some things about the real world. In each of our validation measures we found high or moderate correlations. Certainly WHGI is does not exist in a bubble, but is reflection of the real world, although with some distortion. Since we saw that WHGI correlations are rising over time, in context with the fact from earlier that data quality is rising, this can be taken to mean that as Wikidata becomes more complete it is modelling the real world more. There is some justification in using WHGI as a proxy for real-world phenomena, but that proxy is limited by worldview of Wikipedia editors constrained by notability policies. 
+
+This distortion arises from the fact that Wikipedia and Wikidata do not specifically seek to model the real world. Humans in Wikidata come from Wikipedia articles about humans. Wikipedia articles about humans are created subject to a ``notability policy'', which varies from Wikipedia to Wikipedia. So a human here also implicitly means a ``notable'' human by some standard - and standard which contains a specific worldview. The ways in which WHGI correlates more to gender-disparity indices that focus on positions of power than indices which focus on health measures, show that Wikipedias care more about social position than longevity (AUTHOR BLINDED).
+
+
 
 \section{Potential Applications}
 Though we believe in what Open Knowledge Foundation founder Rufus Pollock once said ``The best thing to do with your data will be thought of by someone else,'' we still present a few ideas to stoke creativity. Since the data arises from Wikipedia, its introspective uses are many, but we also propose uses that are completely unrelated to the Wiki-universe. 
@@ -269,7 +268,9 @@ Wikimedian communities can use WHGI to measure their editorial and content focus
 
 Divorced from Wikipedia entirely, a historian could use the data to determine the gender-disparity levels of a specific place and time. Typically to quantify the gender climate one would rely on the indexes like those mentioned in the Exogenous Indices section. However these indices, are limited to discussing recent history. With large caveats about accuracy and editor bias, our validation showed that our data is in touch with the real world to some degree. With this dataset we can quantify a type of gender-disparity of medieval France, ancient Greece, or Ming dynasty China. Generally WHGI is useful in all the same ways that exogenous indices are used, only with a larger timespan. That is certainly a novel approach not possible before Wikidata.
 
-Yet another new avenue this dataset opens is in the gender-disparity of a language. There are several theories about how language affects gender [INSERT REFS?]. A linguistic could use WHGI aggregated by language to quantify the gendered-ness of a language. Furthermore with the date of birth and death information, that linguistic could see how languages have focus on gender differently over time, potentially backing up a theory of language that comes from their native methods. 
+Yet another new avenue this dataset opens is in the gender-disparity of a language. A linguistic could use WHGI aggregated by language to quantify the gendered-ness of a language. Furthermore with the date of birth and death information, that linguistic could see how languages have focus on gender differently over time. Potentially this could lend evidence to another theory of language that comes from their native methods. 
+
+Generally, WHGI is a essentially a biographic database. The data can not only provide insights on gender-related disparity, but also other disparities such as culture disparities, citizen disparities and ethnic group disparities, etc.  
 
 \section{Conclusion}
 We made it because. It is easy to use, it can show some things about Wikipedia. Its also a validated measure of the real world. Data quality and correlations increasing together is particularly encouraging. There are lots of potential ways in which it could be used.	
