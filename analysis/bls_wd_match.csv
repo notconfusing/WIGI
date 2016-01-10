@@ -1,0 +1,338 @@
+,bls_occupation,wd_occupation,Unnamed: 0,n,p_women,p_black,p_asian,p_hispanic,aggregate,y.n,conjunction,search_term,uncertain_search_term,multiple_search_terms
+0,Aircraft pilots and flight engineers,"astronaut, aviator, navigator",500,129000,4.1,2.7,2.5,5.0,False,True,False,pilot,False,False
+1,Bartenders,"bartender, sommelier,  oenologist",227,412000,59.9,5.2,3.5,13.2,False,True,False,bartender,False,False
+2,Bill and account collectors,treasurer,284,206000,69.1,15.3,3.6,17.6,False,True,False,bill collector,False,False
+3,Biological scientists,"agronomist, horticulturist, forester, ecologist",96,101000,50.1,3.7,11.7,7.2,False,True,False,biologist,False,False
+4,Chemists and materials scientists,"chemist, metallurgist",102,105000,44.2,4.0,9.2,9.4,False,True,False,chemist,False,False
+5,Chief executives,"president and chief executive officer, hotel manager, manager, manager (professional wrestling), businessperson, talent manager, business manager",0,1513000,27.4,3.7,4.2,4.7,False,True,False,chief executive officer,False,False
+6,Clergy,"Rosh yeshiva, religious servant, saint, clergy, muhaddith, pasha, qadi, hermit",123,408000,20.5,11.2,4.2,6.1,False,True,False,clergy member,False,False
+7,Clinical laboratory technologists and technicians,"nutritionist, food chemist,",184,319000,72.8,13.5,14.0,10.7,False,True,False,lab tech,False,False
+8,Computer programmers,"hacker, computer scientist",61,480000,22.5,5.9,17.3,5.3,False,True,False,computer programmer,False,False
+9,Construction laborers,construction worker,347,1387000,2.9,8.4,2.0,41.2,False,True,False,construction worker,False,False
+10,Cooks,"cook, baker, beekeeper,  brewer, butcher, fisherman, hunter, pastry chef",225,1970000,37.7,16.6,6.0,31.7,False,True,False,cook,False,False
+11,Designers,"urban planner, game designer ",143,756000,55.3,3.9,5.9,8.9,False,True,False,designer,False,False
+12,Detectives and criminal investigators,detective,212,160000,24.8,9.8,3.5,10.4,False,True,False,detective,False,False
+13,Driver/sales workers and truck drivers,"co-driver, driver, salesperson",505,3201000,5.4,14.0,1.6,19.3,False,True,False,truck driver,False,False
+14,Electricians,"technics, electrician",352,692000,1.8,6.0,2.3,14.8,False,True,False,electrician,False,False
+15,Elementary and middle school teachers,schoolmaster,133,2838000,81.4,9.8,2.1,10.3,False,True,False,primary school teacher,False,False
+16,"Engineers, all other","business engineering, engineer",91,359000,13.2,3.9,15.4,5.9,False,True,False,engineer,False,False
+17,Financial analysts,financial analyst,50,89000,36.8,3.7,9.0,6.3,False,True,False,Financial analyst,False,False
+18,Firefighters,firefighter,209,295000,3.4,7.7,1.1,9.9,False,True,False,firefighter,False,False
+19,Flight attendants,flight attendant,502,88000,77.6,11.8,5.9,10.5,False,True,False,flight attendant,False,False
+20,Fundraisers,lobbyist,43,86000,75.3,5.1,4.6,3.4,False,True,False,fundraiser,False,False
+21,"Hairdressers, hairstylists, and cosmetologists","hairdresser, salon-holder, make-up artist, wardrobe stylist, perfumer",253,785000,92.8,13.2,6.5,15.0,False,True,False,hairdresser,False,False
+22,Lawyers,"jurist, legislator",126,1061000,31.1,4.4,4.3,4.0,False,True,False,lawyer,False,False
+23,Librarians,"
+librarian, law librarian, bibliophile",138,181000,86.8,7.9,2.5,2.8,False,True,False,librarian,False,False
+24,Logisticians,"mathematician, philosopher, physicist, naturalist, academic",40,94000,36.8,12.3,2.2,11.9,False,True,False,logistician,False,False
+25,Machinists,"locksmith, Tool and die maker, , machinist",439,397000,3.8,4.5,4.9,11.7,False,True,False,machinist,False,False
+26,Maids and housekeeping cleaners,"domestic worker, housewife",239,1457000,88.1,17.2,4.8,43.3,False,True,False,housekeeper,False,False
+27,Personal financial advisors,accountant,51,378000,31.2,4.8,6.2,4.5,False,True,False,financial advisor,False,False
+28,Photographers,"film crew member, film maker, filmmaker",158,178000,52.2,6.2,4.3,10.7,False,True,False,photographer,False,False
+29,Physicians and surgeons,"health care provider, health professional",166,911000,34.3,7.2,18.1,5.2,False,True,False,doctor,False,False
+30,Police and sheriff’s patrol officers,"executioner, park ranger, law enforcement officer, torturer",215,657000,12.6,12.8,3.1,13.8,False,True,False,police officer,False,False
+31,Psychologists,intelligence analysist,107,178000,72.7,6.0,3.9,6.3,False,True,False,psychologist,False,False
+32,Public relations specialists,"spokesperson, communicator",152,155000,58.2,7.3,5.8,8.0,False,True,False,PR person,False,False
+33,Receptionists and information clerks,clerk,306,1237000,91.5,12.1,4.3,17.9,False,True,False,receptionist,False,False
+34,Secretaries and administrative assistants,"secretary, lady-in-waiting",320,2904000,95.3,8.6,3.2,10.3,False,True,False,administrative assistant,False,False
+35,Social workers,activist,119,734000,80.6,23.0,3.1,12.6,False,True,False,social worker,False,False
+36,"Software developers, applications and systems software",video game developer,62,1084000,19.7,4.0,29.4,5.2,False,True,False,software developer,False,False
+37,Special education teachers,"researcher, educator",135,366000,86.2,6.9,1.1,9.4,False,True,False,special ed teacher,False,False
+38,"Tax examiners and collectors, and revenue agents",statutory auditor,55,82000,62.4,13.9,11.5,13.9,False,True,False,tax collector,False,False
+39,Telemarketers,broadcaster,277,97000,50.3,23.0,1.1,14.7,False,True,False,telemarketer,False,False
+40,Tellers,bank teller,290,380000,87.3,11.6,5.7,18.6,False,True,False,teller,False,False
+41,Web developers,webmaster,63,190000,33.7,4.1,8.0,5.6,False,True,False,web developer,False,False
+42,"Welding, soldering, and brazing workers","miller, gunsmith, miner, shipbuilder",445,593000,4.8,8.7,2.6,23.0,False,True,False,welder,False,False
+43,Word processors and typists,"typesetter, publisher, printer",323,119000,88.7,12.4,2.8,12.9,False,True,False,typist,False,False
+44,Writers and authors,"folklorist, naratteur, storyboard artist, literary",155,208000,55.6,5.4,4.2,2.9,False,True,False,author,False,False
+45,Insurance sales agents,,269,540000,44.1,8.1,1.8,10.3,False,True,False,insurance sales agent,False,False
+46,Network and computer systems administrators,,66,226000,25.0,10.0,11.0,10.7,False,True,False,IT,False,False
+47,"Securities, commodities, and financial services sales agents",,270,280000,27.9,3.4,8.3,8.9,False,False,False,,False,False
+48,Dental hygienists,,185,163000,99.3,3.3,5.6,8.1,False,True,False,dental hygienist,False,False
+49,"Directors, religious activities and education",,124,61000,66.3,7.4,2.1,5.9,False,False,False,,False,False
+50,Editors,"editor
+",153,159000,50.7,4.8,3.2,6.5,False,True,False,editor,False,False
+51,Postsecondary teachers,,131,1350000,48.2,7.9,11.3,6.2,False,True,False,professor?,True,False
+52,Phlebotomists,,203,119000,80.2,26.5,4.8,15.7,False,False,False,,False,False
+53,"Athletes, coaches, umpires, and related workers",,146,267000,36.5,6.4,1.4,9.0,False,True,False,,False,False
+54,Occupational therapists,,170,118000,94.0,2.5,4.0,5.8,False,False,False,,False,False
+55,First-line supervisors of fire fighting and prevention workers,,207,64000,0.5,10.7,0.0,6.6,False,False,False,,False,False
+56,"Property, real estate, and community association managers",,26,644000,50.7,8.5,3.4,11.4,False,False,False,,False,False
+57,Payroll and timekeeping clerks,,288,155000,92.6,9.5,4.6,15.1,False,False,False,,False,False
+58,Education administrators,,17,811000,64.4,13.8,2.2,7.9,False,False,False,,False,False
+59,Health practitioner support technologists and technicians,,188,544000,83.6,15.8,5.9,12.2,False,False,False,,False,False
+60,Stationary engineers and boiler operators,,475,121000,5.5,10.4,4.3,13.8,False,False,False,,False,False
+61,Dispatchers,,311,277000,61.5,13.5,2.3,16.7,False,False,False,,False,False
+62,"Pipelayers, plumbers, pipefitters, and steamfitters",,357,534000,1.3,6.6,1.5,20.9,False,True,False,plumber,False,False
+63,"Computer, automated teller, and office machine repairers",,382,296000,10.7,10.8,7.2,9.9,False,False,False,,False,False
+64,Postal service mail carriers,,314,318000,37.7,16.5,6.7,8.8,False,True,False,mail carrier,False,False
+65,Taxi drivers and chauffeurs,,506,336000,13.2,24.8,13.8,16.0,False,True,False,taxi driver,False,False
+66,Chiropractors,,161,58000,22.3,0.0,3.5,4.0,False,True,False,chiropractor,False,False
+67,"Carpet, floor, and tile installers and finishers",,345,150000,2.2,8.8,0.4,37.8,False,False,False,,False,False
+68,"Drywall installers, ceiling tile installers, and tapers",,351,129000,0.3,2.7,0.0,62.0,False,False,False,,False,False
+69,"Personal care and service workers, all other",,261,95000,45.7,5.5,3.3,17.5,False,False,False,,False,False
+70,Civil engineers,,80,358000,13.7,5.4,9.0,3.7,False,True,False,"civil engineer,engineer",False,True
+71,Electronic home entertainment equipment installers and repairers,,389,50000,0.5,11.6,4.3,13.2,False,False,False,,False,False
+72,Cashiers,,264,3275000,71.8,17.2,7.3,19.9,False,True,False,cashier,False,False
+73,"Other installation, maintenance, and repair workers",,417,205000,3.6,5.9,1.4,21.2,False,False,False,,False,False
+74,"Industrial engineers, including health and safety",,84,197000,18.8,6.2,9.6,10.5,False,False,False,,False,False
+75,Crane and tower operators,,522,62000,4.0,12.3,0.9,12.2,False,True,False,crane operator,False,False
+76,Mechanical engineers,,87,288000,4.5,6.3,12.3,4.9,False,True,False,"mechanical engineer,engineer",False,True
+77,"Transportation, storage, and distribution managers",,14,287000,15.6,11.1,3.3,11.3,False,False,False,,False,False
+78,Preschool and kindergarten teachers,,132,678000,98.1,11.8,4.2,12.0,False,True,True,kindergarten teacher,False,False
+79,Marketing and sales managers,,4,967000,45.2,4.2,6.0,6.1,False,False,False,,False,False
+80,First-line supervisors of non-retail sales workers,,263,1151000,24.7,7.2,5.0,10.4,False,False,False,,False,False
+81,Barbers,,252,109000,21.9,38.2,2.5,24.1,False,True,False,barber,False,False
+82,Paralegals and legal assistants,,129,418000,85.9,10.7,4.6,17.0,False,True,False,paralegal,False,False
+83,"Heating, air conditioning, and refrigeration mechanics and installers",,400,340000,1.6,7.1,3.2,16.2,False,True,False,mechanic,False,False
+84,Food service managers,,19,1085000,47.2,8.8,9.5,16.5,False,False,False,,False,False
+85,Cost estimators,,36,114000,11.7,1.5,2.0,6.8,False,False,False,,False,False
+86,Chefs and head cooks,,223,403000,21.5,11.9,14.2,18.6,False,True,False,chef,False,False
+87,Bakers,,424,199000,53.9,15.6,5.1,28.4,False,True,False,baker,False,False
+88,Producers and directors,,145,121000,40.8,8.2,3.3,4.9,False,True,False,,False,False
+89,"Laborers and freight, stock, and material movers, hand",,527,1849000,18.7,15.9,2.5,23.0,False,False,False,,False,False
+90,Dining room and cafeteria attendants and bartender helpers,,232,359000,43.4,10.0,5.5,31.7,False,False,False,,False,False
+91,"First-line supervisors of mechanics, installers, and repairers",,381,292000,5.9,11.3,1.0,10.4,False,False,False,,False,False
+92,"Tailors, dressmakers, and sewers",tailor,459,86000,77.1,5.9,19.5,24.9,False,True,False,,False,False
+93,"Sales representatives, services, all other",,272,457000,31.0,7.9,3.7,10.1,False,False,False,,False,False
+94,Construction managers,,16,983000,6.4,3.7,2.2,9.4,False,True,False,Foreman?,True,False
+95,Crossing guards,,220,61000,55.3,19.7,1.8,16.1,False,True,False,crossing guard,False,False
+96,Drafters,,92,149000,16.6,3.0,7.7,9.9,False,True,False,drafter,False,False
+97,"Miscellaneous healthcare support occupations, including medical equipment preparers",,204,166000,69.0,21.9,4.0,9.9,False,False,False,,False,False
+98,"Compensation, benefits, and job analysis specialists",,38,71000,81.1,6.9,4.2,11.8,False,False,False,,False,False
+99,Insurance underwriters,,52,103000,70.4,10.7,0.7,10.2,False,False,False,,False,False
+100,Administrative services managers,,6,144000,44.1,6.4,4.4,9.5,False,False,False,,False,False
+101,"Combined food preparation and serving workers, including fast food",,228,343000,64.9,14.1,3.1,18.0,False,False,False,,False,False
+102,Registered nurses,,179,2875000,90.6,11.5,7.3,6.2,False,True,False,nurse,False,False
+103,Miscellaneous legal support workers,,130,223000,79.0,11.9,1.4,7.0,False,False,False,,False,False
+104,Massage therapists,,197,158000,81.5,5.4,7.7,12.0,False,True,False,massage therapist,False,False
+105,"Farmers, ranchers, and other agricultural managers","farmer, rancher",15,944000,24.5,0.8,1.2,4.0,False,False,False,,False,False
+106,Market research analysts and marketing specialists,,44,219000,54.2,5.4,9.1,4.7,False,False,False,,False,False
+107,Management analysts,,41,773000,39.8,6.8,8.8,4.4,False,False,False,,False,False
+108,"Miscellaneous vehicle and mobile equipment mechanics, installers, and repairers",,398,87000,1.8,8.0,0.0,31.4,False,True,False,mechanic,False,False
+109,"Purchasing agents, except wholesale, retail, and farm products",,33,261000,55.1,6.1,4.4,9.8,False,False,False,,False,False
+110,Medical assistants,,199,429000,93.8,15.0,3.8,22.9,False,False,False,,False,False
+111,Order clerks,,304,104000,58.2,5.8,4.1,21.3,False,False,False,,False,False
+112,"Other education, training, and library workers",,141,153000,67.3,11.7,2.5,11.8,False,False,False,,False,False
+113,"Graders and sorters, agricultural products",,335,118000,59.8,16.6,2.1,58.0,False,False,False,,False,False
+114,"Surveyors, cartographers, and photogrammetrists",,75,51000,27.8,4.3,5.4,8.1,False,True,True,surveyor,False,False
+115,"Human resources assistants, except payroll and timekeeping",,305,132000,82.7,18.3,1.9,7.9,False,False,False,,False,False
+116,Budget analysts,,48,55000,52.5,11.5,8.7,8.2,False,False,False,,False,False
+117,Mining machine operators,,376,65000,0.3,3.8,0.0,17.2,False,False,False,,False,False
+118,Data entry keyers,,322,337000,77.0,14.0,5.1,13.8,False,False,False,,False,False
+119,Telecommunications line installers and repairers,,407,177000,4.8,11.2,1.9,15.7,False,False,False,,False,False
+120,Compliance officers,,35,199000,50.6,9.1,3.3,8.2,False,False,False,,False,False
+121,Computer systems analysts,,59,499000,30.9,8.8,15.8,4.5,False,False,False,,False,False
+122,Chemical technicians,,113,70000,29.9,15.4,4.8,7.4,False,False,False,,False,False
+123,Medical transcriptionists,,200,55000,98.2,7.0,0.3,4.0,False,False,False,,False,False
+124,"Chemical processing machine setters, operators, and tenders",,478,68000,16.2,4.5,0.8,10.7,False,False,False,,False,False
+125,Public relations and fundraising managers,,5,58000,69.3,5.8,3.4,8.0,False,False,False,,False,False
+126,"Painters, construction and maintenance",,355,485000,5.5,5.5,2.0,42.6,False,True,False,building painter,False,False
+127,Industrial and refractory machinery mechanics,,402,454000,1.9,4.5,2.9,13.3,False,True,False,mechanic,False,False
+128,Counter and rental clerks,,265,139000,53.4,8.9,5.2,19.6,False,False,False,,False,False
+129,Dentists,,162,167000,24.2,1.7,10.6,2.5,False,True,False,dentist,False,False
+130,Heavy vehicle and mobile equipment service technicians and mechanics,,396,194000,1.0,5.4,2.0,17.3,False,True,False,mechanic,False,False
+131,"Food servers, nonrestaurant",,231,217000,64.9,22.2,6.4,20.1,False,False,False,,False,False
+132,Broadcast and sound engineering technicians and radio operators,,157,108000,8.4,4.1,1.6,12.6,False,False,False,,False,False
+133,Physical therapist assistants and aides,,196,66000,66.4,14.7,3.6,5.6,False,False,False,,False,False
+134,Secondary school teachers,,134,1127000,57.3,6.0,3.1,7.6,False,True,False,high school teacher,False,False
+135,First-line supervisors of food preparation and serving workers,,224,552000,59.3,13.9,4.0,17.2,False,False,False,,False,False
+136,"Metal workers and plastic workers, all other",,450,375000,19.5,14.4,6.6,26.0,False,False,False,,False,False
+137,Social and community service managers,,27,315000,70.5,14.6,3.7,8.5,False,False,False,,False,False
+138,"Engineering technicians, except drafters",,93,395000,16.3,10.8,5.0,12.3,False,False,False,,False,False
+139,Customer service representatives,,296,1956000,67.8,16.2,4.2,18.0,False,True,False,customer service representative,False,False
+140,"Cutting, punching, and press machine setters, operators, and tenders, metal and plastic",,434,87000,18.9,8.4,3.3,22.9,False,False,False,,False,False
+141,"Opticians, dispensing",,191,54000,59.6,8.2,3.8,4.1,False,True,False,optician,False,False
+142,Pharmacists,,165,286000,53.7,6.8,18.5,5.1,False,True,False,pharmacist,False,False
+143,First-line supervisors of gaming workers,,242,146000,43.0,5.2,9.2,10.1,False,False,False,,False,False
+144,"Maintenance and repair workers, general",,403,442000,2.2,8.4,3.2,19.4,False,False,False,,False,False
+145,Personal care aides,,258,1071000,84.7,21.8,7.9,21.2,False,False,False,,False,False
+146,Speech-language pathologists,,175,146000,95.2,3.1,1.7,8.3,False,False,False,,False,False
+147,Aerospace engineers,,76,119000,9.0,1.8,13.4,4.6,False,True,False,"aerospace engineer, engineer",False,True
+148,"Weighers, measurers, checkers, and samplers, recordkeeping",,319,74000,49.1,19.9,2.8,21.9,False,False,False,,False,False
+149,Artists and related workers,,142,212000,51.6,4.0,9.3,6.6,False,True,True,artist,False,False
+150,Sheet metal workers,,361,123000,4.6,3.2,1.7,12.1,False,False,False,,False,False
+151,"Food processing workers, all other",,429,117000,29.5,15.9,5.9,34.6,False,False,False,,False,False
+152,"Sales and related workers, all other",,279,204000,47.9,7.7,4.7,10.3,False,False,False,,False,False
+153,First-line supervisors of production and operating workers,,418,808000,19.5,9.4,5.8,13.9,False,False,False,,False,False
+154,Operations research analysts,,71,130000,54.9,8.3,9.3,6.5,False,False,False,,False,False
+155,"Inspectors, testers, sorters, samplers, and weighers",,483,689000,33.4,11.5,6.7,13.6,False,False,False,,False,False
+156,Information security analysts,,60,52000,15.1,11.8,14.2,4.0,False,False,False,,False,False
+157,General and operations managers,,1,1064000,29.1,6.2,4.7,9.3,False,False,False,,False,False
+158,"News analysts, reporters and correspondents",,151,82000,45.7,9.2,6.1,5.9,False,True,False,journalist?,True,False
+159,"First-line supervisors of protective service workers, all other",,208,93000,29.9,17.4,0.4,12.5,False,False,False,,False,False
+160,Painting workers,,487,150000,15.1,5.7,4.3,34.9,False,False,False,,False,False
+161,Purchasing managers,,13,218000,50.9,8.4,4.6,10.4,False,False,False,,False,False
+162,"Sales representatives, wholesale and manufacturing",,273,1277000,27.0,3.7,3.7,9.4,False,False,False,,False,False
+163,Electrical and electronics engineers,,82,335000,9.0,3.5,16.6,6.7,False,True,False,"electrical engineer,engineer",False,True
+164,Sewing machine operators,,456,166000,74.2,5.6,11.4,43.8,False,False,False,,False,False
+165,Aircraft mechanics and service technicians,,391,153000,1.6,7.5,5.4,14.3,False,True,False,mechanic,False,False
+166,"Pressers, textile, garment, and related materials",,455,54000,70.6,17.0,3.5,47.9,False,False,False,,False,False
+167,"Medical, dental, and ophthalmic laboratory technicians",,485,95000,50.7,1.6,8.9,15.9,False,False,False,,False,False
+168,Stock clerks and order fillers,,318,1453000,35.5,16.7,4.5,18.1,False,False,False,,False,False
+169,Computer and information systems managers,,7,605000,26.8,5.6,14.5,5.8,False,False,False,,False,False
+170,"Hosts and hostesses, restaurant, lounge, and coffee shop",,234,260000,81.5,10.2,5.4,14.8,False,True,False,,False,False
+171,Emergency medical technicians and paramedics,,187,172000,31.2,5.0,1.6,8.1,False,True,False,paramedic,False,False
+172,"Physical scientists, all other",interdisciplinary scientist,104,154000,35.1,2.7,20.4,3.8,False,False,False,,False,False
+173,Radio and telecommunications equipment installers and repairers,,383,158000,5.8,11.2,3.2,13.8,False,False,False,,False,False
+174,"Mail clerks and mail machine operators, except postal service",,326,81000,41.2,18.1,10.6,10.1,False,False,False,,False,False
+175,Janitors and building cleaners,,238,2205000,29.7,18.4,3.6,30.9,False,True,False,custodian,False,False
+176,Licensed practical and licensed vocational nurses,,189,531000,94.2,23.3,5.1,9.4,False,False,False,,False,False
+177,"Counter attendants, cafeteria, food concession, and coffee shop",,229,233000,70.8,10.9,4.8,16.6,False,False,False,,False,False
+178,Veterinarians,,178,85000,54.7,1.9,1.3,6.1,False,True,False,veterinarians,False,False
+179,Other extraction workers,,380,75000,4.5,5.6,1.0,26.2,False,False,False,,False,False
+180,Teacher assistants,,140,898000,91.1,14.5,2.7,15.7,False,False,False,,False,False
+181,Tax preparers,,56,107000,59.6,10.4,7.1,15.9,False,True,False,tax preparer,False,False
+182,First-line supervisors of office and administrative support workers,,280,1416000,68.5,11.3,3.5,11.9,False,False,False,,False,False
+183,Accountants and auditors,,46,1765000,60.9,9.7,12.0,6.8,False,True,True,accountant,False,False
+184,"Baggage porters, bellhops, and concierges",,255,68000,25.0,20.8,13.1,18.0,False,True,False,,False,False
+185,"Library assistants, clerical",,301,97000,84.0,7.0,3.2,5.8,False,False,False,,False,False
+186,Technical writers,,154,58000,55.5,2.7,6.7,3.7,False,True,False,technical writer,False,False
+187,Security guards and gaming surveillance officers,,219,903000,18.5,26.6,4.1,15.8,False,True,False,security guard,False,False
+188,"Financial clerks, all other",,291,52000,68.4,17.1,4.1,16.6,False,False,False,,False,False
+189,Tour and travel guides,,256,51000,36.9,3.6,7.1,15.1,False,True,False,tour guide,False,False
+190,Grounds maintenance workers,,241,1298000,5.1,8.7,1.7,44.4,False,True,False,groundskeeper,False,False
+191,Computer hardware engineers,,81,91000,15.1,8.5,20.8,6.5,False,False,False,,False,False
+192,Counselors,,118,661000,69.3,19.4,2.9,10.7,False,True,False,counselor,False,False
+193,Training and development specialists,,39,126000,56.4,15.9,0.8,10.8,False,False,False,,False,False
+194,"Miscellaneous community and social service specialists, including health educators and community health workers",,122,94000,75.7,16.9,2.4,18.4,False,False,False,,False,False
+195,Private detectives and investigators,,218,103000,44.0,8.0,2.2,11.1,False,True,False,private investigator,False,False
+196,Nonfarm animal caretakers,,245,179000,74.2,4.3,1.8,12.2,False,False,False,,False,False
+197,Millwrights,,405,53000,6.4,2.1,1.4,6.7,False,False,False,,False,False
+198,"Hotel, motel, and resort desk clerks",,299,110000,64.6,18.4,6.3,18.6,False,False,False,,False,False
+199,First-line supervisors of retail sales workers,,262,3237000,43.4,8.6,5.9,11.3,False,False,False,,False,False
+200,Advertising and promotions managers,,3,77000,49.4,6.7,4.3,10.0,False,False,False,,False,False
+201,Human resources managers,,10,224000,72.7,11.3,2.4,9.5,False,True,False,HR?,True,False
+202,Water and wastewater treatment plant and system operators,,476,72000,4.5,8.4,1.7,19.6,False,False,False,,False,False
+203,"Musicians, singers, and related workers",,148,203000,35.5,10.9,2.8,6.7,False,True,True,musician,False,False
+204,Billing and posting clerks,,285,475000,90.1,11.8,4.0,16.2,False,False,False,,False,False
+205,"Television, video, and motion picture camera operators and editors",,159,57000,21.4,4.4,5.6,10.7,False,False,False,,False,False
+206,Computer network architects,,67,127000,8.1,10.0,14.6,4.6,False,False,False,,False,False
+207,"Motor vehicle operators, all other",,507,63000,13.3,14.4,1.4,10.5,False,False,False,,False,False
+208,Bus drivers,,504,558000,45.5,25.3,2.3,12.9,False,True,False,bus driver,False,False
+209,Reservation and transportation ticket agents and travel clerks,,307,117000,58.6,21.8,10.9,21.5,False,False,False,,False,False
+210,"Nursing, psychiatric, and home health aides",healer,194,2119000,87.9,34.5,4.6,14.2,False,False,False,,False,False
+211,"Brickmasons, blockmasons, and stonemasons",,343,122000,0.1,5.8,0.3,43.2,False,True,True,brickmason or blockmason or stonemason,False,False
+212,"Butchers and other meat, poultry, and fish processing workers",,425,311000,23.0,13.5,7.9,41.6,False,True,False,butcher,False,False
+213,"Wholesale and retail buyers, except farm products",,32,198000,55.2,7.1,7.7,10.9,False,False,False,,False,False
+214,First-line supervisors of police and detectives,,206,112000,15.2,9.2,4.4,10.6,False,False,False,,False,False
+215,"Judges, magistrates, and other judicial workers",,128,67000,39.0,12.8,0.7,4.5,False,True,True,judge,False,False
+216,"Therapists, all other",,177,148000,83.6,10.3,2.9,8.7,False,False,False,,False,False
+217,"First-line supervisors of farming, fishing, and forestry workers",,332,50000,14.1,7.8,4.2,23.9,False,False,False,,False,False
+218,Residential advisors,,260,58000,61.4,29.1,1.4,5.4,False,False,False,,False,False
+219,Other teachers and instructors,,136,860000,65.6,10.7,5.9,9.5,False,True,False,,False,False
+220,Credit counselors and loan officers,,54,333000,59.2,13.2,6.0,9.3,False,False,False,,False,False
+221,Roofers,,360,196000,1.5,7.0,0.5,45.1,False,True,False,roofer,False,False
+222,Dietitians and nutritionists,,163,116000,93.3,13.7,5.1,7.2,False,True,True,dietician or nutritionist,False,False
+223,"Office and administrative support workers, all other",,331,570000,77.3,14.1,3.9,11.0,False,False,False,,False,False
+224,"Door-to-door sales workers, news and street vendors, and related workers",,278,198000,62.2,10.2,3.8,13.5,False,False,False,,False,False
+225,"Helpers, construction trades",,364,53000,4.5,12.1,1.3,38.4,False,False,False,,False,False
+226,Couriers and messengers,,310,213000,15.5,13.0,2.4,16.9,False,True,False,courier,False,False
+227,Gaming services workers,,246,106000,51.0,9.4,24.3,13.5,False,False,False,,False,False
+228,Waiters and waitresses,,230,2124000,71.2,7.9,7.1,19.6,False,True,False,,False,False
+229,Automotive body and related repairers,,392,140000,1.8,5.7,2.3,25.3,False,False,False,,False,False
+230,Social and human service assistants,,121,151000,77.1,24.4,3.8,15.5,False,False,False,,False,False
+231,Physical therapists,,171,211000,70.7,4.4,9.1,9.4,False,True,False,physical therapist,False,False
+232,"Financial specialists, all other",,57,82000,66.5,10.9,8.4,11.5,False,False,False,,False,False
+233,Operating engineers and other construction equipment operators,,350,348000,1.3,6.0,0.2,17.1,False,False,False,,False,False
+234,Miscellaneous entertainment attendants and related workers,,249,180000,45.4,14.0,5.1,17.6,False,False,False,,False,False
+235,Highway maintenance workers,,369,108000,1.5,11.0,0.1,12.4,False,False,False,,False,False
+236,Diagnostic related technologists and technicians,,186,308000,74.5,9.0,4.1,7.8,False,False,False,,False,False
+237,Tool and die makers,,444,56000,0.8,3.1,5.6,4.3,False,False,False,,False,False
+238,"Crushing, grinding, polishing, mixing, and blending workers",,479,100000,15.0,14.5,6.8,18.4,False,False,False,,False,False
+239,"Architects, except naval",,74,195000,23.5,1.3,6.2,8.2,False,True,False,architect,False,False
+240,Parking lot attendants,,516,81000,11.6,23.5,5.3,35.5,False,True,False,parking attendant,False,False
+241,Miscellaneous media and communication workers,media professional,156,98000,79.2,5.6,15.0,35.0,False,False,False,,False,False
+242,Bus and truck mechanics and diesel engine specialists,,395,316000,0.5,8.6,1.3,13.4,False,True,False,mechanic,False,False
+243,"Models, demonstrators, and product promoters",,274,65000,83.4,19.4,4.0,10.6,False,False,False,,False,False
+244,"Postal service mail sorters, processors, and processing machine operators",,315,66000,47.6,28.6,12.7,9.8,False,False,False,,False,False
+245,Probation officers and correctional treatment specialists,,120,88000,47.5,20.7,1.3,15.0,False,True,True,probation officer,False,False
+246,Postal service clerks,,313,148000,50.0,21.3,9.5,12.0,False,False,False,,False,False
+247,Cleaners of vehicles and equipment,,526,315000,15.2,16.8,2.7,35.9,False,False,False,,False,False
+248,Miscellaneous health technologists and technicians,,192,140000,60.2,18.7,11.0,10.0,False,False,False,,False,False
+249,Appraisers and assessors of real estate,,47,93000,40.6,9.8,2.7,1.0,False,False,False,,False,False
+250,Chemical engineers,,79,71000,17.7,5.9,9.3,6.7,False,True,False,"chemical engineer, engineer",False,True
+251,Surveying and mapping technicians,,94,77000,4.3,5.3,2.5,13.5,False,False,False,,False,False
+252,Cutting workers,,480,67000,19.2,14.1,3.5,15.8,False,False,False,,False,False
+253,"Production, planning, and expediting clerks",,316,272000,55.0,11.0,3.2,12.5,False,False,False,,False,False
+254,Industrial truck and tractor operators,,525,537000,7.4,18.4,1.6,31.3,False,False,False,,False,False
+255,"First-line supervisors of landscaping, lawn service, and groundskeeping workers",,237,281000,7.6,6.6,1.1,19.8,False,False,False,,False,False
+256,"Packers and packagers, hand",,529,431000,53.1,14.0,3.5,42.0,False,False,False,,False,False
+257,Miscellaneous agricultural workers,,336,711000,18.9,3.2,1.5,48.9,False,False,False,,False,False
+258,Carpenters,,344,1223000,1.6,4.2,1.9,29.0,False,True,False,carpenter,False,False
+259,Miscellaneous assemblers and fabricators,,423,919000,38.4,15.8,6.9,19.3,False,False,False,,False,False
+260,"Shipping, receiving, and traffic clerks",,317,527000,27.8,15.6,3.6,23.7,False,False,False,,False,False
+261,Electrical power-line installers and repairers,,406,110000,2.4,7.8,0.3,7.9,False,False,False,,False,False
+262,Industrial production managers,,12,261000,17.6,3.4,5.1,11.4,False,False,False,,False,False
+263,Food preparation workers,,226,868000,58.0,12.1,5.7,27.5,False,False,False,,False,False
+264,"Bailiffs, correctional officers, and jailers",,211,371000,28.0,22.7,1.1,18.3,False,False,False,,False,False
+265,Other healthcare practitioners and technical occupations,,193,75000,50.3,8.8,3.1,5.6,False,False,False,,False,False
+266,Food batchmakers,,427,84000,59.6,12.2,5.7,33.5,False,False,False,,False,False
+267,Human resources workers,,37,603000,71.8,15.4,4.4,11.8,False,True,False,HR?,True,False
+268,"Meeting, convention, and event planners",,42,127000,73.3,8.1,4.2,10.3,False,False,False,,False,False
+269,Respiratory therapists,,174,111000,60.4,12.1,5.6,10.6,False,False,False,,False,False
+270,Precision instrument and equipment repairers,,408,60000,16.0,9.1,1.1,13.3,False,False,False,,False,False
+271,Medical records and health information technicians,,190,90000,89.3,17.1,4.3,15.6,False,False,False,,False,False
+272,Printing press operators,,452,201000,17.2,10.1,3.4,15.6,False,False,False,,False,False
+273,Construction and building inspectors,,365,118000,7.8,5.5,2.1,7.7,False,True,False,building inspector,False,False
+274,Automotive service technicians and mechanics,,394,867000,1.2,9.6,4.7,21.3,False,True,False,mechanic,False,False
+275,Database administrators,,65,101000,36.6,4.1,10.0,9.8,False,False,False,,False,False
+276,Helpers--production workers,,497,59000,34.8,19.8,2.9,30.6,False,False,False,,False,False
+277,Nurse practitioners,,182,103000,86.1,4.5,4.6,2.9,False,True,False,nurse practitioner,False,False
+278,"Office clerks, general",,327,1103000,83.4,12.4,5.0,16.9,False,False,False,,False,False
+279,"Bookkeeping, accounting, and auditing clerks",,286,1268000,89.1,7.6,5.0,9.0,False,True,False,,False,False
+280,"Business operations specialists, all other","entrepreneur
+, financier",45,251000,67.3,14.2,5.6,9.2,False,False,False,,False,False
+281,Computer support specialists,,64,476000,27.1,12.0,7.7,9.7,False,True,False,IT,False,False
+282,"Eligibility interviewers, government programs",,297,92000,81.4,19.8,2.1,23.1,False,False,False,,False,False
+283,"Court, municipal, and license clerks",,294,85000,77.2,23.0,1.2,13.4,False,False,False,,False,False
+284,Laundry and dry-cleaning workers,,454,185000,53.3,20.8,10.3,37.1,False,False,False,,False,False
+285,Environmental scientists and geoscientists,,103,105000,25.7,7.0,1.3,1.7,False,False,False,,False,False
+286,Small engine mechanics,,397,56000,1.4,4.9,0.2,12.2,False,True,False,mechanic,False,False
+287,"Computer occupations, all other",,68,341000,24.4,11.4,11.7,5.9,False,False,False,,False,False
+288,Recreation and fitness workers,,259,406000,66.5,10.0,4.5,9.7,False,True,False,personal trainer?,True,False
+289,Financial managers,,8,1228000,53.5,8.6,5.7,10.3,False,False,False,,False,False
+290,Supervisors of transportation and material moving workers,,499,200000,23.0,13.5,4.4,18.4,False,False,False,,False,False
+291,Structural iron and steel workers,,362,65000,2.8,6.5,0.0,15.8,False,False,False,,False,False
+292,"Interviewers, except eligibility and loan",,300,135000,83.7,20.0,6.0,12.1,False,False,False,,False,False
+293,Computer control programmers and operators,,430,67000,8.4,6.4,3.3,17.1,False,False,False,,False,False
+294,Computer operators,,321,102000,50.7,12.2,6.5,10.7,False,False,False,,False,False
+295,Miscellaneous social scientists and related workers,"social scientist
+, humanities scholar",110,57000,54.3,10.8,5.5,7.0,False,False,False,,False,False
+296,Pest control workers,,240,73000,4.7,7.7,0.1,20.4,False,True,False,exterminator,False,False
+297,Packaging and filling machine operators and tenders,,486,261000,52.3,14.1,8.8,38.0,False,False,False,,False,False
+298,"Cement masons, concrete finishers, and terrazzo workers",,346,68000,2.7,5.8,3.1,53.3,False,True,False,,False,False
+299,Physician assistants,,167,108000,69.4,8.2,9.0,8.8,False,False,False,,False,False
+300,Dishwashers,,233,271000,18.7,12.9,5.5,40.5,False,True,False,dishwasher,False,False
+301,Miscellaneous personal appearance workers,,254,300000,81.5,5.3,59.6,9.5,False,False,False,,False,False
+302,First-line supervisors of construction trades and extraction workers,,341,634000,2.8,4.5,1.3,14.0,False,True,False,foreman?,True,False
+303,"Lifeguards and other recreational, and all other protective service workers",,222,162000,52.6,7.8,1.2,9.2,False,True,False,,False,False
+304,"Managers, all other",,29,3594000,35.0,7.3,5.0,9.3,False,False,False,,False,False
+305,Retail salespersons,,267,3341000,50.2,12.5,4.4,15.3,False,False,False,,False,False
+306,First-line supervisors of housekeeping and janitorial workers,,236,277000,47.1,16.9,3.3,21.7,False,False,False,,False,False
+307,Photographic process workers and processing machine operators,,488,55000,45.6,13.3,4.9,18.7,False,False,False,,False,False
+308,Advertising sales agents,,268,230000,47.4,9.9,2.3,7.6,False,False,False,,False,False
+309,Architectural and engineering managers,,18,120000,10.9,2.8,7.7,2.9,False,False,False,,False,False
+310,"Production workers, all other",,498,933000,26.3,13.7,4.0,21.5,False,False,False,,False,False
+311,Childcare workers,,257,1314000,94.1,15.3,3.3,20.3,False,True,False,childcare worker,False,False
+312,Insurance claims and policy processing clerks,,325,230000,81.9,12.7,3.6,13.7,False,False,False,,False,False
+313,"Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic",,436,54000,6.6,13.7,0.7,21.8,False,False,False,,False,False
+314,"Claims adjusters, appraisers, examiners, and investigators",,34,323000,63.4,17.5,3.1,10.3,False,True,False,claims adjuster,False,False
+315,"Miscellaneous life, physical, and social science technicians",,117,160000,52.8,12.8,14.4,10.4,False,False,False,,False,False
+316,Announcers,,150,50000,23.6,12.0,8.3,15.3,False,True,False,announcer,False,False
+317,Medical scientists,,98,136000,52.8,5.3,22.4,5.8,False,False,False,,False,False
+318,Loan interviewers and clerks,,302,144000,81.2,10.9,4.0,10.4,False,False,False,,False,False
+319,"Electrical, electronics, and electromechanical assemblers",,420,166000,52.8,13.4,16.3,24.0,False,False,False,,False,False
+320,"Religious workers, all other",nun,125,69000,62.4,10.0,2.8,8.9,False,False,False,,False,False
+321,File clerks,,298,292000,81.3,14.1,4.6,16.4,False,False,False,,False,False
+322,Refuse and recyclable material collectors,,531,106000,6.6,24.9,1.4,29.4,False,True,False,garbage collector,False,False
+323,Lodging managers,,22,154000,45.0,8.0,13.9,11.5,False,False,False,,False,False
+324,First-line supervisors of personal service workers,,243,246000,70.3,10.7,19.8,9.3,False,False,False,,False,False
+325,Medical and health services managers,,23,585000,69.7,10.9,5.1,8.1,False,False,False,,False,False
+326,Real estate brokers and sales agents,,275,761000,57.1,4.0,4.7,8.7,False,True,False,real estate agent,False,False
+327,"Information and record clerks, all other",,308,104000,80.2,17.0,2.5,13.4,False,False,False,,False,False
+328,Railroad conductors and yardmasters,,510,52000,5.6,16.2,0.7,12.5,False,True,False,,False,False
+329,Dental assistants,,198,274000,97.9,9.6,3.6,21.2,False,False,False,,False,False
+330,Travel agents,,271,73000,79.0,2.5,9.3,4.8,False,True,False,travel agent,False,False
+331,Parts salespersons,,266,106000,13.3,8.3,4.1,12.3,False,False,False,,False,False
+332,Automotive and watercraft service attendants,,517,94000,9.2,12.9,5.2,12.5,False,False,False,,False,False
