@@ -35,9 +35,11 @@ AAAI creates proceedings, working notes, and technical reports directly from ele
 \section{Introduction}
 The world is rife with inequality offline and on. Wikipedia's editors are largely not women \cite{hill_wikipedia_2013}, and has far-reaching implications into the character of its content. \cite{wagner_its_2015} showed that while coverage of women in large Wikipedias is not worse than other references, the language with which women are portrayed is different and focuses more on romance and family. Additionally they are less central in the internal graph of Wikipedia. These linguistic and network findings were confirmed by \cite{graells-garrido_first_2015}, who also showed evidence of stereotyping in metadata. Yet in popular mindshare there persists a sentiment that denies that any of this is a problem \cite{eckert_retriggering_2013}. Luckily, experiments have shown that awareness of Wikipedia's gender issues is a strategy that can alleviate the problem \cite{hinnosaar_gender_2015}, for which more methods are always needed.
 
-Wikidata, the database that feeds Wikipedia \cite{vrandecic_wikidata:_2014} offers new opportunities to analyze culture programmatically through it's structured data. For instance, Wikidata has been used to find the co-occurrence of nationalities and occupations \cite{goldfarb_quantifying_2015} which would be difficult to do otherwise. We introduce a weekly-updating dataset called the ``Wikidata Human Gender Index'' (WHGI), which measures the gender of the humans represented in Wikidata - that is, Wikipedia biography articles - across time, space, and occupational dimensions. 
+Wikidata, the database that feeds Wikipedia, offers new opportunities to analyze culture programmatically through. Launched in 2012, Wikidata is designed to host structured data that is multilingual (easily translatable so there is only one edition), and plural (can support many competing facts) \cite{vrandecic_wikidata:_2014}.  These features make Wikidata the perfect place for all Wikipedias to to collaboratively store facts about the world. If an Italian Wikipedian stores information about the population of ancient Rome, that information is then available to every other Wikipedia with a short code snippet. Every language collaborating together has meant that Wikidata has become a massive free open knowledgebase in its own right, containing over 40 million facts \cite{krotzsch_how_????}.
 
-Measuring and releasing data on Wikipedia's content gender gap attempts to solve two problems. The first is to shed light on the problem under the philosophy of ``what gets measured, gets fixed.'' Perhaps even more excitingly though, the scope of Wikidata gives us an unprecedented look at gender through time, space, and occupation, at a scale never seen before, which has potential applications for a not-possible-until-now open data mashups.
+As a knowledgebase Wikidata is slowly proving its worth for research. For instance, Wikidata has been used to find popular connections between nationalities and occupations \cite{goldfarb_quantifying_2015}. Or take the fact that all human and mouse genes have been imported into Wikidata \cite{mitraka_wikidata:_2015}, for an internet-wide community effort to find links between genes, drugs and diseases \cite{burgstaller-muehlbacher_wikidata_2015}. All of these tasks would be difficult to do without Wikidata.
+
+We introduce a weekly-updating dataset called the ``Wikidata Human Gender Index'' (WHGI), which measures the gender of the humans represented in Wikidata - that is, Wikipedia biography articles - across time, space, and occupational dimensions. Measuring and releasing data on Wikipedia's content gender gap attempts to solve two problems. The first is to shed light on the problem under the philosophy of ``what gets measured, gets fixed.'' Perhaps even more excitingly though, the scope of Wikidata gives us an unprecedented look at gender through time, space, and occupation, at a scale never seen before, which has potential applications for a not-possible-until-now open data mashups.
 
 This paper begins by describing the format of the data presents a variety of statistics to illustrate how to use the data. We investigate how the data quality has changed over time, which demonstrates the 9 semantic properties available, and the advantages of its weekly, ``snapshot'' feature. We produce a top-10 of Wikipedia’s which increased in their female ratio of human biographies as a example problem. 
 
@@ -53,36 +55,73 @@ Finally, the WHGI is meant for re-use, and we present some potential application
 \caption{Screenshot of WEBSITE BLINDED displaying the gender by culture plot.}
 \end{figure}
 
-Our dataset is available for free under the CC0 license online at  \url{WEBSITE BLINDED}. Here a visualization demonstration of our data lives, and direct downloads, from the \url{WEBSITE BLINDED/} folder. 	This folder contains the CSV-formatted, weekly captured \textit{snapshots} of gender-related data from Wikidata. Each snapshot contains an unaggregated one-row-per-human complete view of the data, \textit{re-indexed} ``property''-specific file, aggregated by tempo, spatial, and other properties, and weekly changes between the property indexes. Our first snapshot is from September 17\textsuperscript{th} 2014, the latest presented here is January 3\textsuperscript{rd} 2016, but snapshotting is automated and tracks the official Wikidata data dumps.
+Our dataset is available for free under the CC-BY-SA license online at  \url{WEBSITE BLINDED}. Here a visualization demonstration of our data lives, and direct downloads, from the \url{WEBSITE BLINDED/} folder. 	This folder contains the CSV-formatted, weekly captured \textit{snapshots} of gender-related data from Wikidata. Each snapshot contains an unaggregated one-row-per-human complete view of the data, \textit{aggregated} ``property''-specific files, aggregated by tempo, spatial, and o0ther properties, and weekly changes between the property indexes. Our first snapshot is from September 17\textsuperscript{th} 2014, the latest presented here is January 3\textsuperscript{rd} 2016, but snapshotting is automated and tracks the official Wikidata data dumps.
 
 \subsection{Processing}
-Each week, just after the release of Wikidata's official weekly data dump, we download a copy of the dump and process it in the following way. Using the Wikidtata Toolkit \footnote{\url{https://www.mediawiki.org/wiki/Wikidata_Toolkit}} the entire database is subsetted to only those items which have the property \textit{instance of} with value \textit{human} - or ``P31:Q5'' in Wikidata terms. For each human item we find the values of \textit{gender}, \textit{date of birth}, \textit{date of death}, \textit{place of birth}, \textit{citizenship}, \textit{ethnic group}, \textit{field of work}, and \textit{occupation}. These correspond to Wikidata properties P21, P569, P570, P19, P27, P172, P101, and P106 respectively.  In every snapshot folder this intermediate step is saved as ``gender-index-data-\{snapshot data\}.csv'', it records one Wikidata item per row, and it's columns are the value of each property.
+Each week, just after the release of Wikidata's official weekly data dump, we download a copy of the dump and process it in the following way. Using the Wikidtata Toolkit \footnote{\url{https://www.mediawiki.org/wiki/Wikidata_Toolkit}} the entire database is subsetted to only those items which have the property \textit{instance of} with value \textit{human} - or ``P31:Q5'' in Wikidata terms. For each human item we find the values of \textit{gender}, \textit{date of birth}, \textit{date of death}, \textit{place of birth}, \textit{citizenship}, \textit{ethnic group}, \textit{field of work}, and \textit{occupation}. These correspond to Wikidata properties P21, P569, P570, P19, P27, P172, P101, and P106 respectively.  In every snapshot folder this complete list of humans is saved as ``gender-index-data-\{snapshot data\}.csv'', it records one Wikidata item per row, and it's columns are the value of each property. 
+
+Because Wikidata is multilingual its values are stored as identifiers, which every language can translate. To maintain fidelity we keep this standard, so for example Aung San Suu Kyi represented in Wikidata in English looks like Figure \ref{fig:aung} and in our dataset would be a row like \begin{small} Q36740,1945,,Q6581072|,,Q836|,Q37995|,,Q82955|Q36180|Q1476215|
+\end{small}. Our code examples include functions to translate these Q-IDs into English labels.
+
+\begin{figure}
+\includegraphics[scale=0.15]{figures/aung_explainer.png} 
+\caption{Example Wikidata Human Item of Aung San Suu Kyi}
+\label{fig:aung}
+\end{figure}
  
-For each of the recorded properties we then re-index the dataset aggregated on that property, but disaggregated by gender. So for instance, the date of birth index has one row per year unique year found as a date of birth, and one column per gender represented in Wikidata. For example the in the January 3\textsuperscript{rd} 2016 snapshot, the first row the date of birth index reads that for the year 4203 BCE Wikidata records two men, and no other genders as having this date of birth. Additionally there are indexes, that make use of the Wikipedia languages in which a human is represented - \textit{sitelinks}, and geographic aggregations of citizenship, place of birth and ethnic group into properties called \textit{culture}, and \textit{worldmap}. Inside every snapshot folder there exists a subfolder titled ``property-indexes'' containing 11 ``re-indexes'' of the snapshot - one per property dimension.
+For each of the recorded properties we then aggregated the dataset on that property, but disaggregated by gender. Take for example the date of birth file. it has one row per year unique year found as a date of birth, and one column per gender represented in Wikidata. See a sample excerpt from the in the January 3\textsuperscript{rd} 2016 snapshot in Table \ref{table:dob}. Additionally there is an aggregate on the Wikipedia languages in which a human is represented - \textit{sitelinks}, and a geographic aggregation of citizenship, place of birth and ethnic group into properties called \textit{culture}, and \textit{worldmap}. Inside every snapshot folder there exists a subfolder titled ``property-indexes'' containing 11 aggregates of the snapshot - one per property dimension.
  
-The third item in every snapshot folder is titled ``changes-since- \{previous snapshot date\}, and contains computed differences between this snapshot and the last. This feature allows inspection of the movements of the past week. There is one ``changes-since'' file for each property file. Using the date of birth example again, the changes since file will show which genders were added - or subtracted - for each year, in the course of the week.
+\begin{table}
+\caption{Excerpt of the 2016-01-03 date of birth-aggregate file. N/A are humans without recorded gender.}
+\begin{tabular} {p{0.8cm}p{0.8cm}p{0.8cm}p{0.8cm}p{0.8cm}p{0.8cm}p{0.8cm}}
+\toprule
+date of birth & no gender & trans-gender female & gender-queer & ka-thoey & female & male \\
+\midrule
+1980 & 839 & 2 & 1 & & 5,092 & 14,137   \\ 
+1981 & 849 & 1 &  & 1 &5,042 & 14,461 \\ 
+1982 & 861 & 2 &  & &5,132 & 14,372  \\ 
+1983 & 864 & 3 &  & &5,078 & 14,520  \\ 
+1984 & 830 & 3 & 1 & &5,372 & 14,558   \\ 
+1985 & 777 & 4 &  & &5,400 & 14,664  \\ 
+\bottomrule
+\end{tabular}
+\label{table:dob}
+\end{table}
+
+The third item in every snapshot folder is titled ``changes-since- \{previous snapshot date\}, and contains computed differences between this snapshot and the last. This feature allows inspection of the movements of the past week. There is one changes-since file for each property file. Using the date of birth example again, the changes-since file will show which genders were added - or subtracted - for each year, in the course of the week.
 
 Examples of how to process the CSVs and generate the following results using both \textit{python-pandas} and \textit{R} can be found in our github repository \footnote{\url{WEBSITE BLINDED}}.
 
-As a demonstration the website displays 4 interactive visualizations of the dataset. Figure \ref{fig:screenshot} shows the \textit{gender-by-country} visualization, which shows the female ratio of humans by place of birth and citizenship combined. The visualizations show \textit{gender-by-culture}, where culture is a further aggregation of countries, \textit{gender-by-date-of-birth-and-death} and \textit{gender-by-Wikipedia-language}.
+\subsection{Online Visualization}
+As a demonstration our website displays 4 interactive visualizations of the dataset. Figure \ref{fig:screenshot} shows the \textit{gender-by-country} visualization, which shows the female ratio of humans by place of birth and citizenship combined during the past week. Figure \ref{fig:screenshot2} shows the \textit{gender-by-language} visualization which compares the female ratio of biography by Wikipedia language, for the entirety of the dataset - ``all time''. The visualizations are interactive which allow the user to investigate specific parts of the plots. Each visualization is available both for all time, and the previous week. We also produce top-10 information for each plot for readability. The remaining 2 unmentioned visualizations are \textit{gender-by-culture}, where culture is a further aggregation of countries and \textit{gender-by-date-of-birth-and-death}.
 
-Additionally there are two special folders in our root directory which we offer for convenience,  titled \textit{newest} and \textit{newest-changes}, which will always link to the most recent snapshot, and the changes between the two most recent snapshots (week to week), respectively. This makes it easy to always access the freshest data.
+\begin{figure}
+\label{fig:screenshot2}
+\includegraphics[scale=0.25]{figures/screenshot2.png} 
+\caption{Screenshot of WEBSITE BLINDED displaying the gender by language plot.}
+\end{figure}
 
-In order to faithfully represent Wikidata, the value of each property is actually a list, since Wikidata allows there to potentially be many competing values for a property. (We store the list, inside the comma-separated sheet, as | ``pipe''-separated values.)  Also note, for faithfulness there is virtually no data-cleaning done, as the point of our project is to display information as faithfully as possible. Our dataset is meant to be used to uncover potential biases in Wikidata and the world at large, and we feel that any cleaning process would introduce further biases.
+Finally there are two special folders in our root directory which we offer for convenience,  titled \textit{newest} and \textit{newest-changes}, which will always link to the most recent snapshot, and the changes between the two most recent snapshots (week to week), respectively. This makes it easy to always access the freshest data.
+
+\subsection{Technical Details}
+In order to faithfully represent Wikidata, the value of each property is actually a list, since Wikidata allows there to potentially be multiple values for a property. This is because either two sources disagree on a property, or like in the case of Aung San Suu Kyi, she has many occupations \ref{fig:aung}. We store the list, inside the comma-separated sheet, as | ``pipe''-separated values. Of course these multiple values introduce a design problem in aggregating on a list of properties. Our method is to aggregate on the list, rather than on the individual items within the list. This means in the case of Aung San Suu Kyi, that her occupation is stored as politician, writer, and human rights activist, and is aggregated with all the other humans who have those three occupations too.
+
+Also note, for faithfulness there is virtually no data-cleaning done, as the point of our project is to display information as faithfully as possible. Our dataset is meant to be used to uncover potential biases in Wikidata and the world at large, and we feel that any cleaning process would introduce further biases. An instructive illustration of this case is that the ``gender'' property in Wikidata is actually labelled in English ``sex or gender'' (no distinction), and not limited to any value. Over our time snapshotting we found 36 values used for ``sex or gender'', including ``male'' and ``female'', but extending to nonbinary genders ``transgender female'', ``intersex'', ``fa'afafine'', ``transgender'', ``Gender fluid'',  ``genderqueer'', ``kathoey'', and ``queer''. At times the other categories of information is recorded here - perhaps erroneously - such as ``gay'', or ``homosexuality''. And even what seem to be mistakes are left in such as one-offs of ``Solanum tuberosum'', ``Messi'', or ``sociologist''. Cleaning this data would be a disservice, we feel, to communicating how - and how well - Wikidata is used.
 
 \section{Dataset Statistics}
 We now turn to look at simple statistics of our dataset, specifically with regard to how it has changed over time. Our first snapshot was on September 17\textsuperscript{th} 2014, and the latest analysed here is January 3\textsuperscript{rd} 2016. Since automation of snapshotting was not completed until June 28th 2015, there is unfortunately a window missing from October 2014 to June 2015. 
 
 \subsection{Data Quality}
 Let us first query the size of the dataset. Total humans in Wikidata increased from 5,869,606 to 6,999,542, and shows linear, unconstrained growth (see Figure \ref{fig:totalhumans}).
+
 \begin{figure}
-\label{fig:totalhumans}
 \includegraphics[scale=0.6]{figures/totalhumans.png} 
 \caption{Total number of humans found in Wikidata at each snapshot period.}
+\label{fig:totalhumans}
 \end{figure}
 
 \begin{table}
-\caption{Change in rates of human-accompanying properties}
+\caption{Change in rates of property coverage for humans}
 \begin{tabular}{lrr}
 \toprule
 {} &  2014-09-17 &  2016-01-03 \\
@@ -101,9 +140,9 @@ at least 1 site link &       99.6\% &       98.1\% \\
 \label{table:accompanying}
 \end{table}
 
-We should also be curious to the data quality of the increasing humans. One way to think about this is about the how much data is accompanying these human entries. We looked at the properties citizenship, place of birth, and ethnic group which will help us best geographically place a human. Another mark of quality is whether a human in Wikidata has an entry in a Wikipedia - a ``sitelink'' in Wikidata vocabulary. Figure \ref{fig:accompanying} shows the rate of accompanying properties, at the earliest and latest snapshots from 2014 and 2016 respectively. The statistics show that data quality has been increasing almost uniformly over time. The number of humans with \textit{gender} data increased by over 1\%, closer to complete coverage. In the time domain \textit{date of birth} and \textit{date of death}coverage increased by 14\% and 7\%. Likewise \textit{citizenship} data increased by 15\% , \textit{place of birth} by 6\% , and \textit{ethnic group} almost doubled (see Table \ref{table:accompanying}). Field of work, and occupation data was not included in our dataset until late, so their growth, while increasing is not precisely comparable.
+We should also be curious to the data quality of the increasing humans. One way to think about this coverage of properties on these human items. We investigated the coverage completeness for all  properties we recorded. Another mark of quality is whether a human in Wikidata has an entry in a Wikipedia - a ``sitelink'' in Wikidata vocabulary. Figure \ref{fig:accompanying} shows the trend in coverage of properties from the earliest and latest snapshots from 2014 and 2016 respectively. The statistics show that data quality has been increasing almost uniformly over time. The number of humans with \textit{gender} data increased by over 1\%, closer to complete coverage. In the time domain \textit{date of birth} and \textit{date of death} coverage increased by 14\% and 7\%. Likewise \textit{citizenship} data increased by 15\%, \textit{place of birth} by 6\%, and \textit{ethnic group} almost doubled (see Table \ref{table:accompanying}). \textit{Field of work}, and \textit{occupation} data was not included in our dataset until late, so their growth, while increasing is not precisely comparable.
 
-Curiously the rate of humans having sitelinks decreased slightly, but this is important as well A Wikidata human without a Wikipedia article is know as a ``structural item''; for instance a member of royalty without a Wikipedia article but is a needed to make a family tree complete. With the view that a structural item is an artefact from humans paying attention to Wikidata's structure, the decrease in sitelinked humans can also be seen as a rise in data quality.
+Curiously the rate of humans having sitelinks decreased slightly, but this is which has an important interpretation. A Wikidata human without a Wikipedia article is know as a ``structural item''; for instance a member of royalty without a Wikipedia article but is a needed to make a family tree complete. With the view that a structural item is an artefact from humans paying attention to Wikidata's structure, the decrease in sitelinked humans can also be seen as a rise in data quality. Probably there are also biography articles in Wikipedias that are not semantically described as humans in Wikidata, however this set is difficult to enumerate since knowing that a Wikipedia article is about a human is difficult to do programmatically. 
 
 
 \begin{figure}
@@ -111,8 +150,6 @@ Curiously the rate of humans having sitelinks decreased slightly, but this is im
 \includegraphics[scale=0.5]{figures/additionalprops.png} 
 \caption{Trend of human-accompanying properties by snapshot.}
 \end{figure}
-
-An important factor to note, as mentioned, is that our dataset does is not \textit{cleaned} to fit any model. In fact the ``gender'' property in Wikidata is actually labelled in English ``sex or gender'' (no distinction), and not limited to any value. Over our time snapshotting we found 36 values used for ``sex or gender'', including ``male'' and ``female'', but extending to nonbinary genders ``transgender female'', ``intersex'', ``fa'afafine'', ``transgender'', ``Gender fluid'',  ``genderqueer'', ``kathoey'', and ``queer''. At times the other categories of information is recorded here - perhaps erroneously - such as ``gay'', or ``homosexuality''. And even what seem to be mistakes are left in such as one-offs of ``Solanum tuberosum'', ``Messi'', or ``sociologist''.
 
 \subsection{Simple Metrics}
 As further motivation for how the dataset can be used, we present some simple metrics which would be of interest to Wikimedian communities. Focusing on one of our motivations, monitoring the trend of gender representation, we inspect the rate at which women are recorded in Wikidata. Figure \ref{fig:frb} shows the ratio of ``female'' recorded humans versus all gendered biographies. Similarly to total biographies this measure is rising at a fairly linear rate of approximately 0.5\% per year. The final months on record show a slight decline which warrants further investigation. In fact being able to measure at this temporal level is precisely one of the points of having such a live-updating measure - to be able to detect trends as they happen, and perhaps relate them to community issues. 
@@ -200,7 +237,7 @@ Additionally we conducted a calibration step, to find the date of birth threshol
 Table \ref{table:scores} shows the the correlations with each index, all of which were significant and ranged from 0.278 to 0.457. The ways in which WHGI correlates more to indices that focus on positions of power than indices which focus on health measures, show that Wikipedias' notability policies are are similarly biased [AUTHOR BLINDED].  Affirmingly, when looking at this information through a snapshotting lens, the correlation with every index is increasing over time. That is, the gender disparities found in WHGI by country are looking more like the real world gender disparities. 
 
 
-\subsection{Bureau of Labor Statistics}
+\subsection{Occupation Gender}
 The notion of what a human's job or occupation is, we saw in Table \ref{table:accompanying}, is well recorded in Wikidata. To answer the question of how accurate Wikidata's gender representation by occupation is, we compared it to data from the United States Bureau of Labor Statistics (BLS). We borrow this ground truth technique from \cite{kay_unequal_2015} who used it to evaluate the gender representation of Google image search results.
 
 The method was.... Since approximately 60\% of our sample have occupation data, we have a more complete than not sample of all humans. We matched occupations by hand. The overlap in the names was \% complete. Finally we correlated the list of most gendered occupations according to WHGI, to that of the BLS
@@ -219,6 +256,7 @@ snapshot &  Spearman Rank Correlation \\
 \end{tabular}
 \end{table}
 
+\subsection{Representation and Reflection}
 In each of our validation measures we found significant, and high or relatively high correlations. Certainly WHGI is does not exist in a bubble, but is reflection of the real world, although with some distortion. Therefore there is some limited justification in using WHGI as a proxy for real-world phenomena. Additionally we saw too that in all cases, real world - WHGI correlations are rising over time. In context with the fact from earlier that data quality is rising, this can be taken to mean that as Wikidata becomes more complete it is modelling the real world more.
 
 \section{Potential Applications}
