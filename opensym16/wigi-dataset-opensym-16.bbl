@@ -25,6 +25,12 @@ Y.-H. Eom, P.~Aragón, D.~Laniado, A.~Kaltenbrunner, S.~Vigna, and D.~L.
   24 language editions.
 \newblock {\em PLoS ONE}, 10(3):e0114825, 03 2015.
 
+\bibitem{glott2010wikipedia}
+R.~Glott, P.~Schmidt, and R.~Ghosh.
+\newblock Wikipedia survey--overview of results.
+\newblock {\em United Nations University: Collaborative Creativity Group},
+  2010.
+
 \bibitem{goldfarb_quantifying_2015}
 D.~Goldfarb, D.~Merkl, and M.~Schich.
 \newblock Quantifying {Cultural} {Histories} via {Person} {Networks} in
@@ -37,6 +43,12 @@ E.~Graells-Garrido, M.~Lalmas, and F.~Menczer.
 \newblock First {Women}, {Second} {Sex}: {Gender} {Bias} in {Wikipedia}.
 \newblock {\em arXiv:1502.02341 [cs]}, pages 165--174, 2015.
 \newblock arXiv: 1502.02341.
+
+\bibitem{hale_multilinguals_2014}
+S.~A. Hale.
+\newblock Multilinguals and {Wikipedia} {Editing}.
+\newblock In {\em Proceedings of the 2014 {ACM} {Conference} on {Web}
+  {Science}}, {WebSci} '14, pages 99--108, New York, NY, USA, 2014. ACM.
 
 \bibitem{hargittai_mind_2015}
 E.~Hargittai and A.~Shaw.
@@ -114,6 +126,12 @@ E.~Mitraka, A.~Waagmeester, S.~Burgstaller-Muehlbacher, L.~M. Schriml, A.~I.
 \newblock Wikidata: {A} platform for data integration and dissemination for the
   life sciences and beyond.
 \newblock {\em bioRxiv}, page 031971, Nov. 2015.
+
+\bibitem{rask_reach_2008}
+M.~Rask.
+\newblock The reach and richness of {Wikipedia}: {Is} {Wikinomics} only for
+  rich countries?
+\newblock {\em First Monday}, 13(6), May 2008.
 
 \bibitem{reagle_gender_2011}
 J.~Reagle and L.~Rhue.

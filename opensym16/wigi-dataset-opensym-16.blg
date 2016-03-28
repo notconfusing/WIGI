@@ -5,45 +5,45 @@ The style file: abbrv.bst
 Database file #1: wigi-dataset-opensym.bib
 Warning--empty journal in hinnosaar_gender_2015
 Warning--empty booktitle in kay_unequal_2015
-You've used 23 entries,
+You've used 26 entries,
             2118 wiz_defined-function locations,
-            629 strings with 8430 characters,
-and the built_in function-call counts, 8110 in all, are:
-= -- 798
-> -- 410
-< -- 7
-+ -- 163
-- -- 138
-* -- 566
-:= -- 1344
-add.period$ -- 74
-call.type$ -- 23
-change.case$ -- 134
+            645 strings with 8878 characters,
+and the built_in function-call counts, 9001 in all, are:
+= -- 891
+> -- 442
+< -- 8
++ -- 177
+- -- 148
+* -- 619
+:= -- 1493
+add.period$ -- 84
+call.type$ -- 26
+change.case$ -- 148
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 319
-empty$ -- 587
-format.name$ -- 138
-if$ -- 1699
+cite$ -- 28
+duplicate$ -- 360
+empty$ -- 659
+format.name$ -- 148
+if$ -- 1891
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 24
-newline$ -- 120
-num.names$ -- 47
-pop$ -- 144
+int.to.str$ -- 26
+missing$ -- 27
+newline$ -- 135
+num.names$ -- 53
+pop$ -- 156
 preamble$ -- 1
-purify$ -- 115
+purify$ -- 126
 quote$ -- 0
-skip$ -- 246
+skip$ -- 277
 stack$ -- 0
-substring$ -- 433
-swap$ -- 84
-text.length$ -- 7
+substring$ -- 476
+swap$ -- 94
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 84
+type$ -- 96
 warning$ -- 2
-while$ -- 73
-width$ -- 25
-write$ -- 257
+while$ -- 82
+width$ -- 28
+write$ -- 292
 (There were 2 warnings)

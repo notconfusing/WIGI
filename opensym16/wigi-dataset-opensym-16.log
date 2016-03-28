@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.2.19)  21 MAR 2016 10:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.2.19)  26 MAR 2016 19:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -469,279 +469,237 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
 
 Excluding 'CCSXML' comment.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 214.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 211.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 214.
-
-Overfull \hbox (20.87769pt too wide) in paragraph at lines 214--215
-\OMS/cmsy/m/n/9 ^^O\T1/ptm/b/n/9 Computer sys-tems or-ga-ni-za-tion $\OMS/cmsy/
-m/n/9 !$ \T1/ptm/b/n/9 Ex-am-ple; \T1/ptm/m/it/9 Re-dun-dancy; \T1/ptm/m/n/9 Ro
-botics;
- []
-
-
-Overfull \hbox (6.43605pt too wide) in paragraph at lines 233--234
-\T1/ptm/m/n/9 cently [[]22[]] showed that while cov-er-age of women in large Wi
-kipedias
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 211.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-Overfull \hbox (1.56673pt too wide) in paragraph at lines 243--244
-[]\T1/ptm/m/n/9 This pa-per be-gins by de-scrib-ing the for-mat of Wiki-data an
-d statis-
- []
-
-<figures/aung_explainer_small.png, id=122, 1167.36125pt x 1034.86626pt>
+] <figures/aung_explainer_small.png, id=121, 1167.36125pt x 1034.86626pt>
 File: figures/aung_explainer_small.png Graphic file (type png)
 
 <use figures/aung_explainer_small.png>
-Package pdftex.def Info: figures/aung_explainer_small.png used on input line 25
-3.
-(pdftex.def)             Requested size: 233.46811pt x 206.96957pt.
+Package pdftex.def Info: figures/aung_explainer_small.png used on input line 24
+1.
+(pdftex.def)             Requested size: 240.0pt x 212.749pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 259.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 264.
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 []\T1/ptm/m/n/9 date
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 \T1/ptm/m/n/9 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 []\T1/ptm/m/n/9 no
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 \T1/ptm/m/n/9 gen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 []\T1/ptm/m/n/9 trans-
  []
 
 
-Overfull \hbox (1.72656pt too wide) in paragraph at lines 262--262
+Overfull \hbox (3.14929pt too wide) in paragraph at lines 267--267
 \T1/ptm/m/n/9 gender
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 \T1/ptm/m/n/9 fe-
  []
 
 
-Overfull \hbox (4.54356pt too wide) in paragraph at lines 262--262
+Overfull \hbox (5.9663pt too wide) in paragraph at lines 267--267
 []\T1/ptm/m/n/9 gender-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 []\T1/ptm/m/n/9 ka-
  []
 
 
-Overfull \hbox (1.72632pt too wide) in paragraph at lines 262--262
+Overfull \hbox (3.14905pt too wide) in paragraph at lines 267--267
 []\T1/ptm/m/n/9 female| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--264
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
 []\T1/ptm/m/n/9 4203
  []
 
 
-Overfull \hbox (4.12552pt too wide) in paragraph at lines 264--264
+Overfull \hbox (5.54825pt too wide) in paragraph at lines 269--269
 \T1/ptm/m/n/8 (B.C.E.)| 
  []
 
 
-Overfull \hbox (1.98772pt too wide) in paragraph at lines 266--267
+Overfull \hbox (3.41045pt too wide) in paragraph at lines 271--272
 []\T1/ptm/m/n/9 14,461| 
  []
 
 
-Overfull \hbox (1.98772pt too wide) in paragraph at lines 267--268
+Overfull \hbox (3.41045pt too wide) in paragraph at lines 272--273
 []\T1/ptm/m/n/9 14,372| 
  []
 
 
-Overfull \hbox (1.98772pt too wide) in paragraph at lines 268--269
+Overfull \hbox (3.41045pt too wide) in paragraph at lines 273--274
 []\T1/ptm/m/n/9 14,520| 
  []
 
 
-Overfull \hbox (1.98772pt too wide) in paragraph at lines 269--270
+Overfull \hbox (3.41045pt too wide) in paragraph at lines 274--275
 []\T1/ptm/m/n/9 14,558| 
  []
 
 
-Overfull \hbox (1.98772pt too wide) in paragraph at lines 270--271
+Overfull \hbox (3.41045pt too wide) in paragraph at lines 275--276
 []\T1/ptm/m/n/9 14,664| 
- []
-
-<figures/genderbydob.png, id=129, 771.88374pt x 552.0625pt>
-File: figures/genderbydob.png Graphic file (type png)
-
-<use figures/genderbydob.png>
-Package pdftex.def Info: figures/genderbydob.png used on input line 281.
-(pdftex.def)             Requested size: 239.28148pt x 171.1376pt.
-
-<figures/genderbycountry.png, id=130, 725.71124pt x 503.8825pt>
-File: figures/genderbycountry.png Graphic file (type png)
-
-<use figures/genderbycountry.png>
-Package pdftex.def Info: figures/genderbycountry.png used on input line 287.
-(pdftex.def)             Requested size: 239.48544pt x 166.28174pt.
-
-<figures/genderbylang.png, id=131, 815.045pt x 548.0475pt>
-File: figures/genderbylang.png Graphic file (type png)
-
-<use figures/genderbylang.png>
-Package pdftex.def Info: figures/genderbylang.png used on input line 293.
-(pdftex.def)             Requested size: 252.66133pt x 169.89296pt.
-
-Overfull \hbox (12.66133pt too wide) in paragraph at lines 293--294
-[][] 
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.300 
-       [2 <./figures/aung_explainer_small.png>]pdfTeX warning (ext4): destinati
-on with the same identifier (name{page.}) has been already used, duplicate igno
-red
+l.284 
+       [2 <./figures/aung_explainer_small.png>]
+<figures/genderbydob.png, id=161, 771.88374pt x 552.0625pt>
+File: figures/genderbydob.png Graphic file (type png)
+
+<use figures/genderbydob.png>
+Package pdftex.def Info: figures/genderbydob.png used on input line 287.
+(pdftex.def)             Requested size: 240.0pt x 171.65144pt.
+
+<figures/genderbycountry.png, id=162, 725.71124pt x 503.8825pt>
+File: figures/genderbycountry.png Graphic file (type png)
+
+<use figures/genderbycountry.png>
+Package pdftex.def Info: figures/genderbycountry.png used on input line 293.
+(pdftex.def)             Requested size: 240.0pt x 166.6354pt.
+
+<figures/genderbylang.png, id=170, 755.82375pt x 537.00626pt>
+File: figures/genderbylang.png Graphic file (type png)
+
+<use figures/genderbylang.png>
+Package pdftex.def Info: figures/genderbylang.png used on input line 315.
+(pdftex.def)             Requested size: 240.0pt x 170.51807pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.309 
-       [3 <./figures/genderbydob.png> <./figures/genderbycountry.png> <./figure
-s/genderbylang.png>]
-Overfull \hbox (12.93376pt too wide) in paragraph at lines 314--315
-\T1/ptm/m/n/9 dataset with re-gard to how it has changed over time as these Wik
-ipedian
- []
-
-<figures/totalfrb.png, id=162, 444.4605pt x 308.8338pt>
+l.326 
+       [3 <./figures/genderbydob.png> <./figures/genderbycountry.png>]pdfTeX wa
+rning (ext4): destination with the same identifier (name{page.}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.373 
+       [4 <./figures/genderbylang.png>]
+<figures/totalfrb.png, id=219, 444.4605pt x 308.8338pt>
 File: figures/totalfrb.png Graphic file (type png)
 
 <use figures/totalfrb.png>
-Package pdftex.def Info: figures/totalfrb.png used on input line 317.
-(pdftex.def)             Requested size: 235.56294pt x 163.68112pt.
+Package pdftex.def Info: figures/totalfrb.png used on input line 401.
+(pdftex.def)             Requested size: 240.0pt x 166.76305pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--322
+Underfull \hbox (badness 10000) in paragraph at lines 406--406
 [][][][]$\T1/ptm/m/n/9 https : / / en . wikipedia . org / wiki / Wikipedia : Wi
 kiProject _ Women _
  []
 
-<figures/changefrb.png, id=167, 364.4817pt x 512.8761pt>
-File: figures/changefrb.png Graphic file (type png)
+<figures/arrowplot_flippedaxes.png, id=224, 590.205pt x 563.10374pt>
+File: figures/arrowplot_flippedaxes.png Graphic file (type png)
 
-<use figures/changefrb.png>
-Package pdftex.def Info: figures/changefrb.png used on input line 326.
-(pdftex.def)             Requested size: 218.6907pt x 307.72803pt.
+<use figures/arrowplot_flippedaxes.png>
+Package pdftex.def Info: figures/arrowplot_flippedaxes.png used on input line 4
+09.
+(pdftex.def)             Requested size: 240.0pt x 228.97514pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.334 
-       [4 <./figures/totalfrb.png> <./figures/changefrb.png>]
-<figures/additionalprops.png, id=180, 538.1706pt x 363.5181pt>
+l.419 
+       [5 <./figures/totalfrb.png>]
+<figures/additionalprops.png, id=241, 538.1706pt x 363.5181pt>
 File: figures/additionalprops.png Graphic file (type png)
 
 <use figures/additionalprops.png>
-Package pdftex.def Info: figures/additionalprops.png used on input line 337.
-(pdftex.def)             Requested size: 242.17453pt x 163.58163pt.
+Package pdftex.def Info: figures/additionalprops.png used on input line 421.
+(pdftex.def)             Requested size: 240.0pt x 162.11172pt.
 
-Overfull \hbox (2.17453pt too wide) in paragraph at lines 337--338
-[][] 
- []
-
-
-Overfull \hbox (8.46985pt too wide) in paragraph at lines 369--370
+Overfull \hbox (8.46985pt too wide) in paragraph at lines 453--454
 \T1/ptm/m/n/9 putable how much growth in Wiki-data stems from Wikipedia's growt
 h
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.409 
-       [5 <./figures/additionalprops.png>]pdfTeX warning (ext4): destination wi
-th the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.449 
-       [6]
-Underfull \hbox (badness 10000) in paragraph at lines 453--453
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--457
 [][][][]$\T1/ptm/m/n/9 https : / / en . wikipedia . org / wiki / Wikipedia : Wi
 kiProject _ Women _
  []
 
 
-Overfull \hbox (1.43188pt too wide) in paragraph at lines 453--454
-\T1/ptm/m/n/9 crease the cov-er-age of Women's bi-ogra-phies, for in-stance: Wi
-kiPro-
+Overfull \hbox (3.05125pt too wide) in paragraph at lines 457--458
+\T1/ptm/m/n/9 their edit-ing ef-forts are mak-ing large scale im-pacts on the W
+ikipedia.
  []
 
-
-Overfull \hbox (6.93066pt too wide) in paragraph at lines 463--464
-[]\T1/ptm/m/n/9 Yet an-other new av-enue this dataset opens is in the gender-di
-sparity
- []
-
-
-Overfull \hbox (13.7708pt too wide) in paragraph at lines 473--474
-\T1/ptm/m/n/9 ing us through an In-di-vid-ual En-gage-ment Grant. [GRANT BLINDE
-D]. 
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.460 
+       [6 <./figures/arrowplot_flippedaxes.png> <./figures/additionalprops.png>
+]
+Overfull \hbox (5.99466pt too wide) in paragraph at lines 465--466
+[]\T1/ptm/m/n/9 Divorced from the Wikipedia-research land-scape, a his-to-rian 
+could
  []
 
 (./wigi-dataset-opensym-16.bblpdfTeX warning (ext4): destination with the same 
 identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 
-      [7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 486.
+l.65 
+      [7])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 501.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.486 \end{document}
-                     [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 486.
+l.501 \end{document}
+                     [8
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 501.
  (./wigi-dataset-opensym-16.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 486.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 486.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 501.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 501.
 Package rerunfilecheck Info: File `wigi-dataset-opensym-16.out' has not changed
 .
-(rerunfilecheck)             Checksum: 34C781D2BF67E723A45C54513D0B3222;934.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 486.
+(rerunfilecheck)             Checksum: F8ED1C1FCAE7DE8359C528131594D6E6;1087.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 501.
  ) 
 Here is how much of TeX's memory you used:
- 6860 strings out of 494957
- 98178 string characters out of 6180028
- 202824 words of memory out of 5000000
- 9890 multiletter control sequences out of 15000+600000
- 59870 words of font info for 73 fonts, out of 8000000 for 9000
+ 6872 strings out of 494957
+ 98468 string characters out of 6180028
+ 199190 words of memory out of 5000000
+ 9894 multiletter control sequences out of 15000+600000
+ 61006 words of font info for 74 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,11n,35p,1161b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,35p,1267b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fo
@@ -752,10 +710,10 @@ c/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on wigi-dataset-opensym-16.pdf (8 pages, 1046197 bytes).
+Output written on wigi-dataset-opensym-16.pdf (8 pages, 882615 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
- 258 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
- 164 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 281 compressed objects within 3 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 
