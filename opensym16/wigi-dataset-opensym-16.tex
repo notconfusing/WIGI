@@ -458,7 +458,29 @@ There may also be biography articles in Wikipedias that are not recorded as huma
 
 
 \subsection{RQ3: Impact of WHGI}
-WHGI can have impact research by offering a large scale gender-persepctive in research. For instance Warncke-Wang et al. explored supply and demand misalignment in Wikipedia by looking at the difference in actual and predicted article quality by page-views. They cite examples of over-supplied articles where quality disproportionately exceeds readership (e.g. ``Themes in Robert Browning’s poetry''), and over-demanded articles where readership disproportionately exceeds quality (e.g. ``Wedding'', and ``cisgender''). Following this dissonance in the gender realm, they follow up by investigating misalignment in WikiProjects as a whole, and that WikiProject:LGBT (Lesbian, Gay, Bisexual, Trans*) are 9.1 times more likely to be under-represented. Simply using inclusion in a WikiProject though is a very narrow scope of inclusion, and the articles in a WikiProject would likely tend to be of higher quality, since at least somebody interested in the topic has identified them. We re-run this analysis, but instead of aggregating by WikiProject, we aggregate by gender.
+
+\begin{table}
+\caption{The relative risk for biography article quality to be misaligned with readership demand (in English Wikipedia). Here we see that biographies about women are 30\% more likely to have readership outstrip article quality (Needs Improvement), conversely biographies about men are 14\% less likely to need improvement. Spent Effort are the cases where article quality exceeds readership demand. Both men and women's biographies represent extra spent editor effort, but men's more.}
+\begin{tabular}{lrr}
+\toprule
+{} &   Needs Improvement &   Spent Effort \\
+\midrule
+female & 1.30 & 1.03 \\
+male   & 0.86 & 1.15 \\
+non-binary & 2.65 & 0.50 \\
+non-biographies & 1.03 & 0.95 \\
+\bottomrule
+\end{tabular}
+\label{table:pah}
+\end{table}
+
+WHGI can have impact research by offering a large scale gender-persepctive in research. For instance Warncke-Wang et al. explored supply and demand misalignment in Wikipedia by looking at the difference in actual and predicted article quality by page-views. They cite examples of over-supplied articles where quality disproportionately exceeds readership (e.g. ``Themes in Robert Browning’s poetry''), and over-demanded articles where readership disproportionately exceeds quality (e.g. ``Wedding'', and ``cisgender''). Following this dissonance in the gender realm, they follow up by investigating misalignment in WikiProjects as a set of articles, and find that WikiProject:LGBT (Lesbian, Gay, Bisexual, Trans*) are 9.1 times more likely to be under-represented, and in need of improvement. They dub this the \textit{relative risk}.
+Simply using inclusion in a WikiProject though is a very narrow scope to measure, high-level disparities. We re-ran this analysis, but instead of aggregating by WikiProject, we utilized the WHGI and were able to aggregate by gender over the entire encyclopedia. Table \ref{table:pah} shows the relative risk for gendered biographies being either in need of improvement (over-demanded), or showing extra ``spent effort'' (over-supplied). Our findings show that women's biographies are 30\% more likely to be in need of improvement compared to the average article, where as men's biographies are 14\% less likely. Women's biographies are roughly comparable to the average encyclopedia article in terms of representing spent effort in over-supplying article quality, whereas men's biographies show a 15\% higher likelihood.
+The row ``non-binary'' speaks to the approximately 50 biographies whose gender is not ``male'' or ``female'', and shows about double bias. As a control, we also calculated the relative risk of every article which is not a biography, ini the ``non-biography'', which sensibly shows a close-to-baseline result, around 1 in both categories. 
+Overall, the gender disparities that were allude to by  \cite{warncke-wang_misalignment_2015}, are shown to be pervasive at a high level.
+
+This quick ``data mashup'' of the WHGI and an external data-set, is a an example of how WHGI is useful for research, in demonstring large-scale trends concerning gender.
+
    
 \section{Discussion}
 This project is not the first establish that Wikipedia data has real-world biases via correlation to exogenous indicators. In 2008 Rask concluded that Wikipedia editions displayed real-world \textit{socio-economic} disparities similar to those found in the United Nations Human Development Index (HDI) \cite{rask_reach_2008}. Rask identified three limitations with their study (1) they used only 11 Wikipedia languages (2) they suggested longitudinal analysis be carried out, and (3) languages-disaggregation is only a proxy for country-disaggregation which the HDI utilizes. WHGI overcomes all three of these limitations as it measures all 285 Wikipedia languages, updates weekly, and manages by-country-disaggregation. Even though our focus is not on socio-economic disparities, but gender disparities, the larger point of connecting Wikipedia's biases rigorously to real-world ones is shown.
