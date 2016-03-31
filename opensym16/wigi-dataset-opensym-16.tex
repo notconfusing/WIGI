@@ -179,7 +179,7 @@ Author Blinded\\
 
 \maketitle
 \begin{abstract}
-The gender gap in Wikipedia's content, specifically in the reperesentation of women in biographies is well-known, but has been difficult to measure. Furthermore the impacts of efforts to address this gender gap have received little attention. To investigate we utilise Wikidata, the database that feeds Wikipedia, and introduce the ``Wikidata Human Gender Indicators'' (WHGI), an open source, open data, real time, longitudinal, biographical dataset that can provide insights into gender disparities across time, space, culture, occupation and language. Through these lenses we show how women's representation has changed along 11 dimensions. Furthermore, to demonstrate it's more general use in research we present validations of the WHGI against three exogenous datasets: the world's historical population, ``traditional'' gender-disparity indices (GDI, GEI, GGGI and SIGI), and occupational gender according to the US Bureau of Labor Statistics.
+The gender gap in Wikipedia's content, specifically in the reperesentation of women in biographies is well-known, but has been difficult to measure. Furthermore the impacts of efforts to address this gender gap have received little attention. To investigate we utilise Wikidata, the database that feeds Wikipedia, and introduce the ``Wikidata Human Gender Indicators'' (WHGI), an open source, open data, longitudinal, biographical dataset that can provide insights into gender disparities across time, space, culture, occupation and language. Through these lenses we show how women's representation has changed along 11 dimensions. Validations of WHGI are presented against three exogenous datasets: the world's historical population, ``traditional'' gender-disparity indices (GDI, GEI, GGGI and SIGI), and occupational gender according to the US Bureau of Labor Statistics. Furthermore, to demonstrate its general use in research, we revisit previous published findings on Wikipedia's gender bias that can be strengthened by WHGI. 
 \end{abstract}
 
 
@@ -221,16 +221,28 @@ Gender inequality is a long-standing social problem which affects many aspects o
 
 Statistical gender indicators are critically important to understanding gender inequality, but their construction is difficult \cite{klasen_gender-related_2004}. Many indicators (single measures) and indices (compound measures) have been proposed, such as The Gender Development Index from the United Nations Development and the Global Gender Gap Index from the World Economic Forum, although no academic consensus exists on which is superior \cite{hawken_cross-national_2012}. Owing to this varied landscape using a plurality of indicators is recommended for research \cite{jutting_measuring_2008}.
 
-Still there are some features lacking among the current gender indicators. The most frequently the are released is annually, which does not allow for real-time analysis. Also they measure only recent history, which limits analysis of the past. And lastly they are not open source, which means verification and remixing is more difficult. 
+Still there are some features lacking among the current gender indicators. The most frequently they are released is annually, which does not allow for real-time analysis. Also they measure only recent history, which limits analysis of the past. And lastly they are not open source, which means verification and remixing is more difficult.
 
-We introduce a real-time, all-recorded-history level, open source dataset that can provide insights into gender disparities across time, space, culture, occupation and language. ``Wikidata Human Gender Indicators'' (WHGI) is a dataset consiting  of 11 separate indicators on the gender representation of humans in Wikidata. WHGI is open data and available for download at \url{WEBSITE BLINDED}, where we also display real-time visualizations. Our 2 goals are to assist gender-focused Wikipedia editing communities by charting their progress, and help their cause under the philosophy of ``what gets measured, gets fixed.''  And secondly to make indicators that can be used in general research to measure gender disparity in ways traditional indicators can't.
+At the same time Wikipedia's \textit{editor} gender gap has come to light as deeply gender-disparate, and received media attention for it \cite{cohen_wikipedia_2011}. Responses, however, are not focused solely on editors, but also \textit{biographical} coverage. Gender-focused Wikipedia editing communities create and improve biographies to combat systemic bias, but their large scale effect is unknown. Luckily, new capabilities to record gender via Wikidata, the database that feeds Wikipedia, make encyclopedia-scale descriptions of gender increasingly tractable and accurate.
+
+We introduce a weekly-updated, all-recorded-history level, open source dataset that can provide insights into gender disparities across time, space, culture, occupation and language. ``Wikidata Human Gender Indicators'' (WHGI) is a dataset consiting  of 11 separate indicators on the gender representation of humans in Wikidata. WHGI is open data and available for download at \url{WEBSITE BLINDED}, where we also display visualizations. 
 
 The rest of this paper is organized as follows: we begin by describing the format of Wikidata and stat\-istics of humans contained in it. We investigate how gender composition and data quality has changed over time and demonstrate the impact that WHGI can have as a metric for content and women-focused Wikipedian communities.  
-Moving beyond Wikipedia data, we present 3 validation measures utilizing ground truths from the US Census Bureau, Bureau for Labor Statistics, and United Nations Development Program. This check shows that WHGI is becoming increasingly aligned with other indicators in use, confirming its general utility.
+Moving beyond Wikipedia data, we present 3 validation measures utilizing ground truths from the US Census Bureau, Bureau for Labor Statistics, and United Nations Development Program. Finally we demonstrate how WHGI can be utilized by revisiting and strengthening published results about gender disparities in Wikipedia.
+
+\section{Research Questions}
+Considering the work in indicator research, the Wikipedia Gender Gap, and the introduction of Wikidata, we ask the following research questions:
+\begin{itemize}
+\item\textbf{RQ1a} Can we create a gender disparity indicators base on the humans in Wikidata?
+\item\textbf{RQ1b} To what extent do these indicators reflect real world gender disparities?
+\item\textbf{RQ2} How can the Wikipedia community use gender disparity inidcators?
+\item\textbf{RQ3} How could existing research benefit from gender disparity indiactors?
+\end{itemize}
+
 
 \section{Related Work}
 
-The thread of research on Wikipedia's gender biases originates in the finding that Wikipedia's editors are largely not women \cite{glott2010wikipedia} \cite{lam_wp:clubhouse?:_2011}, even though the exact number of editors who are women is difficult to estimate. \cite{hill_wikipedia_2013}. This imbalance has been attributed to an internet skills gap \cite{hargittai_mind_2015} and its internal culture \cite{lam_wp:clubhouse?:_2011}. 
+The thread of research on Wikipedia's gender biases has grown since the finding that Wikipedia's editors are largely not women \cite{glott2010wikipedia} \cite{lam_wp:clubhouse?:_2011}, ranging from 13\% to 16\% \cite{hill_wikipedia_2013}. This imbalance has been attributed to an internet skills gap \cite{hargittai_mind_2015} and the editing community's internal culture \cite{lam_wp:clubhouse?:_2011}. 
 
 More and more, in addition to investigations of the Wikipedia \textit{editor gender gap} researchers have also been interrogating the character of its \textit{biography gender gap}. Early studies found that Wikipedia excluded notable women more than its counterparts \cite{reagle_gender_2011}. More recently \cite{wagner_its_2015} it was shown that while coverage of women in large Wiki\-pedias is not less than other reference works, the language with which women are portrayed is different and focuses more on romance and family. Women also tend to be less central in the link graph of Wikipedia \cite{10.1371/journal.pone.0114825}. These linguistic and network findings were confirmed by \cite{graells-garrido_first_2015}, who also showed evidence of stereotyping in metadata. Intersectionally, in terms of socio-economic biases, the level of contributions to a Wikipedia language are associated with the wealth of the contry they originate from \cite{rask_reach_2008}.
 
@@ -242,18 +254,10 @@ Yet in popular mindshare there persists a sentiment that denies that any of this
 \label{fig:aung}
 \end{figure}
 
-Wikidata, the database that feeds Wikipedia, offers new opportunities to analyze culture programmatically. Launched in 2012, Wikidata is designed to host structured data that is \textit{multilingual} (so there is only one edition) and \textit{plural} (can support many competing facts) \cite{vrandecic_wikidata:_2014}.  These features make Wikidata a well-suited for all Wikipedias to collaboratively store facts about the world. If an Italian Wikipedian stores information about the population of ancient Rome, that information is then available to every other Wikipedia with a short code snippet. Every language collaborating together has meant that Wikidata has become a massive free open knowledgebase in its own right, containing over 40 million facts \cite{krotzsch_how_????}.
+Wikidata, offers new opportunities to analyze culture programmatically. Launched in 2012, Wikidata is designed to host structured data that is \textit{multilingual} (so there is only one edition) and \textit{plural} (can support many competing facts) \cite{vrandecic_wikidata:_2014}.  These features make Wikidata a well-suited for all Wikipedias to collaboratively store facts about the world. If an Italian Wikipedian stores information about the population of ancient Rome, that information is then available to every other Wikipedia with a short code snippet. Every language collaborating together has meant that Wikidata has become a massive free open knowledgebase in its own right, containing over 40 million facts \cite{krotzsch_how_????}.
 
 As a knowledgebase, Wikidata is slowly proving its worth for research. Early on Wikidata showed the importance of multilingual Wikipedians in reducing self-focus bias of language editions. \cite{hale_multilinguals_2014} Wikidata has also been used to find popular connections between nationalities and occupations \cite{goldfarb_quantifying_2015}. Or take the fact that all human and mouse genes have been imported into Wikidata \cite{mitraka_wikidata:_2015}, for an internet-wide community effort to find links between genes, drugs and diseases \cite{burgstaller-muehlbacher_wikidata_2015}. All of these tasks would be difficult to do without Wikidata.
 
-\section{Research Questions}
-Considering the related work in indicator research, the Wikipedia Gender Gap, and the introduction of Wikidata, we ask the following research questions:
-\begin{itemize}
-\item\textbf{RQ1a} Can we create a gender disparity indicators base on the humans in Wikidata?
-\item\textbf{RQ1b} To what extent does these indicators reflect real world gender disparities?
-\item\textbf{RQ2} How can the Wikipedia community use gender disparity inidcators?
-\item\textbf{RQ3} How could existing research benefit from gender disparity indiactors?
-\end{itemize}
 
 \section{Method}
 
@@ -412,13 +416,11 @@ First we queried the way the total number of biographies and the ratio of women 
 
 We took a more granular look at the evolution of the female ratio of biographies by disaggregating by Wikipedia Language in Figure \ref{fig:changefrb}. Of the languages that have 100,000 or more gendered biographies, and during the time period September 17 2014 to January 3 2016 that all Wikis increased in size of total biographies. In terms of the rate of women represented in biographies, Norwegian (Bokm\aa l), Spanish, English, Finnish, Japanese and Dutch Wikipedias each increased by more than 0.5\% points. On the other hand Chinese and Polish Wikipedias decreased. 
 
-Japanese Wikipedians relate this increase to strong editing activity about women who are idols, models and celebrities, despite an effort to delete biographies about Adult Video idols\footnote{\url{BLINDED}}. We hypothesize this deletion effort may also be partially responsible for the decline viewable Chinese Wikipedia and the decline in total ratio seein in Figure \ref{fig:totalfrb}.
+Japanese Wikipedians relate this increase to strong editing activity about women who are idols, models and celebrities, despite an effort to delete biographies about Adult Video idols\footnote{\url{BLINDED}}. We hypothesize this deletion effort may also be partially responsible for the decline viewable Chinese Wikipedia and the decline in total ratio seen in Figure \ref{fig:totalfrb}.
 
 Are these changes in the Wikipedias correlated with the efforts of Wikipedian communities targeting gendered content?
 
-There are many Wikipedian communities who's goal it is is to increase the coverage of Women's biographies, for instance: Wiki\-Project Women Scientists \footnote{\url{https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Women_scientists}}, Art + Feminism\footnote{\url{http://art.plusfeminism.org/about/}}, and Women in Red, just to name a few. One concern of these organizations is if their editing efforts are making large scale impacts on the Wikipedia. Fortunately Wikiproject Women in Red keeps metrics of how many biographies they add on a monthly basis, and we were able to conduct a cross-correlation between the time-series of monthly number of biographies created by Women in Red, and the number of female biographies added to English Wikipedia. The correlation between these activities is 0.657, which indicates a positive link. 
-
-As well as simply measuring progress, having an indicator might also be motivating. Zhu et al. found that Wikipedia's erstwhile ``collaboration of the week'' intiatives were effective, but failed due to the manual effort in maintaining goals \cite{zhu_organizing_2012}. In fact WHGI can do just this for women-focused editing groups even if we cannot determine a casual relationship between editing efforts and the increase in women's representation in these languages. Still we are able to numerically highlight this trend which was not viewable before.
+There are many Wikipedian communities who's goal it is is to increase the coverage of Women's biographies, for instance: Wiki\-Project Women Scientists \footnote{\url{https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Women_scientists}}, Art + Feminism\footnote{\url{http://art.plusfeminism.org/about/}}, and Women in Red, just to name a few. One concern of these organizations is if their editing efforts are making large scale impacts on the Wikipedia. Fortunately Wikiproject Women in Red keeps metrics of how many biographies they add on a monthly basis, and we were able to conduct a cross-correlation between the time-series of monthly number of biographies created by Women in Red, and the number of female biographies added to English Wikipedia. The correlation between these activities is 0.657, which indicates a positive link. Even if we cannot determine a casual relationship between editing efforts and the increase in women's representation in these languages we are still able to numerically highlight this trend which was not viewable before.
 
 \begin{figure}
 \includegraphics[width=\columnwidth]{figures/additionalprops.png} 
@@ -454,18 +456,18 @@ at least 1 site link &       99.6\% &       98.1\% \\
 \label{table:accompanying}
 \end{table}
 
-\subsection{RQ3: Impact of WHGI}
+\subsection{RQ3: Impact on Research}
 
 \begin{table}
-\caption{The relative risk for biography article quality to be misaligned with readership demand (in English Wikipedia). Here we see that biographies about women are 30\% more likely to have readership outstrip article quality (Needs Improvement), conversely biographies about men are 14\% less likely to need improvement. Spent Effort are the cases where article quality exceeds readership demand. Both men and women's biographies represent extra spent editor effort, but men's more.}
-\begin{tabular}{lrr}
+\caption{The relative risk for biography article quality to be misaligned with readership demand (in English Wikipedia). Here we see that biographies about women are 30\% more likely to have readership outstrip article quality (Needs Improvement), conversely biographies about men are 14\% less likely to need improvement. Spent Effort are the cases where article quality exceeds readership demand. Sitelink Ratio is the ratio of number of Wikipedia languages a biography is in comparied to the 2.6-language average for all Wikidata items.}
+\begin{tabular}{lrrr}
 \toprule
-{} &   Needs Improvement &   Spent Effort \\
+{} &  Needs Improv. &  Spent Effort &  Sitelink Ratio \\
 \midrule
-female & 1.30 & 1.03 \\
-male   & 0.86 & 1.15 \\
-non-binary & 2.65 & 0.50 \\
-non-biographies & 1.03 & 0.95 \\
+Female        &               1.30 &          1.03 &            1.29 \\
+Male          &               0.86 &          1.15 &            1.29 \\
+Non-binary    &               2.65 &          0.50 &            1.46 \\
+Non-biography &               1.03 &          0.95 &            0.95 \\
 \bottomrule
 \end{tabular}
 \label{table:pah}
@@ -475,30 +477,34 @@ As well as infering quality from WHGI, it can also be used in collaboration with
 
 However using inclusion in a WikiProject though is a very narrow scope, and limits their gendered argument to only low-level disparities. We re-ran this analysis, but instead of aggregating by WikiProject, we utilized the WHGI and were able to aggregate by gender over the entire encyclopedia. Table \ref{table:pah} shows the relative risk for gendered biographies being either in need of improvement (over-demanded), or showing extra ``spent effort'' (over-supplied). Our findings show that women's biographies are 30\% more likely to be in need of improvement compared to the average article, where as men's biographies are 14\% less likely. Women's biographies are roughly comparable to the average encyclopedia article in terms of representing spent effort in over-supplying article quality, whereas men's biographies show a 15\% higher likelihood.
 
-The row ``non-binary'' speaks to the approximately 50 biographies whose gender is neither ``male'' nor ``female'', and shows about double the bias, 2 times as likely to need improvement, and $\frac{1}{2}$ as likely to represent spent effort. As a control, we also calculated the relative risk of every article which is not a biography, ini the ``non-biography''row , which sensibly shows a close-to-baseline result in both categories. 
+On the other hand, using WHGI, we can calculate the average number of Wikipedia languages a biography is in by gender. Being in many languages presents a potential opportunity for quality expansion through translation. The average Wikidata item is in 2.6 Wikipedia languages, but both men and women's biographies are in 29\% more languages on average, at about 3.4 languages each. Despite the equal opportunity for translation-driven quality improvement, nevertheless Women's biographies are more likely to need improvement.
+
+The row ``non-binary'' speaks to the approximately 50 biographies whose gender is neither ``male'' nor ``female'', and shows twice the likelihood to need improvement, $\frac{1}{2}$ the likelihood to represent spent effort, yet they are in 1.46 times as many languages than the average article. As a control, we also calculated the relative risk of every article which is not a biography, in the ``non-biography'' row, which sensibly shows a close-to-baseline result in all categories. 
 
 Overall, the gender disparities that were allude to by  \cite{warncke-wang_misalignment_2015}, are shown to be pervasive at the large scale of every biography on English Wikipedia. This quick ``data mashup'' of the WHGI and an external data-set, is a an example of how WHGI is useful for research, in demonstring large-scale trends concerning gender.
 
    
 \section{Discussion}
-We established the WHGI, and using longitudinal analysis showed that women are increasingly being represented in most Wikipedias. This, along with the fact that exogenous validations show that Wikipedias' gender disparities are increasingly reflecting the real world suggest that Wikipedia is ``catching up''. Further, this catching up is also correlated to the activity levels of women-focused editing initiatives. As it happens Women in Red already cite WHGI for data, so ``what gets measured'' might get fixed - more quickly.
+We established the WHGI, and using longitudinal analysis showed that women are increasingly being represented in most Wikipedias. This, along with the fact that exogenous validations show that Wiki\-pedias' gender disparities are increasingly reflecting the real world suggest that Wikipedia is ``catching up'' to real world disparities. Further, this catching-up is also correlated to the activity levels of women-focused editing initiatives.
 
-Moreover WHGI we demonstrated that WHGI is generally useful to match with other dataset and provid large-scale gender insights. With the supply-demand misalignment dataset we were very quickly able to show that women's biographies are 30\% more likely to be over-read compared to their article quality. This analysis serves as an example of how more connections could be made. For instance the gendered implications of changes to a notability policy could be tested using WHGI and propensity score matching. That is, for a language which has a implemented a stricter notability policy we could compare the way that language's gender compostion changes against a language which was on a similar trajectory before the change, but retained its notability policy.
+We also saw that even as all Wikipedias are growing in total biographies and data coverage, their inclusion of women differs. This leads very naturally into asking about the gendered implications of notability policies, and could be tested using WHGI and propensity score matching. That is, for a language which has a implemented a stricter notability policy we could compare the way that language's gender compostion changes against a language which was on a similar trajectory before the change, but retained its notability policy.
 
-Divorced from the Wikipedia-research landscape, a historian could use the data to determine the gender-disparity levels of a specific place and time. Typically to quantify the gender climate one would rely on the indices like those mentioned in the exogenous indices section. However these indices, are limited to discussing recent history. Our validation showed that our data is in touch with the real world. With this dataset we can quantify a type of gender-disparity of medieval France, ancient Greece, or Ming dynasty China. WHGI is useful in all the same ways that exogenous indices are used, only with a larger timespan. That is certainly a novel approach not possible before Wikidata.
+Moreover WHGI we demonstrated that WHGI is generally useful to match with other dataset and provid large-scale gender insights. With the supply-demand misalignment dataset we were very quickly able to show that women's biographies are 30\% more likely to be over-read compared to their article quality. This analysis serves as an example of how more data connections could be made. 
+
+Beyond the Wikipedia-research landscape, a historian could use the data to determine the gender-disparity levels of a specific place and time. Typically to quantify the gender climate one would rely on the indices like those mentioned in the exogenous indices section. However these indices, are limited to discussing recent history. Our validation showed that our data is in touch with the real world. With this dataset we can quantify a type of gender-disparity of medieval France, ancient Greece, or Ming dynasty China. WHGI is useful in all the same ways that exogenous indices are used, only with a larger timespan. That is an approach not possible before Wikidata.
 
 \section{Limitations and Future Work}
 WHGI is a proxy for real world phenomena, but is also limited by the worldview of Wikipedia editors and is constrained by its notability policies. 
-
-Wikipedia's notability policies require humans to be in positions of power which are systemically biased against women, how then can the rise in women's biographical representation be explained? There could be several possible reasons. At least three factors that affect encyclopedic inclusion are: (1) the rate at which women receive positions of power in the real world, (2) the level of gender bias in Wikipedias' notability policies, and (3) the level of efforts to write about women in Wikipedia. 
+Wikipedia's notability policies require humans to be in positions of power which are systemically biased against women, how then can the general rise in women's biographical representation be explained? There could be several possible reasons. At least three factors that affect encyclopedic inclusion are: (1) the rate at which women receive positions of power in the real world, (2) the level of gender bias in Wikipedias' notability policies, and (3) the level of efforts to write about women in Wikipedia. 
 
 The validation analysis (correlations with existing gender disparity indices) show that WHGI captures real world phenomena. The increased correlation with existing gender disparity indices between our earliest and latest snapshots indicates that WHGI is capturing movement in the latter two factors - policy changes and editing effort changes in the Wikipedia community. Unfortunately we cannot disentangle the influence in these three factors.
 
-Yet another limitation is that there may also be biography articles in Wikipedias that are not recorded as humans in Wikidata. However it is not readily computable how much growth in Wikidata stems from Wikipedia's growth (e.g. a new biography is added), or migration of information to Wikidata (e.g. an existing biography in Wikipedia is marked as a human in Wikidata).
+Yet another limitation is that there may also be biography articles in Wikipedias that are not recorded as humans in Wikidata. However the size of this set is not readily computable. Particularly we would like to know how much growth in Wikidata stems from Wikipedia's growth (e.g. a new biography is added), or migration of information to Wikidata (e.g. an existing biography in Wikipedia is marked as a human in Wikidata).
 
-Still applications could be built to help the community, for instance to detect spikes in creation and deletion of specific demographics of humans. Such a tool could also alert to the presence of unplanned activity, good or bad, which affects the macro-level gender of Wikipedia and Wikidata. Take Figure \ref{fig:genderbylang}, it shows a week where contributions to Nepali Wikipedia are nearly 100\% about women. Likewise, if a week were to show a net-subtraction of female biographies  a community alert could be generated. This would suggest a path of research investigating editors use information to act.
+Still applications on top of WHGI indicators could be built to help the community, for instance to detect spikes in creation and deletion of specific demographics of humans. Such a tool could also alert to the presence of unplanned activity, good or bad, which affects the macro-level gender of Wikipedia and Wikidata. Take Figure \ref{fig:genderbylang}, it shows a week where contributions to Nepali Wikipedia are nearly 100\% about women. Likewise, if a week were to show a net-subtraction of female biographies a community alert could be generated.
 
-
+We wonder if tools like this would be motivating as well, as well as simply measuring progress. Zhu et al. found that Wikipedia's erstwhile ``collaboration of the week'' intiatives were effective, but failed due to the manual effort in maintaining goals \cite{zhu_organizing_2012}. This would suggest a path of research investigating how editors use information to act. As it happens Women in Red already cite WHGI for data, but would a tighter integration help the cause? A user study in providing editing communities with detailed feedback and exact movement in the landscape would ask if ``what gets measured, get fixed'' - more quickly?
+ 
 
 \section{Conclusion}
 We made the Wikidata Human Gender Indicators (WHGI), a biographic database for researchers wishing to incorporate gender data along dimensions of time, space and occupation. Based off of Wikidata and Wikipedia it can most obviously be used by those communities to monitor the effects of focused editing and biases in their content. We also validated the indicators with measures of the real world, such as population, country-based gender disparities, and occupations. These validations showed that the WHGI is significantly correlated to real world demographics and gender disparities. We also showed that data quality of Wikidata has been increasing. Data quality and correlations increasing together is particularly encouraging as support for using WHGI as a tool, as we showed extending previous research in article-readership misalignment. WHGI is freely available for download, we have outlined some of the potential ways in which it could be used, and hope that many more are thought of by others.
