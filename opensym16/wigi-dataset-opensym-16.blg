@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: wigi-dataset-opensym-16.aux
+The style file: abbrv.bst
+Database file #1: wigi-dataset-opensym.bib
+Warning--empty journal in hinnosaar_gender_2015
+Warning--empty booktitle in kay_unequal_2015
+You've used 26 entries,
+            2118 wiz_defined-function locations,
+            645 strings with 8878 characters,
+and the built_in function-call counts, 9001 in all, are:
+= -- 891
+> -- 442
+< -- 8
++ -- 177
+- -- 148
+* -- 619
+:= -- 1493
+add.period$ -- 84
+call.type$ -- 26
+change.case$ -- 148
+chr.to.int$ -- 0
+cite$ -- 28
+duplicate$ -- 360
+empty$ -- 659
+format.name$ -- 148
+if$ -- 1891
+int.to.chr$ -- 0
+int.to.str$ -- 26
+missing$ -- 27
+newline$ -- 135
+num.names$ -- 53
+pop$ -- 156
+preamble$ -- 1
+purify$ -- 126
+quote$ -- 0
+skip$ -- 277
+stack$ -- 0
+substring$ -- 476
+swap$ -- 94
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 96
+warning$ -- 2
+while$ -- 82
+width$ -- 28
+write$ -- 292
+(There were 2 warnings)
