@@ -51,9 +51,11 @@
 \begin{document}
 %
 % --- Author Metadata here ---
-\conferenceinfo{OpenSym}{'15 San Francisco, Calif. USA}
-%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
-%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
+\conferenceinfo{OpenSym '15}{August 19-21, 2015, San Francisco, CA, USA}
+%\CopyrightYear{2015} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
+\crdata{978-1-4503-3666-6/15/08 \\
+http://dx.doi.org/10.1145/2788993.2789849}
+%http://dx.doi.org/10.1145/2788993.2789849}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
 % --- End of Author Metadata ---
 
 \title{Wikipedia in the World of Global Gender Inequality Indices: What The Biography Gender Gap Is Measuring}
@@ -119,7 +121,7 @@ We correlate a Wikipedia-derived gender inequality indicator (WIGI), with four w
 \keywords{data mining, Wikidata, Wikipedia, gender gap, demographics}
 
 \section{Introduction}
-Encylopedias have long contained gender bias, both in their \textit{editorship} and in their \textit{biographical coverage}. \cite{thomas:respect} \cite{reagle}. Like its historical counterparts, Wikipedia has been estimated to have a female authorship of around only 13\% - 16\%\cite{hill}. A skew of the same order of magnitude has been found by studies of biographical articles in Wikipedia \cite{lam}, \cite{eom}, \cite{reagle}.  More recently Wagner et. al has compared gender statistics derived from Wikipedia and gender inequality indices, concluding ``to a certain extent gender inequalities of the real world manifest on Wikipedia"\cite{DBLP:journals/corr/WagnerGJS15}.  Yet it is important to disentangle biases that exist in the larger world and those that are introduced by Wikipedians and Wikipedia policy. We seek to understand in more detail which social factors that gender inequality indices measure are also reflected in Wikipedia.
+Encylopedias have long contained gender bias, both in their \textit{editorship} and in their \textit{biographical coverage}. \cite{thomas:respect} \cite{reagle}. Like its historical counterparts Wikipedia has been estimated to have a female authorship of between about 13\% - 16\%\cite{hill}. A skew of the same order of magnitude has been found by studies of biographical articles in Wikipedia \cite{lam}, \cite{eom}, \cite{reagle}.  More recently Wagner et. al have compared gender statistics derived from Wikipedia and gender inequality indices, concluding ``to a certain extent gender inequalities of the real world manifest on Wikipedia"\cite{DBLP:journals/corr/WagnerGJS15}.  Yet it is important to disentangle biases that exist in the larger world and those that are introduced by Wikipedians and Wikipedia policy. We seek to understand in more detail which social factors that gender inequality indices measure are also reflected in Wikipedia.
 
 
 \section{Research Question}
@@ -129,7 +131,7 @@ RQ1: Using other gender inequality indices as a basis, which social factors does
 \section{Method}
 We correlate four general gender inequality indices to a Wikipedia-derived indicator, and then compare which factors in the highest and lowest correlated indices are similar.
 
-Our Wikipedia-derived indicator is called the \textit{Wikipedia Gender Inequality Indicator} (\textbf{WIGI}), and utilizes Wikidata. Wikidata is a database that stores and feeds semantic facts to every language edition of Wikipedia. Its October 14 2014 dataset included a total of 1,061,634 Wikidata items about humans with a \textit{date of birth} and a \textit{citizenship} or a \textit{place of birth} property that is a country. Place of birth and citizenship we recognize may not be the same, but in case of contradiction we simply select one at random. As we are looking at large aggregates we don't believe this will have a significant effect. Ultimately the \textit{ratio of female and nonbinary gendered biographies} to total biographies the score for a country\cite{klein:wigi}. WIGI that list of countries along with these computed biography gender ratios.
+Our Wikipedia-derived indicator is called the \textit{Wikipedia Gender Inequality Indicator} (\textbf{WIGI}), and utilizes Wikidata. Wikidata is a database that stores and feeds semantic facts to every language edition of Wikipedia. Its October 14 2014 dataset included a total of 1,061,634 Wikidata items about humans with a \textit{date of birth} and a \textit{citizenship} or a \textit{place of birth} property that is a country. Place of birth and citizenship we recognize may not be the same, but in case of contradiction we simply select one at random. As we are looking at large aggregates we don't believe this will have a significant effect. The \textit{ratio of female and nonbinary gendered biographies} to total biographies is the score for a country\cite{klein:wigi}. WIGI is that list of countries along with these computed biography gender ratios.
 
 Of the other gender inequality indices there is a consensus that the complexity of the issue means that no single index is the best \cite{mills} \cite{hawken}. We use four ``general" indices that are in widespread use. 
  
@@ -192,7 +194,7 @@ How do the methodologies of the GEI and GDI show what WIGI is measuring? Looking
 In their similarities of education and income we find related measurements of school enrolment, years of schooling and earned income.
 The disparity that emerges is that GEI additionally measures empowerment by positions of power whereas GDI additionally measures life expectancy. Since GEI is the is the most similar to WIGI and GDI is the least similar, this suggests that the WIGI is more highly correlated to women's positions of power by country than to life expectancy by country.
 
-A positions of power bias is similar to what we might expect from Wikipedia's notability policies. Notability in Wikipedia, although varying by language, essentially defers to inclusion in the journalistic record. That means that humans in positions of power, as GEI imports, would would have articles in Wikipedias in greater proportion, because more powerful positions are more covered in media. Yet, because of the imperfect correlation we find with the GEI, we cannot say that Wikipedia's gender bias is entirely due the social positions of power bias - it is only one factor. 
+A positions of power bias is similar to what we might expect from Wikipedia's notability policies. Notability in Wikipedia, although varying by language, essentially defers to inclusion in the journalistic record. That means that humans in positions of power, as GEI imports, would have articles in Wikipedias in greater proportion, because more powerful positions are more covered in media. Yet, because of the imperfect correlation we find with the GEI, we cannot say that Wikipedia's gender bias is entirely due the social positions of power bias - it is only one factor. 
 
 Finally we conclude that Wikipedia's biographical bias is closer to the gender bias in highly-qualified jobs, political and executive positions than longevity.
 
