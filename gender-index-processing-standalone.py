@@ -14,10 +14,14 @@ import shutil
 java_min_int = -2147483648
 snap = '/home/maximilianklein/snapshot_data/'
 java_place = '/home/maximilianklein/Wikidata-Toolkit/wdtk-examples/results'
+newest_dir = '/home/maximilianklein/snapshot_data/newest'
+newest_changes_dir = '/home/maximilianklein/snapshot_data/newest-changes'
 pobs_map = json.load(open('helpers/aggregation_maps/pobs_map.json','r'))
 country_map = pandas.DataFrame.from_csv('helpers/aggregation_maps/country_maps.csv')
 ethnic_group_map = json.load(open('helpers/aggregation_maps/mechanical_turk/ethnic_groups_map.json','r'))
 citizenship_map = json.load(open('helpers/aggregation_maps/mechanical_turk/citizenship_map.json','r')) 
+qid_p297_map = json.load(open('helpers/aggregation_maps/qid_p297.json','r'))
+
 #Tranforming QIDs into English labels.
 enwp = pywikibot.Site('en','wikipedia')
 wikidata = enwp.data_repository()
@@ -78,16 +82,30 @@ def engify_labels(df):
     df.columns = labels
     return df
 
+def twolettercode(qid):
+    try:
+        return qid_p297_map[qid]
+    except KeyError:
+        return qid
+
+
 def organise_snaps():
-    snapshot_dates = os.listdir(java_place)
-    latest_file_name = max(snapshot_dates)
+    dump_dates = os.listdir(java_place)
+    #print dump_dates
+    latest_dump = max(dump_dates)
+    #print latest_dump
+    latest_file_name = max(os.listdir(os.path.join(java_place,latest_dump)))
+    #print latest_file_name
     latest_date = '-'.join(latest_file_name.split('.')[0].split('-')[-3:])
-    latest = os.path.join(java_place,latest_file_name)
+    #print latest_date
+    latest = os.path.join(java_place,latest_dump,latest_file_name)
+    #print latest
     #cp file over here and make property index
     new_snap_location = os.path.join(snap,latest_date)
     if not os.path.exists(new_snap_location):
         os.makedirs(new_snap_location)
     copy_dest = os.path.join(new_snap_location,latest_file_name)
+    #print latest, copy_dest
     shutil.copyfile(latest, copy_dest)
     property_index_dir = os.path.join(new_snap_location, 'property_indexes')
     if not os.path.exists(property_index_dir):
@@ -154,7 +172,7 @@ def make_world_map(df):
     edf = cdf[cdf['Economy_qid'].apply(lambda x: x is not None)]
     bios_count = len(edf)
 
-    edf['Economy'] = edf['Economy_qid'].apply(english_label)
+    edf['Economy'] = edf['Economy_qid'].apply(twolettercode)
     #print(edf.head())
 
     country_perc = defaultdict(dict)
@@ -169,7 +187,9 @@ def make_world_map(df):
         country_perc[country]['total']= total
 
     wdf = pandas.DataFrame.from_dict(country_perc, orient='index')
-    return wdf
+    returndf = wdf[['total','Score']] #no need to include the economy because it's the indec 
+    print returndf.head()
+    return returndf
 
 ###
 #REINDEX
@@ -220,7 +240,8 @@ def save_property_index(param, df, property_index_dir):
 def save_reindex(reindexed_dfs, property_index_dir):
     for param, gender_df in reindexed_dfs.iteritems():
         engify_labels(gender_df)
-        save_property_index(param, gender_df, property_index_dir)
+        for pdir in [property_index_dir, newest_dir]:
+            save_property_index(param, gender_df, pdir)
 
 def changes_between(fa, fb):
     dfa = pandas.DataFrame.from_csv(fa)
@@ -234,7 +255,8 @@ def changes_between(fa, fb):
 
 
 def make_change_sets():
-    dates = os.listdir(snap)
+    dircontent = os.listdir(snap)
+    dates = filter(lambda x: x not in ['newest','newest-changes', 'README.MD'], dircontent)
     sdates = sorted(dates)
     latest = sdates[-1]
     prev = sdates[-2]
@@ -242,30 +264,44 @@ def make_change_sets():
     prev_dir = os.path.join(os.path.join(snap,prev),'property_indexes')
     latest_files = os.listdir(latest_dir)
     prev_files = os.listdir(prev_dir)
-    changedir = os.path.join(latest_dir,'changes-since-{}'.format(prev))
+    changedir = os.path.join(os.path.join(snap,latest),'changes-since-{}'.format(prev))
     if not os.path.exists(changedir):
         os.makedirs(changedir)
    
-    
+    #remove everything from newest-changes dir before wirting to it.
+    filelist = [ f for f in os.listdir(newest_changes_dir) if f.endswith(".csv") ]
+    for f in filelist:
+        os.remove(os.path.join(newest_changes_dir,f))
+
+    #print latest
     for ind_file in latest_files:
+        print ind_file
         if ind_file in prev_files:
             p_f = os.path.join(prev_dir, ind_file)
             l_f = os.path.join(latest_dir, ind_file)
             change_df = changes_between(p_f, l_f)
-            filename = '{}-from-{}-to-{}'.format(ind_file,prev,latest)
-            filepoint = os.path.join(changedir, filename)
-            change_df.to_csv(filepoint , encoding='utf-8')
+            filename = '{}-from-{}-to-{}.csv'.format(ind_file.split('.csv')[0],prev,latest)
+            for cdir in [changedir, newest_changes_dir]:
+                filepoint = os.path.join(cdir, filename)
+                #print filepoint
+                change_df.to_csv(filepoint , encoding='utf-8')
 
 
 
 if __name__ == '__main__':
     copy_dest, property_index_dir = organise_snaps()
+    print('did copy',copy_dest)
     df = pandas.read_csv(copy_dest, na_values=[java_min_int])
+    print('read csv')     
     df = split_columns(df)
+    print('split_columns')
     df = make_culture(df)
+    print('made_cultures')
     reindexed_dfs = make_reindex(df)
+    print('made reindexes')
+    reindexed_dfs['worldmap'] = make_world_map(df)
+    print('added worldmap to indexes')
     save_reindex(reindexed_dfs, property_index_dir)
-
-    wdf = make_world_map(df)
-    save_property_index('worldmap', wdf, property_index_dir)
+    print('saved reindexes')
     make_change_sets()
+    print('made change sets')
